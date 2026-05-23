@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Highly Sensitive &middot; 高敏感研究文獻日報 &middot; 2026年5月23日</title>
+<meta name="description" content="2026年5月23日 高敏感研究文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<style>
+  :root { --bg: #f6f1e8; --surface: #fffaf2; --line: #d8c5ab; --text: #2b2118; --muted: #766453; --accent: #8c4f2b; --accent-soft: #ead2bf; --card-bg: color-mix(in srgb, var(--surface) 92%, white); }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: radial-gradient(circle at top, #fff6ea 0, var(--bg) 55%, #ead8c6 100%); color: var(--text); font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  .container { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 60px 32px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 52px; animation: fadeDown 0.6s ease both; }
+  .logo { width: 48px; height: 48px; border-radius: 14px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; box-shadow: 0 4px 20px rgba(140,79,43,0.25); }
+  .header-text h1 { font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+  .header-meta { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; align-items: center; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; letter-spacing: 0.3px; }
+  .badge-date { background: var(--accent-soft); border: 1px solid var(--line); color: var(--accent); }
+  .badge-count { background: rgba(140,79,43,0.06); border: 1px solid var(--line); color: var(--muted); }
+  .badge-source { background: transparent; color: var(--muted); font-size: 11px; padding: 0 4px; }
+  .summary-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 28px 32px; margin-bottom: 32px; box-shadow: 0 20px 60px rgba(61,36,15,0.06); animation: fadeUp 0.5s ease 0.1s both; }
+  .summary-card h2 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; color: var(--accent); margin-bottom: 16px; }
+  .summary-text { font-size: 15px; line-height: 1.8; color: var(--text); }
+  .section { margin-bottom: 36px; animation: fadeUp 0.5s ease both; }
+  .section-title { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .section-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; background: var(--accent-soft); }
+  .news-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 22px 26px; margin-bottom: 12px; box-shadow: 0 8px 30px rgba(61,36,15,0.04); transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+  .news-card:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .news-card.featured { border-left: 3px solid var(--accent); }
+  .news-card.featured:hover { border-color: var(--accent); }
+  .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .rank-badge { background: var(--accent); color: #fff7f0; font-weight: 700; font-size: 12px; padding: 2px 8px; border-radius: 6px; }
+  .emoji-icon { font-size: 18px; }
+  .card-header-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .emoji-sm { font-size: 14px; }
+  .news-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.5; }
+  .journal-source { font-size: 12px; color: var(--accent); margin-bottom: 8px; opacity: 0.8; }
+  .news-card p { font-size: 13.5px; line-height: 1.75; color: var(--muted); }
+  .card-footer { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .tag { padding: 2px 9px; background: var(--accent-soft); border-radius: 999px; font-size: 11px; color: var(--accent); }
+  .news-card a { font-size: 12px; color: var(--accent); text-decoration: none; opacity: 0.7; margin-left: auto; }
+  .news-card a:hover { opacity: 1; }
+  .utility-high { color: #5a7a3a; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(90,122,58,0.1); border-radius: 4px; }
+  .utility-mid { color: #9f7a2e; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(159,122,46,0.1); border-radius: 4px; }
+  .utility-low { color: var(--muted); font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(118,100,83,0.08); border-radius: 4px; }
+  .utility-sm { font-size: 10px; }
+  .pico-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; padding: 12px; background: rgba(255,253,249,0.8); border-radius: 14px; border: 1px solid var(--line); }
+  .pico-item { display: flex; gap: 8px; align-items: baseline; }
+  .pico-label { font-size: 10px; font-weight: 700; color: #fff7f0; background: var(--accent); padding: 2px 6px; border-radius: 4px; flex-shrink: 0; }
+  .pico-text { font-size: 12px; color: var(--muted); line-height: 1.4; }
+  .keywords-section { margin-bottom: 36px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .keyword { padding: 5px 14px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 20px; font-size: 12px; color: var(--accent); cursor: default; transition: background 0.2s; }
+  .keyword:hover { background: rgba(140,79,43,0.18); }
+  .topic-section { margin-bottom: 36px; }
+  .topic-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .topic-name { font-size: 13px; color: var(--muted); width: 100px; flex-shrink: 0; text-align: right; }
+  .topic-bar-bg { flex: 1; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+  .topic-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #c47a4a); border-radius: 4px; transition: width 0.6s ease; }
+  .topic-count { font-size: 12px; color: var(--accent); width: 24px; }
+  .clinic-banner { margin-top: 48px; animation: fadeUp 0.5s ease 0.4s both; }
+  .clinic-links { display: flex; flex-direction: column; gap: 10px; }
+  .clinic-link { display: flex; align-items: center; gap: 14px; padding: 18px 24px; background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; text-decoration: none; color: var(--text); transition: all 0.2s; box-shadow: 0 8px 30px rgba(61,36,15,0.04); }
+  .clinic-link:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .clinic-icon { font-size: 28px; flex-shrink: 0; }
+  .clinic-name { font-size: 15px; font-weight: 700; color: var(--text); flex: 1; }
+  .clinic-desc { font-size: 12px; color: var(--muted); margin-top: 2px; font-weight: 400; }
+  .clinic-arrow { font-size: 18px; color: var(--accent); font-weight: 700; }
+  footer { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); display: flex; justify-content: space-between; animation: fadeUp 0.5s ease 0.5s both; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 600px) { .container { padding: 36px 18px 60px; } .summary-card, .news-card { padding: 20px 18px; } .pico-grid { grid-template-columns: 1fr; } footer { flex-direction: column; gap: 6px; text-align: center; } .topic-name { width: 70px; font-size: 11px; } .clinic-links { gap: 8px; } .clinic-link { padding: 14px 18px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🌸</div>
+    <div class="header-text">
+      <h1>Highly Sensitive &middot; 高敏感研究文獻日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年5月23日</span>
+        <span class="badge badge-count">📊 50 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + Zhipu AI</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻主要聚焦於肝臟纖維化的分子機制與幹細胞療法，但心理學領域有兩項重要研究深入探討了高敏感特質（SPS）的內在結構及其與心理健康、認知功能的具體關聯，為臨床精準介入提供了新的網絡分析視角。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#1</span>
+            <span class="emoji-icon">🧠</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>國中生高敏感特質、憂鬱與學業困難的網絡分析</h3>
+          <p class="journal-source">Acta psychologica &middot; Network analysis of sensory processing sensitivity, depression and academic difficulties in middle school students.</p>
+          <p>研究透過網絡分析發現，疲勞和低情緒是連結高敏感特質與學業問題的核心節點，且易興奮性與低感覺閾值主要與憂鬱相關，而美學敏感度則對學業有保護作用。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">575名青少年（12-17歲）</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">網絡分析評估高敏感特質亞維度（EOE, LST, AES）、憂鬱（PHQ-8）與學業困難的關聯</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">不同亞維度間節點強度與中心性的比較</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">識別出疲勞與低情緒為核心介入點；AES與學業困難負相關，EOE/LST與憂鬱正相關</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">高敏感特質</span><span class="tag">憂鬱</span><span class="tag">兒童發展</span><span class="tag">心理治療</span><span class="tag">疲勞</span><span class="tag">教養</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#2</span>
+            <span class="emoji-icon">🤲</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>探討手部心理旋轉的個體差異及其與心理健康的關聯</h3>
+          <p class="journal-source">Acta psychologica &middot; Exploring individual differences in the mental rotation of hands and their links to mental health.</p>
+          <p>研究發現高敏感特質（SPS）得分較高的女性在進行心理旋轉任務時反應更快，這可能與其強烈的同理心與觀點取替能力有關，且SPS中介了認知表現與焦慮/憂鬱的關係。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">大學生</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">執行心理旋轉任務（SDT, HLT）並填寫SPS、述情障礙、焦慮及憂鬱量表</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">比較不同性別與SPS分數組別在反應時間與準確度的差異</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">SPS高分女性在特定旋轉角度反應更快；SPS與述情障礙完全中介了認知表現與心理健康的關聯</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">高敏感特質</span><span class="tag">焦慮</span><span class="tag">憂鬱</span><span class="tag">心理治療</span><span class="tag">同理心</span><span class="tag">注意力</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#3</span>
+            <span class="emoji-icon">🧬</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>血清素在大腦發育中的作用：從分子途徑到神經發育風險</h3>
+          <p class="journal-source">Cellular and molecular neurobiology &middot; The Role of Serotonin in Brain Development: From Molecular Pathways to Neurodevelopmental Risk.</p>
+          <p>綜述探討了血清素（5-HT）在胎兒大腦發育關鍵期的作用，指出母體、胎盤和胎兒源頭的5-HT動態交互作用失調，可能是自閉症等神經發育風險的收斂機制。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">發展神經生物學相關文獻（綜述）</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">整合分子、細胞與系統層級的5-HT機制研究</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">正常發育與5-HT動態失衡（基因、環境、藥物因素）的比較</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">提出5-HT穩態破壞是神經發育障礙的潛在生物標記與治療目標，並存在性別差異</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">神經科學</span><span class="tag">自閉症</span><span class="tag">兒童發展</span><span class="tag">壓力反應</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div></div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧪</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>肝細胞衍生的S100A4/A6/A10/A11蛋白通過直接和間接激活HSCs促進肝臟纖維化</h3>
+          <p class="journal-source">Inflammation</p>
+          <p>研究發現肝細胞衍生的S100A4/A6/A10/A11蛋白作為損傷相關分子模式（DAMPs），通過激活巨噬細胞和直接作用於肝星狀細胞（HSCs），雙重促進肝臟纖維化。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🥩</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>乾式與濕式熟成及穀物與牧草飼養系統對牛肉蛋白質組的影響</h3>
+          <p class="journal-source">Food research international (Ottawa, Ont.)</p>
+          <p>利用蛋白質組學分析顯示，乾式熟成增加肌肉結構與能量代謝蛋白，而濕式熟成增加熱休克蛋白，飼養方式也顯著影響牛肉的代謝途徑。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>吲哚-3-乳酸通過抑制NLRP3信號減輕肝星狀細胞焦亡和肝纖維化</h3>
+          <p class="journal-source">Experimental cell research</p>
+          <p>色氨酸代謝物ILA可通過激活AHR信號抑制NLRP3炎症小體，從而減少肝星狀細胞焦亡並改善肝纖維化，具有治療潛力。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧫</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>間質質幹細胞在血液疾病中的應用：進展、挑戰與生物工程策略</h3>
+          <p class="journal-source">Current stem cell research & therapy</p>
+          <p>綜述討論了間質質幹細胞在造血功能支持、免疫調節及移植物抗宿主病預防中的應用，並探討了克服臨床轉化挑戰的新興生物工程策略。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">介入治療</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧠</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>睪酮在膠質母細胞瘤中的雙重作用：從靶向治療到腫瘤微環境調節與神經保護</h3>
+          <p class="journal-source">Biomedicine & pharmacotherapy = Biomedecine & pharmacotherapie</p>
+          <p>睪酮在膠質母細胞瘤中既有促進腫瘤生長的作用，也具有神經保護特性，治療策略需平衡抗雄激素療法與神經保護需求。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">神經科學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>精神分裂症中的熱休克蛋白：整合壓力反應、分子途徑與新興治療策略</h3>
+          <p class="journal-source">The Neuroscientist : a review journal bringing neurobiology, neurology and psychiatry</p>
+          <p>熱休克蛋白（HSPs）在精神分裂症中扮演關鍵角色，影響蛋白穩態、神經保護及抗精神病藥物反應，是潛在的精準醫療目標。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span><span class="tag">壓力反應</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🦷</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>OCT3/4增強的牙髓間質幹細胞獲得造血幹細胞樣特性並支持骨髓抑制小鼠的造血恢復</h3>
+          <p class="journal-source">Stem cells and development</p>
+          <p>過表達OCT3/4的牙髓間質幹細胞可轉分化為造血幹細胞樣細胞，並能有效促進骨髓抑制小鼠的造血與免疫恢復。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">介入治療</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">📊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>來自多學科CHIP診所的治療相關性克隆造血的發生和自然史</h3>
+          <p class="journal-source">American journal of hematology</p>
+          <p>比較了治療相關性克隆造血與新生克隆造血，發現t-CH患者無事件生存期和總生存期較短，且特定基因突變顯著增加進展為髓系腫瘤的風險。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>雙相屏障穿透奈米藥物用於早期干預肝星狀細胞以增強肝纖維化治療</h3>
+          <p class="journal-source">ACS applied materials & interfaces</p>
+          <p>開發了一種雙相奈米藥物，能穿透肝竇內皮細胞屏障，靶向並激活肝星狀細胞，有效改善肝纖維化。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">介入治療</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>ALS突變不會改變人類幹細胞衍生運動神經元中的神經元周圍網形成</h3>
+          <p class="journal-source">Communications biology</p>
+          <p>研究顯示，肌萎縮側索硬化症（ALS）相關突變並不會導致人類運動神經元內在的神經元周圍網形成障礙，提示病變可能涉及其他神經細胞類型。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💉</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>單細胞轉錄組學揭示潑尼松龍對膽道閉鎖症肝臟微環境的抗炎作用</h3>
+          <p class="journal-source">Scientific reports</p>
+          <p>潑尼松龍治療可將膽道閉鎖症的肝臟免疫-間質微環境從炎症狀態轉變為再生狀態，抑制巨噬細胞並使肝星狀細胞去活化。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">介入治療</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💉</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>AMD3100調節人類間質質幹細胞的分泌組反應但不影響其抑制T細胞增殖的作用</h3>
+          <p class="journal-source">Scientific reports</p>
+          <p>AMD3100雖不改變BM MSCs抑制T細胞增殖的能力，但會調節其分泌的特定分子，影響骨髓微環境的免疫調節功能。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🩸</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>細胞毒性和基因毒性壓力暫時性增加血小板偏向造血幹細胞對血小板生成的貢獻</h3>
+          <p class="journal-source">Experimental hematology</p>
+          <p>在細胞毒性壓力下，血小板偏向造血幹細胞能繞過中間祖細胞，快速生成血小板，這是應急血小板恢復的關鍵機制。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🐛</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>多房棘球絛蟲和細粒棘球絛蟲原頭蚴對肝星狀細胞的差異性激活</h3>
+          <p class="journal-source">Parasitology research</p>
+          <p>多房棘球絛蟲原頭蚴比細粒棘球絛蟲更早、更強烈地激活肝星狀細胞，導致更顯著的結構改變，解釋了不同棘球絛蟲病引起的肝纖維化差異。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🦠</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>藥物共生菌Phocaeicola dorei通過緩解巨噬細胞對中性粒細胞的胞葬作用改善膽汁淤積性肝纖維化</h3>
+          <p class="journal-source">Nature communications</p>
+          <p>口服P. dorei可抑制中性粒細胞與巨噬細胞浸潤，破壞胞葬作用，從而減輕膽汁淤積性肝纖維化，是一種潛在的微生群療法。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">介入治療</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧪</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Ferrostatin-1和日柏醇補充劑在化學定義培養基中增強人類造血幹細胞擴增</h3>
+          <p class="journal-source">Molecular therapy. Advances</p>
+          <p>補充鐵死亡抑制劑Ferrostatin-1和日柏醇可抑制脂質過氧化，顯著改善臍帶血造血幹細胞在化學定義培養基中的擴增效率。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧠</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>造血幹細胞移植與鐮刀型細胞貧血成人腦容量變化的關係</h3>
+          <p class="journal-source">Neurology</p>
+          <p>成功的造血幹細胞移植可顯著減緩鐮刀型細胞貧血症成人的腦萎縮速率，保護腦部健康。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">神經科學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌿</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>薑黃素通過PI3K/AKT途徑抑制靶向Crispld2抑制肝星狀細胞活化以治療肝纖維化</h3>
+          <p class="journal-source">Liver international : official journal of the International Association for the Study of the Liver</p>
+          <p>薑黃素通過下調Crispld2表達並抑制PI3K/AKT信號通路，有效抑制肝星狀細胞活化，從而改善肝纖維化。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">介入治療</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>抑制FKBP10通過RAS信號減弱肝星狀細胞活化和肝纖維化</h3>
+          <p class="journal-source">Biochemical and biophysical research communications</p>
+          <p>FKBP10在肝硬化肝臟中上調，敲低FKBP10可抑制肝星狀細胞活化並促進凋亡，通過VPS4A調節RAS信號通路發揮抗纖維化作用。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>低濃度索拉非尼在人類肝星狀細胞抗纖維化過程中增加二氢神經醯胺</h3>
+          <p class="journal-source">Biochemical and biophysical research communications</p>
+          <p>低濃度索拉非尼可逆轉纖維化過程中的脂質代謝變化，增加二氢神經醯胺水平，為抗纖維化機制提供了新見解。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">⚠️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>撤稿：PU.1缺陷小鼠抵抗硫代乙酰胺誘導的肝纖維化</h3>
+          <p class="journal-source">Bioscience reports</p>
+          <p>撤稿聲明。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧪</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>基於纖維素奈米晶/低甲氧基果膠複合物的皮克林乳液的構建</h3>
+          <p class="journal-source">Food research international (Ottawa, Ont.)</p>
+          <p>研究構建了具有優異穩定性的皮克林乳液，闡明了纖維素奈米晶與果膠的相互作用及界面行為。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🦠</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>腸道上皮Syndecan-1通過增強Faecalibacterium prausnitzii生物膜形成維持炎症性腸病黏膜穩態</h3>
+          <p class="journal-source">Gut microbes</p>
+          <p>Syndecan-1的糖胺聚糖鏈通過促進F. prausnitzii的鈷胺素合成和生物膜形成，維持腸道屏障功能，改善炎症性腸病。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌿</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>薯蕷皂苷通過PI3K/Akt/mTOR介導的脂肪酸代謝重編和NF-κB激活緩解肝纖維化</h3>
+          <p class="journal-source">Journal of ethnopharmacology</p>
+          <p>薯蕷皂苷通過靶向PI3K和mTOR，抑制肝星狀細胞活化、脂肪酸攝取及炎症反應，從而減輕肝纖維化。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">介入治療</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔥</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>古菌熱休克蛋白-14二聚體的熱韌性：對自然分子設計的見解</h3>
+          <p class="journal-source">Biochemical and biophysical research communications</p>
+          <p>研究發現古菌sHSP14二聚體在升溫時通過焓固效應增強穩定性，揭示了其獨特的耐熱分子設計機制。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧫</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>腫瘤邊緣的幹細胞：機制見解、治療挑戰與新興前景</h3>
+          <p class="journal-source">International immunopharmacology</p>
+          <p>綜述探討了造血幹細胞、間質幹細胞、誘導多能幹細胞及癌幹細胞在腫瘤免疫治療中的應用潛力與挑戰。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">介入治療</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💧</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>通過生物-生態耦合系統實現廢水管理可持續發展的浪潮</h3>
+          <p class="journal-source">Water research</p>
+          <p>生物-生態耦合系統通過結合工程生物處理與生態修復，提高了污染物去除效率和資源回收能力，是可持續廢水管理的新方向。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌿</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>天麻素通過多細胞協調機制緩解膽汁淤積性肝纖維化</h3>
+          <p class="journal-source">Phytomedicine : international journal of phytotherapy and phytopharmacology</p>
+          <p>天麻素通過調節肝細胞修復、抑制巨噬細胞炎症及調節肝星狀細胞異質性，有效緩解膽汁淤積性肝纖維化。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">介入治療</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌿</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Corylin對代謝功能障礙相關脂肪肝病的有益作用</h3>
+          <p class="journal-source">Antioxidants & redox signaling</p>
+          <p>Corylin通過AMPK調節減少脂質堆積、氧化壓力和炎症，並抑制肝星狀細胞纖維化表達，改善MAFLD。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">介入治療</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🩸</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>不要剪斷臍帶：為什麼臍帶血仍然值得在移植中佔有一席之地</h3>
+          <p class="journal-source">International journal of immunogenetics</p>
+          <p>儘管使用率下降，臍帶血因獨特的免疫特性、低慢性GVHD發生率及強大的抗白血病效應，仍是造血幹細胞移植的重要來源。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">介入治療</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🦠</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>HSPA5通過PERK-eIF2α信號通路誘導自噬靶向VP2抑制SVA複製</h3>
+          <p class="journal-source">Journal of virology</p>
+          <p>熱休克蛋白HSPA5通過激活PERK-eIF2α通路誘導自噬，降解塞內卡病毒VP2蛋白，從而抑制病毒複製。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>雙價抗CTGF適體調節多種信號通路以減輕肝纖維化</h3>
+          <p class="journal-source">European journal of medicinal chemistry</p>
+          <p>雙價抗CTGF適體PDM通誘導CTGF二聚化並阻斷其與TGF-β1的相互作用，有效抑制肝星狀細胞活化和肝纖維化。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">介入治療</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌿</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Pedunculoside通過靶向c-Jun抑制肝星狀細胞活化改善肝纖維化</h3>
+          <p class="journal-source">International immunopharmacology</p>
+          <p>Pedunculoside通過直接結合並抑制c-Jun的磷酸化，阻斷MAPK和NF-κB通路，從而抑制肝星狀細胞活化和肝纖維化。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">介入治療</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">⚠️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>整合網絡毒理學和實驗驗證揭示乙檸檬酸三丁酯對系統性紅斑狼瘡的免疫毒性</h3>
+          <p class="journal-source">International immunopharmacology</p>
+          <p>塑化劑ATBC通過誘導氧化應激和激活cGAS-STING通路，降低SLE患者先天免疫激活的閾值，加劇炎症反應。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">環境敏感度</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>靶向肝竇內皮細胞治療肝纖維化的納米療法</h3>
+          <p class="journal-source">Journal of controlled release : official journal of the Controlled Release Society</p>
+          <p>綜述探討了恢復肝竇內皮細胞功能或破壞致病細胞通路的創新納米治療策略，為抗纖維化治療提供新途徑。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">介入治療</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧠</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>腦小血管病中連結抑鬱症狀與認知功能的共同杏仁核和丘腦底物</h3>
+          <p class="journal-source">Journal of affective disorders</p>
+          <p>研究發現腦小血管病患者的抑鬱和認知症狀與特定的杏仁核和丘腦亞區結構及功能連接改變有關，且存在性別差異。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span><span class="tag">憂鬱</span><span class="tag">情緒調節</span><span class="tag">認知功能</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Caveolin-1缺失通過驅動DRP1介導的線粒體分裂導致肝星狀細胞脂質代謝重編從而加劇肝纖維化</h3>
+          <p class="journal-source">Free radical biology & medicine</p>
+          <p>Caveolin-1缺失促進DRP1介導的線粒體分裂和氧化應激，驅動脂質代謝重編，從而加劇肝星狀細胞活化和肝纖維化。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>SREBP2將ACSS2依賴的乙酰輔酶A生物合成與肝星狀細胞的代謝表觀遺傳激活和肝纖維化聯繫起來</h3>
+          <p class="journal-source">Metabolism: clinical and experimental</p>
+          <p>SREBP2通過激活ACSS2轉錄，促進組蛋白乙醯化，驅動肝星狀細胞的代謝表觀遺傳激活和肝纖維化。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌿</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>礦物溶解產物通過污泥聚集驅動厭氧氨氧化氮去除</h3>
+          <p class="journal-source">Environmental research</p>
+          <p>黃鐵礦溶解通過增強胞外聚合物粘附促進厭氧氨氧化污泥聚集，形成正反饋迴路，顯著提高氮去除效率。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Lin28A通過抑制肝星狀細胞中HMGA2/HIF-1α依賴的鐵死亡驅動肝纖維化</h3>
+          <p class="journal-source">Biochemical pharmacology</p>
+          <p>Lin28A在肝星狀細胞中過表達通過抑制let-7成熟上調HMGA2，進而抑制鐵死亡，促進肝纖維化。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>KNDC1通過抑制肝星狀細胞糖酵解減輕非酒精性脂肪肝纖維化</h3>
+          <p class="journal-source">Cellular signalling</p>
+          <p>KNDC1通過激活KRAS結合GLUT2，阻止其膜轉位，從而抑制葡萄糖攝取和糖酵解，減輕肝纖維化。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🦀</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>生存的熱邊界：海洋無脊椎動物的案例研究</h3>
+          <p class="journal-source">Comparative biochemistry and physiology. Part A, Molecular & integrative physiology</p>
+          <p>整合生理和分子數據發現，單一參數無法定義物種熱極限，血氧和運動活性與野外分佈最吻合。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">環境敏感度</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>具有ROS/pH雙重響應的金屬-酚類奈米粒子通過協同微環境重塑和代謝重編治療肝纖維化</h3>
+          <p class="journal-source">Colloids and surfaces. B, Biointerfaces</p>
+          <p>設計的ROS/pH雙重響應奈米系統通過靶向清除ROS、調節巨噬細胞極化及抑制糖酵解，協同治療肝纖維化。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">介入治療</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>高風險黑色素瘤患者遺傳變異和遺傳祖先的見解</h3>
+          <p class="journal-source">Melanoma research</p>
+          <p>研究分析了高風險黑色素瘤患者的遺傳祖先，發現大多數患者具有歐洲血統，整合祖先分析有助於精準醫療發展。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>FNDC4通過AMPK/YAP通路調節TGF-β1誘導的肝星狀細胞活化和肝纖維化</h3>
+          <p class="journal-source">Free radical biology & medicine</p>
+          <p>肝細胞衍生的FNDC4通過激活AMPK抑制YAP，選擇性減弱TGF-β1驅動的肝星狀細胞遷移和纖維化。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>臍帶血同種異體反應的實驗和數據建模方法確定細胞因子譜作為與反應初始階段和免疫調節相關的潛在生物標記</h3>
+          <p class="journal-source">Cytokine</p>
+          <p>研究建立了臍帶血同種異體反應模型，識別出可量化細胞因子譜作為早期免疫激活和抑制的生物標記。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>β-菸酰胺單核苷酸通過恢復SIRT1功能防止肝星狀細胞衰老和脂質積累</h3>
+          <p class="journal-source">Chemico-biological interactions</p>
+          <p>NMN通過恢復NAD+水平和SIRT1活性，改善線粒體功能，抑制脂質過氧化誘導的肝星狀細胞衰老和脂質積累。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div></div>
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div>
+            <div class="topic-row">
+              <span class="topic-name">高敏感特質</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:4%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">環境敏感度</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:2%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">生理健康</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+              <span class="topic-count">45</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">介入治療</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:22%"></div></div>
+              <span class="topic-count">10</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">神經科學</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:13%"></div></div>
+              <span class="topic-count">6</span>
+            </div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">高敏感特質</span><span class="keyword">憂鬱</span><span class="keyword">網絡分析</span><span class="keyword">認知差異</span><span class="keyword">血清素</span></div></div>
+
+  <div class="clinic-banner">
+    <div class="clinic-links">
+      <a href="https://www.leepsyclinic.com/" class="clinic-link" target="_blank">
+        <span class="clinic-icon">🏥</span>
+        <span class="clinic-name">李政洋身心診所首頁<span class="clinic-desc">專業身心健康服務</span></span>
+        <span class="clinic-arrow">→</span>
+      </a>
+      <a href="https://blog.leepsyclinic.com/" class="clinic-link" target="_blank">
+        <span class="clinic-icon">📬</span>
+        <span class="clinic-name">訂閱電子報<span class="clinic-desc">接收最新心理健康資訊</span></span>
+        <span class="clinic-arrow">→</span>
+      </a>
+      <a href="https://buymeacoffee.com/CYlee" class="clinic-link" target="_blank">
+        <span class="clinic-icon">☕</span>
+        <span class="clinic-name">Buy Me a Coffee<span class="clinic-desc">支持這個計畫持續運作</span></span>
+        <span class="clinic-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：GLM-5-Turbo</span>
+    <span><a href="https://github.com/u8901006/highly-sensitive">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
