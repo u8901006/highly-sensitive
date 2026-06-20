@@ -1,0 +1,749 @@
+{
+  "date": "2026-06-20",
+  "count": 50,
+  "papers": [
+    {
+      "pmid": "[object Object]",
+      "title": "The search for safe and effective CAR-T targets in AML.",
+      "journal": "Blood cancer journal",
+      "date": "2026 Jun 20",
+      "abstract": "Acute myeloid leukemia (AML) remains a highly aggressive malignancy with limited therapeutic options and poor long-term survival. A major barrier to curative treatment is the persistence of leukemic stem cells (LSCs), a chemo-resistant population that drives relapse. Chimeric antigen receptor (CAR)-T-cell therapy has transformed the treatment of B-cell hematological malignancies. However, its application in AML has been met with significant challenges. Among the key challenges are the scarcity of AML-specific antigens and the risk of on-target/off-tumor toxicity due to shared antigen expression on normal hematopoietic stem cells (HSCs) and/or mature blood cells. Early clinical trials of CAR-T-cell therapy in AML -primarily targeting CD123, CD33, or CLL&#x2011;1- have demonstrated limited durable complete remissions and/or frequent myeloablation, underscoring the need for more selective targets. While other targets show more restricted expression profiles, they are often expressed only in a small subgroup of AML patients. In this review, we systematically evaluated 63 AML-associated antigens for which CAR constructs have been reported, using five criteria: (1) homogeneous expression across AML patients, (2) uniform expression on AML cells within individual patients; (3) presence on LSCs, (4) absence on normal HSCs, and (5) no or acceptable expression on mature blood cells. Applying a 20-point scoring framework, 13 novel antigens emerged as the most promising candidates for CAR-T-cell therapy in AML: ADGRE2, SIGLEC-6, IL1RAP, MUC1, CCR1, CD155, CD70, LILRB4, GRP78, CD37, ITGB2, TIM-3 and mesothelin. We discuss the advantages and limitations of each target, along with strategies to mitigate associated risks. With no CAR-T-cell therapy currently approved for AML, this comprehensive review provides a prioritized antigen landscape and a framework to guide the rational design of next-generation CARs for this challenging malignancy.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": []
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Contact Piezoelectric Transducers for Acoustic Voice Analysis: High Reliability for Frequency and Intensity, but Limited for Spectral and Perturbation Measures.",
+      "journal": "Journal of voice : official journal of the Voice Foundation",
+      "date": "2026 Jun 19",
+      "abstract": "PURPOSE: Clinical voice assessment is often limited by the environmental sensitivity of air-conduction microphones. While contact transducers offer noise immunity, their validity across diverse clinical parameters remains debated. This study evaluates the interchangeability of a dual-element piezoelectric transducer against a professional headset microphone, investigating the impact of anatomical filtering on signal integrity. METHODS: Forty-nine adults (VHI-10 < 5.5) underwent simultaneous recordings. To account for biomechanical filtering, comprehensive anthropometric profiling (neck circumference and cervical skinfold thickness) was performed. Statistical validity was assessed via linear mixed-effects models (LMM) and intraclass correlation coefficients (ICC). RESULTS: The transducer achieved superior noise rejection (SNR: 28.2&#xa0;dB vs&#xa0;24.8&#xa0;dB). Mean fundamental frequency exhibited excellent interchangeability (ICC = 0.839, P = 0.909), and intensity metrics showed moderate reliability. In contrast, spectral (Slope, Tilt), noise (HNR), and amplitude perturbation (Shimmer) measures revealed significant systematic bias (P < 0.05). Furthermore, all perturbation (Jitter, Shimmer) and noise-related metrics exhibited poor reliability (ICC < 0.30), precluding their individual clinical use. Crucially, anthropometric variables did not emerge as significant covariates, suggesting that anatomical variability, while present, does not systematically improve sensor performance models. These in vivo findings challenge previous synthetic models, highlighting the damping characteristics of neck tissue. CONCLUSIONS: Low-cost piezoelectric transducers are robust tools for monitoring pitch and intensity in ecologically valid, noisy environments. However, they remain unsuitable for clinical perturbation analysis due to biomechanical low-pass filtering. This study provides a necessary methodological framework and calibration equations for integrating contact sensors into a",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Acoustic voice analysis",
+        "Calibration",
+        "Perturbation analysis",
+        "Piezoelectric contact transducer",
+        "Sensor interchangeability",
+        "Spectral measures"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "osmiaCAM: A low-cost imaging monitoring system for linking solitary bee foraging, nest provisioning, and environmental sensitivity.",
+      "journal": "Integrative and comparative biology",
+      "date": "2026 Jun 19",
+      "abstract": "While social bees are a primary focus of research and monitoring efforts among pollinators, more than 80% of bee species are solitary. For solitary bees, foraging behavior and efficiency directly impact the reproductive outcomes of individuals (fitness), as the consequences of foraging performance are not buffered by a colony. Cavity-nesting bees (e.g., Osmia spp. and Megachile spp. (Megachilidae)) progressively provision pollen in cells within hollow stems and other cavities, with each cell generally containing one offspring, making their reproductive output easily quantifiable. Cavity-nesting bees thus represent an ideal system to study fitness effects of individual variation in foraging niche, including differences in foraging activity and responses to environmental conditions. Understanding the links between individual performance and fitness can improve our understanding of solitary bee behavior, physiology, and ecology, particularly in response to environmental change. However, quantifying both foraging activity and provisioning rates within nests is prohibitively labor-intensive in many cases, especially for the extended time periods (i.e., weeks or months) over which nests are provisioned and under naturalistic ecological conditions. While recent work has established computer vision tools for automated monitoring of foraging activity at solitary bee nests, combining these approaches with in-nest monitoring could help better link foraging to fitness in solitary bees. Here we introduce Osmia Camera Activity Monitoring (osmiaCAM), a low-cost, open-source, automated monitoring system for foraging and nest-provisioning behavior of cavity-nesting bees, including key pollinator and research model organisms, such as Osmia spp. and Megachile spp. We demonstrate the potential of this system in a small validation experiment in Central California, where we quantified foraging transits and nest provisioning rates of Osmia spp. under variable weather conditions. This vali",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": []
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "The PERK-GADD45A axis is a key driver of hepatic stellate cell activation.",
+      "journal": "Hepatology communications",
+      "date": "2026 Jul 1",
+      "abstract": "BACKGROUND: Hepatic stellate cells (HSCs) play a pivotal role in driving fibrosis during chronic liver injury. HSCs produce vast amounts of fibrotic proteins, causing endoplasmic reticulum (ER) stress and initiating the unfolded protein response (UPR). While the UPR is important for fibrogenesis, how signaling through UPR transducer Protein Kinase R-like ER Kinase (PERK) and its effectors impact HSC activation and fibrogenesis is unclear. Here, we sought to uncover the role of PERK and its effector GADD45A in liver fibrosis. METHODS: PERK-GADD45A signaling was assessed in primary and immortalized HSCs treated with TGF&#x3b2;, and mouse models of fibrosis. Genetic and pharmacological disruption of PERK or GADD45A was used to assess the role of PERK or GADD45A in HSC activation, proliferation, and fibrogenesis. HSC-specific Gadd45a-null mice were utilized to investigate the role of GADD45A on CCl4-induced fibrosis. RESULTS: We found that TGF&#x3b2;-induction of collagen I drives activation of PERK signaling in HSCs. Furthermore, loss or inhibition of PERK limits long-term HSC activation as illustrated by reduced levels of collagen I and fibronectin, impaired collagen I deposition, and reduced cell proliferation in vitro. Next, we show that PERK signaling induces expression of GADD45A during HSC activation, and loss of GADD45A disrupts HSC activation and expression of proliferation and cell-cycle-associated genes in immortalized and primary HSCs. Finally, HSC-specific GADD4Aa loss limits CCl4-driven fibrogenesis in vivo. CONCLUSION: PERK signaling is critical for HSC activation, and loss of the PERK downstream effector GADD45A limits fibrosis progression. Disruption of HSC activation and proliferation, coupled with dysregulation of cell-cycle-associated genes upon PERK or GADD45A loss, suggests that PERK-GADD45A signaling impacts multiple facets of HSC pathophysiology.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "HSC",
+        "TGF&#x3b2;",
+        "endoplasmic reticulum stress",
+        "liver fibrosis",
+        "unfolded protein response"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Semaglutide exerts anti-pulmonary fibrosis effects by inhibiting cellular senescence through activation of the Sirt1/HSF1/HSPs pathway.",
+      "journal": "Biochemical pharmacology",
+      "date": "2026 Jun 18",
+      "abstract": "Idiopathic pulmonary fibrosis is an interstitial lung disease of unknown etiology with no effective treatment. Semaglutide is a glucagon-like peptide-1 receptor agonist that has been widely used in the treatment of diabetes and obesity. This study investigated the therapeutic effects of semaglutide on pulmonary fibrosis and its molecular mechanisms. An in vivo mouse lung fibrosis model was established using bleomycin and treated with semaglutide, and the key targets of semaglutide were explored using heat shock factor 1 (HSF1) shRNA or Sirt1 inhibitor. In vitro, a mouse lung epithelial cell senescence model was established using hydrogen peroxide and treated with semaglutide. Key targets of semaglutide anti-senescence were screened by transcriptomics and the screened HSF1 genes were silenced using siRNA. Semaglutide-regulated HSPs were screened by transcriptomics and PCR arrays and co-immunoprecipitation experiments were conducted to explore key factors in semaglutide promoting increased expression of heat shock proteins (HSPs). We found that semaglutide significantly improved pulmonary fibrosis, oxidative stress and cellular senescence in vivo and inhibited hydrogen peroxide-induced cellular senescence in vitro. Moreover, the above effects were inhibited by silencing HSF1 or Sirt1 inhibition. In addition, semaglutide promoted HSF1 protein deacetylation by Sirt1, leading to the increased expression of HSPs downstream of HSF1. In conclusion, semaglutide inhibited cellular senescence and exerted anti-pulmonary fibrosis effects through the Sirt1 protein-mediated deacetylation of HSF1, which enhances HSF1 binding to the HSP gene promoters and increased the expression of various HSPs.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Cellular senescence",
+        "Pulmonary fibrosis",
+        "Semaglutide",
+        "Sirt1/HSF1/HSPs pathway"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Aging of hematopoietic stem cells is inconsequential to progenitor cell function.",
+      "journal": "Stem cell reports",
+      "date": "2026 Jun 18",
+      "abstract": "Aging of the hematopoietic system has profound consequences for organismal health and longevity, attributed to the well-characterized functional aging of hematopoietic stem cells (HSCs). Here, we tested whether progenitor cells may demonstrate age resistance to enable hematopoietic homeostasis throughout life despite the functional decline of upstream HSCs. Strikingly, our results revealed unwavering reconstitution capacity by young and old progenitors, demonstrating that intermediate progenitors are functionally unaffected by aging and placing Flk2+ multipotent progenitors (MPPs) as a potential source of age resilience. This unique finding was emphasized by unchanged transcriptomic, proliferation, and mitochondrial capacity of young and old MPPs, revealing remarkable similarities upon aging. Considering that HSCs functionally decline with age, yet intermediate progenitors remain unperturbed and \"age resilient\", we posit that MPPs may play an essential role in protecting downstream progenitors from inheriting age-related properties from HSCs. We propose three potential mechanisms for how MPPs maintain hematopoietic integrity and homeostasis with age.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "age resilience",
+        "aging",
+        "aging homeostasis",
+        "hematopoietic progenitor cells",
+        "hematopoietic reconstitution",
+        "hematopoietic stem cells",
+        "longevity",
+        "multipotent progenitor cells",
+        "single-cell RNA sequencing",
+        "transcriptomics",
+        "transplantation"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": {
+        "i": [
+          "Csi-Bantam",
+          "Clonorchis sinensis"
+        ],
+        "#text": "Delivered byExtracellular Vesicles Promotes Liver Fibrosis via Targeting TRIM35."
+      },
+      "journal": "Journal of agricultural and food chemistry",
+      "date": "2026 Jun 18",
+      "abstract": "Freshwater fish is widely consumed, yet raw or undercooked freshwater fish can transmit foodborne zoonotic pathogens. Clonorchiasis, caused by, is a major foodborne parasitic disease associated with hepatobiliary injury and fibrosis. The biological functions and mechanisms underlying liver injury mediated by-derived extracellular vesicles (EVs) encapsulated microRNAs in fibrogenic remodeling remain poorly defined. Here, we isolated and characterized EVs from adult, confirmed their uptake by hepatic stellate cells (HSCs), and identifiedas aEV-enriched microRNA.enhances HSC activation and upregulates fibrogenic markers, including &#x3b1;-SMA, COL1A1, and COL3A1, bothand in a mice infection model. Bioinformatic prediction and dual-luciferase assays validated TRIM35 as a target of. TRIM35 silencing phenocopiedoverexpression and increased PI3K/AKT phosphorylation, whereasinhibition restored TRIM35 and attenuated fibrogenic markers. Collectively,EV-associatedpromotes HSC activation via the TRIM35-PI3K/AKT axis, suggesting a potential target for antifibrotic intervention in clonorchiasis. These findings provide mechanistic insight into how infection acquired from raw or undercooked freshwater fish harboring infectivemetacercariae can lead to hepatobiliary injury and fibrogenic remodeling, supporting food safety risk assessment and future prevention of fish-borne parasitic hazards.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Clonorchis sinensis",
+        "Csi-bantam",
+        "PI3K/AKT signaling pathway",
+        "TRIM35",
+        "extracellular vesicles",
+        "hepatic stellate cells"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Discovery of Jatrophane Diterpenoids as JAG1-Notch Signaling Inhibitors for the Treatment of Liver Fibrosis.",
+      "journal": "Journal of medicinal chemistry",
+      "date": "2026 Jun 18",
+      "abstract": "Liver fibrosis is an urgent clinical condition that lacks effective therapies. In this study, molecular networking-guided fractionation of the medicinal plantyielded a focused jatrophane diterpenoid library (-), featuring 26 previously undescribed structures. Subsequent antifibrotic screening of this library in TGF-&#x3b2;1-stimulated hepatic stellate cells (HSCs) identified euphylonoid D () as a novel hit, enabling a preliminary structure-activity relationship (SAR) analysis of this class. In a CCl-induced mouse model,significantly alleviated liver fibrosis while exhibiting a favorable safety profile. Mechanistic studies revealed thatacts as the first small-molecule inhibitor of Jagged-1 (JAG1), a classic Notch ligand, thereby suppressing Notch signaling, leading to the attenuation of liver fibrosis. These findings not only validate JAG1 as a therapeutic target for liver fibrosis but also highlightas a promising lead for developing novel antifibrotic agents.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": []
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Stiffness-Activated Stellate Cells Drive Pancreatic Cancer Liver Colonization via GMFG-TNS4 Signaling.",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "date": "2026 Jun 18",
+      "abstract": "Liver metastasis remains the primary cause of death in pancreatic cancer. Collagen deposition by activated hepatic stellate cells (HSCs) generates a stiff fibrotic niche that favors metastatic colonization, yet the underlying mechanisms remain incompletely understood. Using stiffness-tunable hydrogels, it is shown that elevated substrate stiffness activates HSCs and establishes a self-reinforcing loop of matrix stiffening. Mechanistically, stiffness triggers Piezo1-mediated Cainflux, induces endoplasmic reticulum stress (ERS), and activates the IRE1&#x3b1;-XBP1 pathway to upregulate glia maturation factor gamma (GMFG) transcription and secretion. GMFG is transported into pancreatic cancer cells where it binds to intracellular tensin-4 (TNS4), promoting FAK/AKT phosphorylation and coordinating two programs critical for metastatic outgrowth: enhanced cell-ECM adhesion and increased de novo fatty acid synthesis. In mice with graded liver stiffness, pharmacological inhibition of mechanosensitive cation channels reduces metastatic burden and dampens GMFG-associated epithelial and lipogenic features, while targeting the GMFG-TNS4 axis suppresses early hepatic micrometastatic seeding and long-term liver metastasis burden. Together, these findings define a mechano-ER stress-paracrine cascade linking fibrotic stiffness to pro-colonization signaling, highlighting the Piezo1-GMFG-TNS4 pathway as a therapeutic vulnerability in PDAC liver metastasis.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Piezo1&#x2010;GMFG&#x2010;TNS4 axis",
+        "liver metastasis",
+        "matrix stiffness",
+        "pancreatic ductal adenocarcinoma (PDAC)"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "A novel multi-criteria framework for environmental and strategic assessment of mining waste disposal sites.",
+      "journal": "Environmental monitoring and assessment",
+      "date": "2026 Jun 18",
+      "abstract": "The transition toward circular economy and bioeconomy frameworks necessitates a paradigm shift in mining waste management, moving beyond mere disposal to strategic, risk-aware decision-making. However, selecting sustainable storage sites is a complex process involving conflicting environmental, geotechnical, and socio-economic criteria laden with expert uncertainty. This study proposes a novel two-stage intuitionistic fuzzy (IF) integrated group multi-criteria decision-making (MCDM) framework designed to support robust environmental management decisions. First, the Intuitionistic Fuzzy Pivot Pairwise Relative Criteria Importance Assessment (IF-PIPRECIA) method is employed to determine the weights of criteria across six dimensions, effectively capturing hesitation in expert judgments. Second, the Intuitionistic Fuzzy VIekriterijumsko KOmpromisno Rangiranje (IF-VIKOR) method ranks alternative sites by balancing group utility and individual regret. The framework is validated through a case study in a region characterized by high mining potential and environmental sensitivity (Trabzon, T&#xfc;rkiye). The results reveal that \"impact on air and surface water,\" \"pollution risk,\" and \"regulatory compliance\" are the dominant factors driving sustainable site selection. Among the alternatives, the site that best balances ecological safety with operational feasibility was identified as the leading compromise option. Sensitivity analyses confirm the model's stability under variations in weighting. Taken together, these findings demonstrate the practical applicability of the proposed framework and highlight its contribution to the literature as the first integration of IF-PIPRECIA and IF-VIKOR in this domain, offering policymakers and practitioners a transparent, evidence-based tool for managing mining waste in alignment with the UN Sustainable Development Goals (SDGs).",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Fuzzy multi-criteria decision-making",
+        "Intuitionistic fuzzy sets",
+        "Mining waste management",
+        "Sustainable site selection"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Vitamin A-coupled MSCs- derived extracellular vesicles relieve acute liver injury by targeting hepatic stellate cells to deliver REDD1.",
+      "journal": "Journal of nanobiotechnology",
+      "date": "2026 Jun 17",
+      "abstract": "Mesenchymal stem cells (MSCs)-derived extracellular vesicles (EVs) offer great potential for treating liver injury. However, owing to their intrinsic surface characteristics, bare EVs are non-specifically distributed in the liver tissue after systemic administration, leading to limited therapeutic efficacy. Acute liver injury, often induced by acetaminophen overdose, can progress to life-threatening fibrosis, with hepatic stellate cells (HSCs) recognized as central drivers of this pathological process. While regulated in development and DNA damage response 1 (REDD1) has demonstrated antifibrotic effects by inhibiting HSCs activation, its clinical application has been hindered by challenges in targeted delivery. Utilizing the natural affinity of vitamin A (VA) for retinol binding protein receptors on HSCs, this study addresses the critical need for targeted therapies in acute liver injury by developing a novel delivery system based on VA-conjugated EVs (V-EVs) to transport the therapeutic gene REDD1 specifically to activated HSCs (aHSCs). After loading with REDD1 (V-EV), the system showed enhanced cellular uptake in activated HSCs in vitro and effective hepatic accumulation in vivo. Treatment with V-EVsignificantly suppressed HSCs activation, reduced inflammation and hepatocyte apoptosis, improved liver function, and alleviated liver fibrosis in experimental models. This work highlights a promising strategy that combines targeted vesicle delivery with gene therapy, offering a potential avenue for improving the precision and efficacy of treatments for liver injury and fibrosis.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Extracellular vesicles",
+        "Hepatic stellate cells",
+        "Liver injury",
+        "REDD1",
+        "Targeted delivery"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "G22037, a novel oxadiazole-pyrazole derivative, attenuates liver fibrosis by targeting annexin A5 and inhibition of ER stress-dependent hepatic stellate cell activation.",
+      "journal": "Biochemical pharmacology",
+      "date": "2026 Jun 17",
+      "abstract": "Liver fibrosis is a critical pathological process in chronic liver disease and is strongly associated with poor prognosis. This study investigated the anti-fibrotic potential of G22037, a novel oxadiazole-pyrazole derivative whose pharmacological properties have not been previously characterized. In the human hepatic stellate cell line LX-2, G22037 significantly suppressed TGF&#x3b2;1-induced overexpression of COL1A1 and &#x3b1;-SMA, indicating a direct inhibitory effect on hepatic stellate cells (HSCs) activation. The in vivo anti-fibrotic activity of G22037 was validated in two complementary mouse models: bile duct ligation (BDL)-induced cholestatic liver injury and CDAHFD-induced MASH. In both models, administration of G22037 markedly attenuated liver injury, collagen deposition, and fibrogenesis. Mechanistically, limited proteolysis-mass spectrometry (LiP-MS) and cellular thermal shift assay (CETSA) revealed that G22037 directly targets Annexin A5 (ANXA5). By binding to ANXA5, G22037 alleviates liver fibrosis through inhibition of calcium overload and its downstream consequences, including reactive oxygen species (ROS) accumulation and endoplasmic reticulum (ER) stress. Furthermore, G22037 modulated macrophage-driven inflammatory responses by suppressing NLRP3 inflammasome activation and subsequent IL-1&#x3b2; release, which indirectly contributed to the inhibition of HSCs activation. Collectively, our study demonstrates that G22037 exerts significant anti-fibrotic activity both in vitro and in vivo, and possesses dual pharmacological activities that inhibit HSCs activation and macrophage polarization, positioning it as a promising and safe candidate for the treatment of liver fibrosis.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "ANXA5",
+        "ER Stress",
+        "Liver fibrosis",
+        "Oxadiazole-pyrazole derivative"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Hyaluronic acid-coated metal-organic framework for co-delivery of Sirtuin 3 gene and zinc to inhibit liver fibrosis.",
+      "journal": "Acta biomaterialia",
+      "date": "2026 Jun 17",
+      "abstract": "Liver fibrosis is characterized by excessive accumulation of extracellular matrix and disruption of hepatic sinusoidal architecture. However, effective therapies targeting microvascular dysfunction and immune imbalance remain limited. In this study, we present hyaluronic acid (HA)-coated zeolitic imidazolate framework-8 (ZIF-8) formulations (HDZs) loaded with sirtuin 3 (SIRT3) plasmid DNA, designed for the co-delivery of SIRT3 and bioavailable zinc ions to restore hepatic homeostasis. The HA coating promoted cellular uptake across multiple hepatic cell types, including hepatic stellate cells (HSCs), liver sinusoidal endothelial cells (LSECs), and macrophages. In vitro, the nanoplatform suppressed stellate cell activation, maintained LSEC fenestrae, and induced macrophage polarization toward an anti-inflammatory phenotype. The pH-responsive disassembly of ZIF-8 enabled efficient intracellular release of SIRT3, while the simultaneous release of zinc ions contributed to cytoprotective effects. In fibrotic mouse models, the treatment significantly reduced collagen deposition, preserved sinusoidal structure, and promoted M2-dominant macrophage polarization, accompanied by improved liver function and elevated hepatic zinc levels. These results demonstrate a combined anti-fibrotic effect achieved through coordinated genetic modulation and micronutrient support. Collectively, this HDZ platform represents a multifunctional non-viral gene delivery strategy for liver fibrosis and offers potential for treating other chronic liver diseases involving mitochondrial dysfunction, immune dysregulation, and microvascular injury. STATEMENT OF SIGNIFICANCE: Liver fibrosis lacks effective treatments that simultaneously address structural damage, immune imbalance, and mitochondrial dysfunction. This study introduces a hyaluronic acid-coated ZIF-8 nanoplatform that co-delivers a mitochondrial regulatory gene and bioavailable zinc, enabling coordinated genetic and micronutrient modulation w",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Gene delivery",
+        "Liver fibrosis",
+        "SIRT3",
+        "ZIF-8",
+        "Zinc ion"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": {
+        "i": "JAK2V617F",
+        "#text": "Mathematical modeling ofclonal expansion in a general population cohort."
+      },
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+      "date": "2026 Jun 23",
+      "abstract": "The Philadelphia chromosome-negative myeloproliferative neoplasms (MPNs) are a group of blood cancers characterized by overproduction of one or more types of blood cells, which can lead to thrombosis and other complications. MPNs develop slowly and are driven by a relatively small set of mutations in the hematopoietic stem cells (HSCs). Their slow development (over the course of decades) affords a unique opportunity to study their onset, but until recently few data have been available from individuals not yet showing overt disease. Thanks to the ambitious Danish General Suburban Population Study conducted in suburban Zealand, Denmark, we have identified a ([Formula: see text]) cohort of individuals harboring the most common driver mutation in MPN (namely) and have obtained follow-up measurements of their variant allele fraction (VAF) spanning over 10 y. We show that these data are consistent with a Moran model governing the competition between healthy and mutated HSCs, and estimate the selective advantage of the mutant clone for each individual. Notably, we find that for many individuals, the change in VAF over many years is statistically consistent with zero, or even negative, selective advantage. This is in contrast to prior studies that have focused on patients diagnosed with overt MPN disease, in whom the mutant cells are almost always found to outcompete the healthy cells. Our results have implications for our understanding of the very early phases of MPN disease, and may contribute to early detection and personalized prediction of disease progression.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "early detection",
+        "mathematical modeling",
+        "myeloproliferative neoplasms"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": {
+        "sub": 4,
+        "#text": "Therapeutic effects of alprostadil on CCl-induced hepatic fibrosis in rats and investigation of its molecular mechanisms."
+      },
+      "journal": "Molecular and cellular biochemistry",
+      "date": "2026 Jun 17",
+      "abstract": "Hepatic fibrosis (HF) is driven by hepatic stellate cell (HSC) activation. Although cyclic adenosine monophosphate (cAMP) is a key antifibrotic signal, whether pharmacological cAMP elevation acts through protein kinase A (PKA) or exchange protein directly activated by cAMP 1 (EPAC1) remains unclear. Alprostadil (PGE1) elevates intracellular cAMP, but its antifibrotic mechanism is undefined. Using CCl&#x2084;-induced HF in rats and primary HSCs, we found that Alprostadil markedly reduced liver injury, collagen deposition, and HSC activation. Fibrotic livers showed increased total cAMP but decreased PKA- and EPAC1-bound cAMP, indicating depletion of functional cAMP microdomains. Alprostadil restored effector-bound cAMP, increased EPAC1 expression, and enhanced PKA/CREB phosphorylation. Notably, EPAC1 inhibition-but not PKA inhibition-attenuated the antifibrotic effects of Alprostadil in vivo and in vitro. These findings identify EPAC1 as the dominant downstream effector through which Alprostadil restores localized cAMP signaling to suppress HSC activation and hepatic fibrosis.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Alprostadil",
+        "Cyclic adenosine monophosphate",
+        "Exchange protein directly activated by cAMP 1",
+        "Hepatic fibrosis",
+        "Hepatic stellate cells"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Tracking Dynamic Variations of Reactive Oxygen Species and Temperature during Ferroptosis-Induced Hepatic Stellate Cell Activation.",
+      "journal": "ACS nano",
+      "date": "2026 Jun 17",
+      "abstract": "Ferroptosis, driven by iron-dependent lipid peroxidation, represents a promising therapeutic strategy for hepatocellular carcinoma (HCC). However, reactive oxygen species (ROS) released from ferroptotic HCC cells may activate hepatic stellate cells (HSCs), potentially exacerbating liver fibrosis, an unexpected risk in HCC treatment. Resolving this rapid intercellular crosstalk requires methods that can track extracellular ROS release and key parameters of HSC activation (.., intracellular redox homeostasis and mitochondrial activity) with high spatiotemporal resolution. Here, we established ancoculture model of HuH7 (HCC) and LX-2 (HSCs) cells and employed scanning electrochemical microscopy (SECM) to spatiotemporally resolve extracellular ROS fluxes from ferroptotic HuH7 cells, while subsequent intracellular ROS generation, mitochondrial respiratory activity, and intracellular temperature changes in LX-2 cells. We found that ROS released from ferroptotic HuH7 cells increased by &#x223c;2.44 &#x3bc;M, and was temporally followed by NOX2-associated intracellular ROS bursts in LX-2 cells, with a maximum generation rate of approximately 5.44 &#xd7; 10mol min. This intracellular ROS burst was coupled to mitochondrial hypermetabolism in LX-2 cells, reflected by a &#x223c;1.27-fold elevation in oxygen consumption and a &#x223c;1.65 K rise in intracellular temperature. Finally, we also found that pirfenidone, an antifibrotic agent, could effectively suppress this ferroptosis-induced HSC activation. Our study introduces an SECM approach providing real-time single-cell evidence that ferroptotic HCC cells can trigger ROS-mediated activation of neighboring HSCs, and supports further evaluation of antifibrotic combination strategies for safer ferroptosis-based HCC therapy.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "ferroptosis",
+        "hepatic stellate cells",
+        "hepatocellular carcinoma",
+        "nanopipette electric thermometer (NET)",
+        "reactive oxygen species",
+        "scanning electrochemical microscopy (SECM)"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Degradable multi-arm PEG hydrogels with tunable stiffness and diffusivity.",
+      "journal": "Biomaterials science",
+      "date": "2026 Jun 17",
+      "abstract": "The bone marrow extracellular matrix (BM-ECM) has distinct mechanical and biochemical subniches, in which hematopoietic stem cells (HSCs) reside, self-renew, and differentiate into immune cells. Stiffness and diffusivity are key mechano-regulators of HSC fate. To control these key microenvironment parameters, we prepared a poly(ethylene-glycol) norbornene (PEGNB)-modified hydrogel platform with tunable stiffness and solute diffusivity by varying the polymer volume fraction, the number of macromolecular arms, their arm length, and their crosslinker type. The latter was identified as either nondegradable dithiothreitol (DTT) or matrix metalloproteinase (MMP)-degradable peptides. We characterized 24 PEGNB hydrogels for stiffness, swelling, and solute diffusion. Hydrogel swelling ratios ranged from 0.89 to 2.48 for DTT-crosslinked networks and 1.49 to 4.86 for peptide-crosslinked networks, supporting solvent retention for cell culture. Storage moduli ranged from 6.4 to 44.8 kPa (DTT-crosslinked networks) and 3.6 to 32.7 kPa (peptide-crosslinked networks), within the physiological range of the BM-ECM. Solute diffusivity values were also evaluated for all hydrogel formulations. Introduction of an MMP-sensitive crosslinker maintained the same relationship among hydrogel stiffness, swelling and solute diffusion while allowing for cell-mediated remodeling and high cell viability. Unlike prior predictive models, our study accounts for structural complexity to better matchconditions. Therefore, we present a modular framework for engineering PEGNB hydrogels with independently tunable mechanical and transport properties, providing a robust, physiologically relevant platform to investigate stem cell-matrix interactions and advance stem cell-based tissue engineering.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": []
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Unveiling the role of heat shock protein 83 (HSP83) in Gossypium hirsutum in enhancing whitefly stress tolerance.",
+      "journal": "Molecular genetics and genomics : MGG",
+      "date": "2026 Jun 16",
+      "abstract": "Heat shock proteins (HSPs) are key molecular chaperones that control protein homeostasis and stress signalling in plants. They have been widely studied for abiotic stresses, such as drought and heat; however, their role in insect-mediated biotic stress is little known, especially in polyploid crops like cotton, which is an important economic crop. Whitefly, Bemisia tabaci (Gennadius), infestation is a serious agronomic constraint in cotton (Gossypium spp.); however, efforts to completely investigate the genetic and molecular components driving host resistance against this pest have not been entirely successful yet. In this study, a genome-wide analysis of heat shock proteins (HSPs) families in cotton varieties has been conducted to investigate the involvement of HSPs in whitefly stress. About 505 HSPs genes are found unequally distributed in the genomes of four cotton species. Chromosomal locations and their mapping have shown the highest number of genes at chromosome 9 in G. hirsutum and G. barbadense; at chromosome 6 in G. raimondii; and at chromosome 5 in G. arboreum. Gene ontology, evolutionary dynamics and domain analysis have been performed for HSP families in cotton, which showed the presence of different conserved domains important for biological as well as molecular functions. The HSP83, belonging to the HSP90 gene family, has been focused on in cotton species for this particular aspect due to the differential expression suggested by reference RNA-sequencing data. The gene structure of these HSP83s is similar, and all contain a conserved HSP90 superfamily coding for important domains like HSP90-like ATPase. In addition, various important cis-regulatory elements like bZIP, WRKY, and GT1-motif, related to different signalling and stress patterns during the central dogma, have been found in the promoter regions of HSP83s. The functional validation was done by virus-induced gene silencing (VIGS) of the target HSP83 gene found at chromosome 12 in G. hirsutum whi",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Cotton leaf curl disease (CLCuD)",
+        "Genome-wide analysis",
+        "HSP83",
+        "Heat shock proteins (HSPs)",
+        "Virus-induced gene silencing (VIGS)",
+        "Whitefly"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Role of HIV-1 in IL-8 response of human stellate cells to gram-positive microbial products.",
+      "journal": "Scientific reports",
+      "date": "2026 Jun 15",
+      "abstract": "Patients living with human immunodeficiency virus 1 (PLWH) develop accelerated liver fibrosis, but the exact mechanism remains unknown. Activation of hepatic stellate cells (HSCs)-a central driver of hepatic fibrogenesis-is influenced by various factors, including viral infection, hepatocellular injury, chronic immune activation, gut barrier dysfunction, and microbial translocation. The role of gram-positive microbial products in human immunodeficiency virus 1 (HIV-1) infection-associated liver inflammation and fibrosis remains poorly understood. This study investigates the effect of lipoteichoic acid (LTA), a major gram-positive bacterial component, on HSCs in the context of HIV-1 infection. Human primary HSCs (pHSCs) were isolated from liver tissues of HIV-1-infected and uninfected individuals undergoing hepatic resection. Inflammatory responses of HSCs to LTA stimulation were measured via ELISA in patient-derived HSCs, and in vitro Lx2 cells (a human HSC line) before and after HIV-1exposure. Western blotting, ChIP-qPCR and RNA-seq were used on Lx2 cells to explore relevant gene associations. LTA modestly induced interleukin-8/CXCL8 (IL-8) production in HSCs, but this response was heightened in both patient-derived HIV-1 exposed pHSCs and in vitro HIV-1exposed Lx2 cells. IL-8 mRNA levels were higher in HIV-1-infected tissues compared to uninfected controls. LTA exposure increased IL-8 mRNA in LX2 cells, and IL-8 treatment of Lx2 cells increased &#x3b1;-SMA and COL1A1 expression. Transcriptomic analysis on Lx2 cells co-exposed to LTA and HIV-1suggested a link between histone acetylation and IL-8. HIV-1 exposure in patient-derived pHSCs and Lx2 cells was linked to increased IL-8 response of HSCs to LTA. In vitro IL-8 treatment of Lx2 cells supports a role of IL-8 in pro-fibrogenic signaling in HSCs. These findings link gut-derived gram-positive microbial products and IL-8 activation in HSCs, providing important insights to guide future mechanistic studies and potent",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Fibrosis",
+        "Hepatic stellate cells",
+        "Human immunodeficiency virus",
+        "Inflammatory response",
+        "LTA",
+        "Microbial translocation"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Molecular interactions, solubility, and cytotoxic activity of 4&#x2011;hydroxycoumarin in choline chloride&#x2011;based acidic deep eutectic solvents.",
+      "journal": "Scientific reports",
+      "date": "2026 Jun 15",
+      "abstract": "This study systematically investigated the solubility enhancement of 4-hydroxycoumarin (4HC), a poorly water-soluble pharmaceutical compound, in three novel acidic deep eutectic solvents (ADESs) prepared from choline chloride (ChCl) and acidic hydrogen bond donors encompassing propionic acid (Pro), acetic acid (Ace) and lactic acid (Lac). The solubility measurements were conducted Appling the shake-flask method at 298.15-313.15&#xa0;K. The ChCl/Pro system exhibited unprecedented more than 500-fold solubility improvement over the pure water, with solubility Increasing in the order: ChCl/Pro&#x2009;>&#x2009;ChCl/Ace&#x2009;>&#x2009;ChCl/Lac. Hansen Solubility Parameters (HSPs) analysis confirmed hydrogen bonding and acidity as dominant dissolution factors. In addition,&#xa0;advanced thermodynamic models (Wilson, e-NRTL, UNIQUAC) accurately correlated experimental solubility data, with the Wilson model achieving ARD percentage values as low as 0.10%. Thermodynamic analysis revealed the dissolution process is endothermic and enthalpy-driven. MTT cytotoxicity assays on HT29 colon cancer cells demonstrated IC&#x2085;&#x2080; values in the 20-100&#xa0;&#xb5;g/mL range, with differential cytotoxicity correlated to solvent composition. These findings identify ChCl/Pro as the optimal ADES candidate (500-fold solubility enhancement, IC20-100&#xa0;&#xb5;g/mL range) for preformulation development of 4HC, establishing a data-driven foundation for green solvent-based pharmaceutical applications.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "ChCl/Pro",
+        "Drug solubility",
+        "Green pharmaceutical solvents",
+        "Hansen solubility parameters",
+        "MTT assay",
+        "Thermodynamic modeling"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Ginsenosides in Liver Fibrosis: Pharmacological Actions and Therapeutic Potential.",
+      "journal": "The American journal of Chinese medicine",
+      "date": "2026 Jun 16",
+      "abstract": "Liver fibrosis (LF) represents a critical pathological stage in the progression of various chronic liver diseases, and is characterized by the sustained activation of hepatic stellate cells (HSCs) and excessive deposition of extracellular matrix (ECM). These processes ultimately lead to cirrhosis and even hepatocellular carcinoma. Current therapeutic strategies for LF primarily rely on etiological interventions and supportive management. However, due to the complex pathogenesis of LF, involving multiple interconnected signaling pathways, effective and specific antifibrotic therapies remain lacking. Therefore, the development of multi-target and system-level therapeutic strategies for the treatment of LF is of considerable importance. Ginsenosides, the major bioactive components of, exhibit multi-component and multi-target pharmacological properties and have shown broad potential in the prevention and treatment of liver fibrosis. Accumulating evidence indicates that several ginsenosides, including Rg1, Rb1, Rg3, Rh1, Rd, and the metabolite Compound K, exert significant antifibrotic effects across various experimental models. This review systematically summarizes the pharmacological mechanisms of ginsenosides in liver fibrosis and integrates their effects from a mechanistic perspective. Overall, ginsenosides directly target key fibrogenic processes by inhibiting HSCs activation and proliferation, promoting apoptosis, reducing ECM synthesis, and facilitating ECM degradation. In addition, they indirectly modulate fibrosis progression by regulating upstream amplifying factors such as inflammation, oxidative stress, and the immune microenvironment. Furthermore, ginsenosides also influence cell fate-related processes, including autophagy and ferroptosis, in a cell-type-dependent manner. In hepatocytes, maintaining appropriate autophagic activity and suppressing lipid peroxidation generally confers protective effects. In HSCs, by contrast, the inhibition of protective autop",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Anti-inflammatory Mechanisms",
+        "Anti-oxidant",
+        "Ginsenosides",
+        "Hepatic Stellate Cells",
+        "Liver Fibrosis",
+        "TGF-&#x3b2;1/Smad Signaling"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "HSP10, HSP60, and HSP70 overexpression associates with PD-L1 upregulation and adverse outcomes in on-small cell lung cancer.",
+      "journal": "Pathology, research and practice",
+      "date": "2026 Jun 13",
+      "abstract": "BACKGROUND: HSP10, HSP60, and HSP70, members of the heat shock protein (HSP) family, are cytoprotective stress-response chaperones involved in protein homeostasis and critical pathways, including inflammation. Aberrant expression of these proteins has been observed in many tumors and is associated with patients' prognosis. Immunotherapy with checkpoint inhibitors, particularly those targeting the Programmed Death-1 (PD-1)/ Programmed Death Ligand 1 (PD-L1) axis, has emerged as a highly promising therapeutic approach for non-small cell lung cancer (NSCLC). METHODS: Public databases and bioinformatics analyses were employed to investigate the relationship between HSP10, HSP60, HSP70 and PD-L1. This predicted association was further validated using immunohistochemistry (IHC) on tissue microarrays (TMAs) comprising 43 cases of adjacent non-cancerous lung tissue (Non-CLT) and 433 cases of surgically resected NSCLC (including 294 cases of adenocarcinoma and 139 cases of squamous cell carcinoma). Additionally, the correlation between the expression of these HSPs and the clinicopathological features of NSCLC was examined. RESULTS: Pan-cancer analysis revealed significantly elevated levels of HSP10, HSP60 and HSP70 in most cancers compared to normal tissues. In NSCLC, these HSPs showed markedly higher expression at both mRNA and protein levels than in adjacent Non-CLT. Patients with advanced clinical stage or lymph node metastasis (LNM) exhibited higher HSP60 and HSP70 expression than those with early-stage disease or no LNM. Notably, all three HSPs demonstrated positive correlations with both PD-L1 expression (mRNA and protein levels) but negative correlations with the infiltration of most immune cells. Moreover, elevated these three HSPs expression was associated with significantly shorter overall survival (OS) time in NSCLC patients. Multivariate analysis confirmed that overexpression of HSP10, HSP60, and HSP70 was identified as a poor prognostic factor for NSCLC. CONCLUS",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "HSP10",
+        "HSP60",
+        "HSP70",
+        "Non-small cell lung cancer",
+        "Prognosis"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Prolonged heat stress induces autophagy in mouse skeletal muscle.",
+      "journal": "American journal of physiology. Regulatory, integrative and comparative physiology",
+      "date": "2026 Jun 15",
+      "abstract": "Environment-induced heat stress (HS) is a significant and expanding threat to human health and efficient agricultural production. In this investigation, we aimed to determine the extent to which HS impacted skeletal muscle health. We hypothesized that HS would decrease autophagosome degradation and autophagic flux in mouse skeletal muscle. To test this hypothesis, female C57 mice were exposed to thermoneutral (TN; 30 &#xb0;C) or heat stress (HS; 37.5 &#xb0;C) conditions for 24 h, and the gastrocnemius, soleus, and diaphragm muscles were immediately collected. A subset of mice was treated with colchicine to assess autophagic flux. Environment-induced HS increased rectal and subcutaneous temperatures by ~2.0 &#xb0;C and decreased feed intake by 75% and body mass by 14%, without a change in muscle mass. In all muscles, 24 h of HS increased phosphorylated HSP 27 by 1.47-fold to 4.5-fold compared to TN; however, HSPs 27, 60, 72, and 90 were similar between groups. We discovered HS increased autophagic flux in the gastrocnemius and diaphragm, but not soleus, without changes in most key autophagy regulatory proteins. Markers of mitophagy, regulators of mitochondrial architecture, and mitochondrial abundance were largely similar between groups for all muscles. Environment-induced HS increased ER stress regulators, BIP by 1.7-fold to 2.9-fold and p-IRE1&#x3b1; by 1.84-fold to 2.75-fold in all muscles, and p-eIF2&#x3b1; was increased 3.6-fold in soleus. Counter to our hypothesis, these data demonstrate that 24 h of HS did not decrease autophagosome degradation or flux across a range of muscles in a mouse HS model.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Colchicine",
+        "Heat Stroke",
+        "Heat shock proteins",
+        "Hyperthermia",
+        "Unfolded protein response"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Personality moderates immunological and functional consequences of caregiver burden.",
+      "journal": "Health psychology : official journal of the Division of Health Psychology, American Psychological Association",
+      "date": "2026 Jun 15",
+      "abstract": "UNLABELLED: Dementia spousal caregiving is a chronic stressor and confers increased risk for adverse physical health outcomes, although not all caregivers are equally affected. Personality traits may shape how individuals respond to caregiving-related stressors, influencing vulnerability or resilience to health risks. OBJECTIVE: This study examined whether personality traits moderate the effects of caregiver burden on different markers of physical health in dementia spousal caregivers. METHOD: A sample of 219 caregivers provided blood samples and completed self-reported measures of caregiver burden, personality, and physical functioning. We measured inflammation via ex vivo lipopolysaccharide (LPS)-stimulated whole-blood leukocyte cytokine production. Multiple linear regression models tested each personality trait as a moderator of associations between caregiver burden and health outcomes. RESULTS: Lower levels of agreeableness and higher levels of neuroticism moderated effects of caregiver burden on poorer physical functioning and elevated LPS-stimulated proinflammatory cytokine production. Lower levels of conscientiousness also amplified the relationship between caregiver burden and proinflammatory reactivity. In addition, higher levels of extraversion were associated with lower levels of LPS-stimulated proinflammatory cytokines, and higher levels of conscientiousness, extraversion, and openness were associated with better physical functioning. CONCLUSIONS: These findings suggest that personality traits may confer differential susceptibility to the physiological and functional consequences of caregiving stress. Identifying personality-related risk and resilience factors may help inform tailored interventions to reduce health risks and promote health and well-being among dementia spousal caregivers. (PsycInfo Database Record (c) 2026 APA, all rights reserved).",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": []
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Activated hepatic stellate cell membrane-camouflaged nanomedicine enables targeted HDAC6 inhibition for liver fibrosis therapy.",
+      "journal": "Journal of controlled release : official journal of the Controlled Release Society",
+      "date": "2026 Jun 14",
+      "abstract": "Liver fibrosis is a common outcome of chronic liver injury and can progress to cirrhosis, yet effective anti-fibrotic therapies remain limited. Here, we identify histone deacetylase 6 (HDAC6) as the most consistently upregulated zinc-dependent HDAC in fibrotic livers and activated hepatic stellate cells (HSCs). However, systemic HDAC6 inhibition may be constrained by inefficient delivery to fibrogenic HSCs and increased off-target exposure. To enable selective HDAC6 inhibition in activated HSCs, we developed an activated HSC membrane-camouflaged PLGA nanomedicine (PLGA-Ric@HSCM) loaded with the HDAC6 inhibitor ricolinostat (Ric). Membrane cloaking preserves key adhesion and recognition proteins, promotes homotypic uptake by HSCs, and reduces macrophage sequestration in vivo. PLGA-Ric@HSCM dampened profibrotic transcriptional programs by restoring microtubule acetylation and suppressing both the canonical TGF&#x3b2;/Smad2/3 pathway and the p38/c-JUN/ATF2 axis. Compared to PLGA-Ric, PLGA-Ric@HSCM shows a more pronounced reduction in fibrosis burden and improved hepatic pathology across etiologically distinct models. Together, PLGA-Ric@HSCM provides a biomimetic, HSC-targeted strategy to reprogram acetylation homeostasis via HDAC6 inhibition and consequently mitigate liver fibrogenesis.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "HDAC6",
+        "Hepatic stellate cells",
+        "Liver fibrosis",
+        "Nanoparticles",
+        "Targeted therapy"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Rapid adaptation accelerates competitive suppression in a parasite community.",
+      "journal": "The ISME journal",
+      "date": "2026 Jun 13",
+      "abstract": "Environmental stress leads to changes in community composition by altering competitive hierarchies and pushing taxa towards extinction. Parasites and their communities are particularly vulnerable to stress due to environmental sensitivity of infection steps and dependence on host fitness. Parasite populations might avoid extinction through evolutionary rescue - whereby rapid adaptation to stress enables persistence - but the impacts of adaptation to stress on parasite communities remain unclear. Here, we study the evolutionary and ecological impact of thermal stress in a simple parasite community by propagating populations of two viral parasites (bacteriophages &#x3c6;14-1 and &#x3c6;LUZ19) of Pseudomonas aeruginosa in monoculture and co-culture under two thermal conditions, a control temperature (37&#xb0;C) and a high temperature that restricts &#x3c6;14-1 growth (42&#xb0;C). We show that rapid thermal adaptation of &#x3c6;14-1 facilitated persistence in monoculture. Rescue of this phage in co-culture made it a superior competitor, and it replaced &#x3c6;LUZ19 as the dominant phage at high temperature. We determine that thermal adaptation occurred through mutations in genes linked to attachment to bacterial hosts and within-host replication. We also show that competitive suppression by &#x3c6;14-1 constrained &#x3c6;LUZ19 molecular evolution. Our findings suggest that rapid adaptation to environmental stress can prevent the extinction of some parasites but may inadvertently destabilise the community and facilitate further species loss. This work underscores the need to take an eco-evolutionary approach to predict the responses of communities to global climate change.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "adaptation",
+        "bacteria",
+        "community",
+        "competition",
+        "evolution",
+        "parasite",
+        "phage",
+        "temperature"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Role of primary protectors of plant cells in salinity tolerance: molecular mechanisms and adaptive strategies.",
+      "journal": "Plant signaling & behavior",
+      "date": "2026 Dec 31",
+      "abstract": "Salinity stress is among the most pervasive abiotic factors limiting plant growth and agricultural productivity worldwide, currently affecting more than 20% of irrigated croplands. Elevated salt concentrations induce osmotic imbalance, ionic toxicity, and oxidative stress, leading to disruptions in photosynthesis, metabolism, and plant development. To counteract these deleterious effects, plants have evolved intricate, highly coordinated defense systems comprising structural and functional cellular protectors. At the structural level, the cell wall, plasma membrane, vacuole, and peroxisome play critical roles in maintaining cellular homeostasis under saline conditions. These cellular structures safeguard the cell by regulating ion fluxes, preserving membrane integrity, and mitigating the toxicity of reactive oxygen species (ROS). Ion transporters such as SOS1, NHX1, and HKT1, along with vacuolar proton pumps, maintain optimal Na&#x207a;/K&#x207a; balance and pH regulation within cellular compartments. Functionally, plants deploy osmolytes and compatible solutes, including proline, glycine betaine, trehalose, and polyamines that act as osmoprotectants, stabilizing proteins and membranes while maintaining cellular turgor. Concurrently, robust antioxidant systems, comprising both enzymatic components (superoxide dismutase, catalase, ascorbate peroxidase) and non-enzymatic molecules (ascorbate, glutathione, carotenoids), scavenge excess ROS generated during salt stress. Stress proteins such as heat shock proteins (HSPs) and late embryogenesis abundant (LEA) proteins also contribute to proteostasis and membrane stabilization during salt stress. Recent advances (2020-2025) have significantly expanded our understanding of the molecular and signaling networks underlying salinity tolerance. While earlier studies have focused on individual components such as ion transporters, osmolytes, or antioxidant systems, this review uniquely integrates structural organelle-based defense",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Na&#x207a;/K&#x207a; homeostasis",
+        "Salinity stress",
+        "antioxidants",
+        "osmolytes",
+        "stress proteins"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "High internal phase emulsions stabilized by polyphenol-mediated Moringa seed protein for &#x3b2;-carotene encapsulation: Enhanced stability and bioaccessibility.",
+      "journal": "Food research international (Ottawa, Ont.)",
+      "date": "2026 Sep 1",
+      "abstract": "In this study, Moringa oleifera seed protein (MOSP) served as the raw material, while three polyphenols-epicatechin (EC), epigallocatechin gallate (EGCG), and tannic acid (TA)-were incorporated for modification to produce a high internal phase emulsion (HIPE). For each of the three polyphenols, the optimal addition level was around 15&#xa0;&#x3bc;g per 1&#xa0;mg of MOSP. The inclusion of polyphenols resulted in the interfacial tension being at the oil-water interface was significantly diminished, decreasing from 10.22 mN/m to 5.43 mN/m, with the emulsifying activity index (EAI) of MOSP-TA reaching 72.50&#xa0;m/g. Molecular dynamics simulations demonstrated that the MOSP-polyphenol complex rapidly and stably adsorbed at the oil-water interface within 30&#xa0;ns, thereby reducing interfacial formation energy. The HIPEs prepared with MOSP-TA exhibited the smallest increase in droplet size after 30&#xa0;days of storage and after heating, with the mean diameter increasing from 234.67&#xa0;&#x3bc;m to 352.33&#xa0;&#x3bc;m and from 108.33&#xa0;&#x3bc;m to 191.33&#xa0;&#x3bc;m, respectively. The loading capacity of &#x3b2;-carotene using MOSP-TA-stabilized HIPE can reach as high as 81%. This HIPE protects &#x3b2;-carotene against thermal and UV degradation. In in vitro simulated digestion experiments, HIPE significantly slows the release of free fatty acids, which aids in regulating functional factors and allows them to maintain their efficacy. The bioaccessibility of &#x3b2;-carotene can reach a maximum of 40%. In conclusion, MOSP-TA serves as an effective emulsifier with promising applications in the formulation of high internal phase emulsions. This study presents a novel strategy for delivering hydrophobic functional factors that exhibit environmental sensitivity and low bioaccessibility within food systems.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Bioaccessibility",
+        "High internal phase emulsion",
+        "Moringa oleifera seeds protein",
+        "Polyphenols",
+        "&#x392;-Carotene"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Exposure to environmental toxicants and obstructive sleep apnea: a cross-sectional study.",
+      "journal": "Future science OA",
+      "date": "2026 Dec",
+      "abstract": "OBJECTIVE: To evaluate associations between environmental toxicant (ET) exposures and obstructive sleep apnea (OSA) using an exposome-wide approach. METHODS: This cross-sectional analysis included 13,161 participants from two NHANES cycles (2015-2016 and 2017-March 2020). Fifty-six toxicants across six classes (arsenic species, ethylene oxide, heavy metals, nicotine metabolites, VOC metabolites, and thyroid-disrupting compounds) were measured. OSA status was defined using a validated questionnaire based on self-reported symptoms. Exposome-wide association analysis (ExWAS) adjusted for sociodemographic, lifestyle, and clinical covariates, and restricted cubic spline (RCS) analysis characterized nonlinear exposure-response relationships. RESULTS: The overall prevalence of OSA was 49% (&#x2009;=&#x2009;6,443). Nine ETs showed significant associations with OSA, including blood and urinary cadmium, seven volatile organic compound metabolites (e.g., 2,5-dimethylfuran, ethylbenzene, furan, o-xylene), and three urinary cysteine-derived metabolites (N-acetylcysteine derivatives). Subgroup analyses revealed higher susceptibility among women and individuals aged <65&#x2009;years. RCS analyses demonstrated nonlinear, nonmonotonic relationships for cadmium and cysteine-derived metabolites with OSA prevalence. CONCLUSIONS: Nine ETs were significantly associated with OSA prevalence, with evidence of differential susceptibility by sex and age. These findings highlight environmental factors associated with OSA, which may serve as potential targets for future mechanistic research and public health interventions.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Environmental toxicants",
+        "NHANES",
+        "cross-sectional study",
+        "exposome-wide association study",
+        "obstructive sleep apnea"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Local delivery of SBRT and IL-12 to murine PDAC tumors modulates hematopoiesis.",
+      "journal": "Oncoimmunology",
+      "date": "2026 Dec 31",
+      "abstract": "Standard of care radiotherapy and chemotherapy have shown limited efficacy in pancreatic ductal adenocarcinoma (PDAC). Immunotherapy has emerged as a promising treatment but has been hindered by systemic toxicities. A shift from systemic to localized delivery has reduced adverse effects and improved response rates in various cancers. However, the impact of tumor-targeted therapies on distant tissues, such as the bone marrow, remains underexplored. In a murine model of PDAC, we treated tumors with targeted stereotactic body radiation therapy (SBRT) and intratumoral interleukin-12 mRNA (IL-12). We evaluated tumor, blood, and bone marrow cells for therapy-induced changes over a period of 13&#x2009;d to 13 months. Our results showed that while SBRT/IL-12 locally eradicated primary tumors, it also induced significant effects in the bone marrow. Early effects included acute lymphopenia in the blood and an immunostimulatory response in the bone marrow, leading to increased hematopoiesis. Long-term effects involved a reduction in hematopoietic stem cells (HSCs) and a shift towards a myeloid lineage, suggesting potential premature aging of the HSC population. These findings highlight the profound impact of localized SBRT/IL-12 therapy on distal bone marrow, emphasizing the need for further investigation into the long-term immunological consequences of localized cancer treatments.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Pancreatic ductal adenocarcinoma",
+        "hematopoiesis",
+        "hematopoietic stem cells",
+        "interleukin-12, bone marrow",
+        "stereotactic body radiation therapy"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Deciphering transcriptomic insights into climate adaptation in Etroplus suratensis (pearl spot) under combined thermal-saline stress.",
+      "journal": "Aquatic toxicology (Amsterdam, Netherlands)",
+      "date": "2026 Aug",
+      "abstract": "Climate change poses significant challenges to aquaculture through rising temperatures and salinity fluctuations, necessitating insights into molecular adaptation mechanisms in resilient species like pearl spot (Etroplus suratensis) which is an euryhaline fish. This study performed de novo transcriptomic profiling of gill, liver, and kidney tissues from juvenile pearl spot exposed to combined temperature (28 &#xb0;C control, 31 &#xb0;C intermediate, 34 &#xb0;C stress) and salinity (0 ppt freshwater, 15 ppt brackishwater) treatments over 90 days in triplicate setups. Illumina NovaSeq 6000 sequencing generated 1634 million raw reads, yielding 1613 million high-quality paired-end reads post-filtering. De novo assembly produced 876,873 contigs enabling identification of 23,204 differentially expressed genes in liver, 11,190 in gill, and 8005 in kidney, revealing tissue-specific responses dominated by temperature with synergistic salinity effects. Liver exhibited robust metabolic remodelling (upregulated FASN, ACC, HK4 for lipid/glucose pathways), proteostasis (HSP70/90, HYOU1), balanced immunity (C3 downregulation, dcst1/hells upregulation), and transcription/apoptosis regulation (MafA-like, RNF2). Gill DEGs emphasized osmoregulation (Na+/K+-ATPase downregulation, Piezo2 upregulation), oxygen transport (hemoglobin subunits), and ECM remodelling. Kidney highlighted ion homeostasis (STC, CEBPD) and DNA repair. Gene Set Enrichment Analysis revealed enriched pathways including fatty acid biosynthesis (27-fold at T3L), steroid biosynthesis, arginine metabolism, and oxidative phosphorylation. Quantitative RT-PCR validation of six key DEGs confirmed RNA-seq results (R&#xb2; = 0.9). These findings elucidate tissue-specific molecular signatures characterising pearl spot resilience, identifying biomarkers (HSPs, STC) for breeding climate-resilience aquaculture strains in response to environmental shifts.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Climate-resilience aquaculture",
+        "Pearl spot",
+        "Salinity",
+        "Temperature",
+        "Transcriptomics"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Bridging traditional knowledge and modern discovery: The role of zebrafish in anti-aging research of medicinal and edible traditional Chinese medicine.",
+      "journal": "Phytomedicine : international journal of phytotherapy and phytopharmacology",
+      "date": "2026 Jul 25",
+      "abstract": "BACKGROUND: With the acceleration of global aging, anti-aging research has become a critical frontier in the life sciences. The zebrafish (Danio rerio), as a well-established model organism, offers exceptional advantages for anti-aging studies owing to its high genetic and physiological homology with humans, evolutionarily conserved aging mechanisms, suitability for high-throughput screening, and capacity to model telomere dynamics. Concurrently, Traditional Chinese Medicine (TCM) offers a holistic perspective on aging, attributing it to systemic imbalances such as deficiency of visceral function, qi-blood disharmony, and yin-yang imbalance. Within this framework, medicinal and edible TCM-natural substances recognized for both nutritional and therapeutic value-have shown considerable promise in mitigating aging-related processes, supported by their favorable safety profiles and historical documentation. METHODS: This review systematically collates and analyzes recent advances in the application of zebrafish as a model organism for evaluating the anti-aging efficacy of medicinal and edible TCM. Literature published up to September 2023 was retrieved from databases such as PubMed, Web of Science, and Scopus using keywords including \"zebrafish,\" \"anti-aging,\" \"medicinal and edible herbs,\" and \"traditional Chinese medicine.\" Data on aging models, mechanistic pathways, and phytochemical activities were extracted and synthesized to elucidate the synergistic potential of zebrafish and TCM in gerontological research. RESULTS: A total of 978 publications were identified using the keywords related to \"anti-aging\" and \"medicinal and edible herbs.\" Subsequently, 135 relevant studies were selected for this review based on the use of zebrafish models and aging-related indicators.This review focuses on the establishment of zebrafish aging models and the evaluation of anti-aging effects of medicinal and edible traditional Chinese medicines in these models. Three major types of zebr",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Anti-aging",
+        "Medicinal and edible herbs",
+        "Research progress",
+        "Zebrafish"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Hardwired differences: Sexually dimorphic neural connectomes in the brain-lung axis.",
+      "journal": "iScience",
+      "date": "2026 Jun 19",
+      "abstract": "Sexual dimorphism in lung physiology and disease is well established; yet, the underlying central circuits remain unexplored. Using retrograde trans-synaptic tracing with pseudorabies virus from the lung combined with whole-brain mapping, we uncovered fundamental sex differences in brain-lung connectivity. Male mice exhibited anterior, cognition-associated networks clustering and hemispheric lateralization, whereas female mice displayed posterior, brainstem-predominant circuits specialized for automatic respiratory control, along with more integrated and modular network architectures. These findings reveal a hardwired neural framework for sex-specific respiratory control, with implications for understanding differential susceptibility to respiratory disease between males and females.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "biological sciences"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Feature- and space-based interference with functionally active and passive items in working memory.",
+      "journal": "Journal of experimental psychology. Human perception and performance",
+      "date": "2026 Jul",
+      "abstract": "Functionally active and passive states in working memory have been related to different neural mechanisms. Memoranda in active states might be maintained by persistent neural firing, whereas memoranda in passive states might be maintained through short-term synaptic plasticity. We reasoned that this might make these items differentially susceptible to interference during maintenance, particularly that passively maintained items might be more robust. To test this hypothesis, we gave our participants a working memory task in which one item was prioritized (active) by always probing it first, whereas the other item was deprioritized (passive) by always probing it second. In two experiments, on half the trials, we presented an interfering task during memory maintenance, in which the stimuli matched either the feature dimension of the memory items (color or orientation) or their spatial location. Whether the interfering task appeared on a given trial was unpredictable. In a third experiment where participants were given prior knowledge of the interference condition, and finally in a fourth experiment, we used a reward-based prioritization cue. Across experiments, we found that both active and passive memory items were affected by interference to a similar extent, with overall performance being closely matched in all experiments. We further investigated precision and probability of target response parameters from the standard-mixture model, which also showed no differences between states. We conclude that active and passive items, although potentially stored in different neuronal states, do not show differential susceptibility to interference. (PsycInfo Database Record (c) 2026 APA, all rights reserved).",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": []
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Differential effects of a novel mesoionic insecticide, triflumezopyrim, on Apis mellifera and Apis cerana.",
+      "journal": "Journal of hazardous materials",
+      "date": "2026 Jul 15",
+      "abstract": "This study investigates the toxicological effects of Triflumezopyrim (TRF), a novel mesoionic insecticide, on two closely related honey bee species, Apis mellifera and Apis cerana. In acute oral toxicity assays, A. cerana exhibited a lower LCvalue (3.413&#x202f;mg/L) compared to A. mellifera (17.495&#x202f;mg/L), indicating approximately 5-fold higher sensitivity to TRF. Transcriptomic analysis revealed differential gene expression patterns related to detoxification, neurotransmission, and immune responses between A. mellifera and A. cerana following TRF exposure, suggesting potential differences in molecular responses that require further validation. A. mellifera displayed enhanced cytochrome P450 and UGT expression, which likely contribute to its higher tolerance, while A. cerana showed obvious downregulation of genes involved in neurotransmission and immune function. Additionally, sublethal TRF exposure caused an initial oxidative imbalance, as indicated by significantly upregulated P450 activity in A. mellifera but a strong reduction in A. cerana, while GST activity was significantly upregulated in both species, alongside decreased GSH levels and reduced LPO, suggesting that different antioxidant and detoxification responses may occur in the two species after TRF exposure. Moreover, the downregulation of neurotransmission related genes (i.e., ACHE, GAD, and GLS) indicated the disruption of synaptic transmission in A. cerana. Consistent with the molecular differences, both the two honey bees exhibited reduced climbing ability and sucrose responsiveness after chronic TRF exposure, with the effects being more pronounced in A. cerana. These laboratory-based hazard identification findings reveal the differential susceptibility of A. mellifera and A. cerana to TRF under controlled conditions, providing foundational data for future refinements of pollinator hazard assessment protocols in regions where both species coexist.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Honey bee",
+        "Neurotransmission disruption",
+        "Oxidative stress",
+        "Species-specific sensitivity",
+        "Toxicology"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "NUDT21 Downregulation Promotes Liver Fibrosis by Activating the PIM2-Mediated CEBPB/SLC2A1 Glycolytic Axis in Hepatic Stellate Cells.",
+      "journal": "FASEB journal : official publication of the Federation of American Societies for Experimental Biology",
+      "date": "2026 Jun 15",
+      "abstract": "Abnormal glycolysis plays a pivotal role in the activation of hepatic stellate cells (HSCs) and the progression of liver fibrosis, yet its regulatory mechanisms remain incompletely understood. This study aimed to investigate the role of PIM2 and its regulatory mechanisms in liver fibrosis using a CCl-induced mouse model and a TGF-&#x3b2;1-stimulated human HSC line (LX-2) model. The results showed that PIM2 expression was significantly upregulated in fibrotic liver tissue and a specific subset of activated HSCs. Functional experiments showed that PIM2 knockdown suppressed the activation, proliferation, and glycolysis of this specific HSC subset, whereas PIM2 overexpression promoted these processes. These effects were reversed by the glycolysis inhibitor 2-DG. Mechanistically, NUDT21 downregulation promoted PIM2 expression by regulating alternative polyadenylation (APA), resulting in PIM2 3'UTR shortening. Downstream, PIM2 activated the transcription factor CEBPB, which upregulated the transcription of the glucose transporter SLC2A1 and ultimately drove glycolysis. In line with these findings, PIM2 knockdown effectively attenuated liver fibrosis in mice. In conclusion, this study identifies PIM2 as a key driver of HSC activation and glycolysis within a distinct HSC subpopulation. PIM2 expression is regulated by NUDT21-mediated APA, and its function is mediated via the CEBPB/SLC2A1 axis, providing a potential novel therapeutic target for liver fibrosis.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "PIM2",
+        "alternative polyadenylation",
+        "glycolysis",
+        "hepatic stellate cells",
+        "liver fibrosis"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Artematrolide F suppresses communication between hepatocellular carcinoma cells and hepatic stellate cells to attenuate liver cancer progression through targeting YKT6.",
+      "journal": "Cellular signalling",
+      "date": "2026 Sep",
+      "abstract": "Hepatocellular carcinoma (HCC) remains a highly malignant cancer with limited treatment options. HCC cells (HCCs) activate hepatic stellate cells (HSCs) and transform them into cancer-associated fibroblasts (CAFs), forming a vicious cycle for hepatocarcinogenesis. Therefore, inhibition of the communication between HCCs and HSCs is expected to emerge as a novel strategy for HCC treatment. Artematrolide F (AF), a sesquiterpenoid dimers (SDs) isolated from Artemisia atrovirens, exhibited significantly inhibitory activity on tumor cells in our previous report, but its mechanism remains unknown. This further study demonstrated that AF significantly inhibited the proliferation, colony formation and metastasis of HCCs. Notably, the inhibitory effect was enhanced when HCCs were cocultured with HSCs, suggesting that AF may suppress tumor progression through regulating the crosstalk of HCCs and HSCs. The vesicular transport protein YKT6 was identified as a target of AF through integrating bioinformatics analysis and machine learning model, which were verified by DARTS, CETSA, molecular docking, molecular dynamics simulation, and knockdown experiments. Further mechanistic research revealed that AF targeting YKT6 disrupted the crosstalk between HSCs and HCCs, suppressed HSC-driven tumor proliferation by inhibiting extracellular vesicles (EVs) secretion from HCCs, and blocked tumor autophagy by disrupting vesicular transport. These findings demonstrate that AF could serve as a novel therapeutic candidate for HCC treatment through regulating YKT6 to suppress HCCs-HSCs communication, block EV-dependent tumor progression, and inhibit tumor autophagy.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Artematrolide F",
+        "Autophagy",
+        "Extracellular vesicles",
+        "HCCs&#x2013;HSCs crosstalk",
+        "Hepatocellular carcinoma",
+        "YKT6"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Perillyl alcohol alleviates liver fibrosis by promoting hepatic stellate cell ferroptosis and inhibiting macrophage recruitment.",
+      "journal": "Chemico-biological interactions",
+      "date": "2026 Jul 25",
+      "abstract": "BACKGROUND: The activation of hepatic stellate cells (HSCs) represents a critical progression in the development of liver fibrosis. Perillyl alcohol (POH), a naturally occurring monoterpene abundant in plant essential oils, demonstrates anti-inflammatory, antioxidant, and antitumor properties. However, the potential effect of POH in the treatment of liver fibrosis remains unclear. PURPOSE: In this study, we explored the suppressive effect of POH on HSCs activation and its underlying mechanism. METHODS: To explore the effects of POH, CCl-induced liver fibrosis mouse model and primary HSCs were applied in the in vitro and in vivo experiments. HSC activation-markers and fibrotic markers were examined to evaluate the inhibitory effect on HSC activation after POH treatment via qRT-PCR, Western Blot, and Immunofluorescence staining assays. The mechanism by which POH inhibits HSC activation and exerts anti-fibrotic effects via the ferroptosis pathway was explored. RESULTS: POH attenuated CCl-induced liver fibrosis in mice and suppressed HSC activation in vitro by inducing ferroptosis (characterized by intracellular iron overload, reactive oxygen species accumulation, malondialdehyde levels increase, and glutathione depletion). Mechanistically, these effects depended on the GPX4/NRF2 axis and consequently suppressed macrophage recruitment and hepatic inflammation. CONCLUSION: Collectively, our findings demonstrate that POH induces HSC ferroptosis through suppression of the NRF2/GPX4 pathway, which in turn inhibits macrophage recruitment and alleviates liver inflammation, highlighting its potential as a therapeutic option for liver fibrosis.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Ferroptosis",
+        "Hepatic stellate cells",
+        "Liver fibrosis",
+        "NRF2/GPX4 axis",
+        "Perillyl alcohol"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Effects of dry- versus wet-aging and concentrate versus pasture-feeding systems on beef proteome explored using SWATH-MS proteomics.",
+      "journal": "Food research international (Ottawa, Ont.)",
+      "date": "2026 Aug 1",
+      "abstract": "This study aimed to use a shotgun proteomics approach to investigate proteome changes between two finishing diets (pasture or concentrate) and two meat aging methods (wet- or dry-aging) in 60 striploins (Longissimus thoracis et lumborum) from British breed steers (n&#xa0;=&#xa0;15 from pasture and n&#xa0;=&#xa0;15 from concentrate). Bag dry-aging led to higher abundances of proteins involved in muscle structure, energy metabolism, and proteolysis. Meanwhile, bag wet-aging led to increased levels of heat shock proteins (HSPs) and proteins associated with oxidative stress, suggesting a response to environmental stressors during aging. Concentrate-finished beef exhibited greater levels of glycolytic enzymes, which may contribute to improved tenderness and color stability, indicating a shift toward anaerobic metabolism. Pasture-finished beef increased the abundance of oxidative metabolism proteins, aligning with the greater physical activity of grass-fed cattle. TPM1, PGK1, TNNT3, GAPDH, ATP2A3, and PYGM were the top putative protein biomarkers in concentrate and dry-aged beef, followed by the overabundance of MYH7B in concentrate and wet-aged beef, with RPL23AY and IPO5 being the most significant in the combination of pasture-finished beef and wet-aging. This research provided a comprehensive understanding of how beef aging method and feeding systems influence the beef proteomes from wet- and dry-aging. It further identified, using PLS-DA-based chemometrics analysis, putative proteins as key discriminating biomarkers that warrant further investigation for dry-aged beef quality monitoring and authenticity.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Authenticity",
+        "Bag dry-aging",
+        "Beef",
+        "Bioinformatics",
+        "Finishing diet",
+        "Proteomics",
+        "SWATH-MS",
+        "Wet-aging"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "The duality of testosterone in glioblastoma: From targeted therapy to modulation of the tumor microenvironment and neuroprotection.",
+      "journal": "Biomedicine & pharmacotherapy = Biomedecine & pharmacotherapie",
+      "date": "2026 Jul",
+      "abstract": "Glioblastoma (GB) remains one of the most aggressive and lethal human tumors, displaying a pronounced predominance among men that suggests a potential involvement of sex hormones, particularly testosterone (TST), in its pathogenesis. The present review summarizes and integrates current evidence regarding the dual role of testosterone in GB biology. On the one hand, testosterone promotes oncogenic progression by stimulating the proliferation, survival, and invasion of cancer stem cells (CSCs) through the activation of androgen receptors (ARs) and subsequent conversion to estradiol, which triggers proliferative signaling cascades. On the other hand, testosterone exhibits potent neuroprotective properties and contributes to the maintenance of central nervous system homeostasis by modulating neurogenesis, attenuating neuroinflammatory responses and enhancing the reparative potential of normal neural and mesenchymal stem cells (MSCs). This dualism creates a complex therapeutic dilemma. The review discusses the potential of antiandrogen therapy and aromatase inhibitors as targeted approaches with their effect largely depending on the molecular context of the tumor. As an innovative strategy for mitigation of the neurotoxicity associated with standard treatment, a novel biomedical approach is proposed, based on the use of a functionally enhanced secretome of ex vivo hypoxia-preconditioned mesenchymal stem cells (MSC), treated with testosterone. This approach aims to achieve localized delivery of neurotrophic and anti-inflammatory factors to protect brain tissue and expand the therapeutic window for aggressive cytostatic therapy. Collectively, these insights underscore the need for integration of personalized antiandrogen therapy with adjunctive neuroprotective strategies to develop more effective, comprehensive treatment paradigms for GB patients.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Cancer stem cells (CSCs)",
+        "Glioblastoma (GB)",
+        "Hematopoietic stem cells (HSCs)",
+        "Mesenchymal stem cells (MSCs)",
+        "Neural stem cells (NSCs)",
+        "Neuroprotection",
+        "Testosterone"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Non-linear relationships between age-friendly neighborhood environments and cognitive health among older adults in Guangzhou, China.",
+      "journal": "Social science & medicine (1982)",
+      "date": "2026 Aug",
+      "abstract": "Understanding the complex relationships between neighborhood environments and cognitive health is critical for developing age-friendly communities. Although numerous studies have explored the linkages between neighborhood age-friendliness and cognitive health among older adults in Western contexts, their non-linear relationships in rapidly urbanizing Chinese megacities remain inadequately understood. A holistic insight into which age-friendly neighborhood domain is more important to older adults' cognition warrants investigation. This study examines the non-linear relationships between neighborhood age-friendliness across nine domains and cognitive function among older adults in Guangzhou, China, using data from 1383 older adults across 30 urban neighborhoods. Results from Generalized Additive Mixed Models (GAMMs) reveal that secure environment and civic participation exhibit non-linear associations with Mini-Mental State Examination (MMSE) scores, and that secure environment and distance to transit exert curvilinear effects on the risk of cognitive impairment. Higher levels of green and blue environments and civic participation are linearly associated with lower odds of cognitive impairment. Age-stratified analyses reveal that older adults aged 70+ demonstrate greater environmental sensitivity, with significant non-linear effects across multiple domains, whereas younger older adults (60-69) show primarily linear relationships. Education-stratified analyses indicate that lower-educated older adults are more dependent on physical and social environmental support, while higher-educated older adults show sensitivity to civic participation and communication and information services. These findings advance environmental gerontology theory by capturing age-education gradients in environmental docility effects and offer evidence-based public policy recommendations that prioritize vulnerable populations in enabling healthy ageing in Chinese megacities and other rapidly urba",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Age-friendly neighborhood environment",
+        "China",
+        "Cognitive health",
+        "Generalized additive mixed models",
+        "Heterogeneity analysis",
+        "Non-linear relationships",
+        "Older adults"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Synergistic integration of heterojunctions and hydrogels: Types, mechanisms, and applicsations.",
+      "journal": "Advances in colloid and interface science",
+      "date": "2026 Sep",
+      "abstract": "Heterojunctions, as semiconductor materials, possess excellent photocatalytic properties and are widely applied in fields such as disease treatment, biosensing, environmental remediation, and energy. However, heterojunctions still encounter issues of environmental sensitivity and low biocompatibility in practical applications, which limit their application in various fields. In recent years, the combination of heterojunctions with hydrogels to form hydrogel composites has been widely used in the medical field, environmental field, and biosensing field. This is because the encapsulation of heterojunctions by hydrogels can provide heterojunctions with good biocompatibility and increase their chemical stability. Heterojunction hydrogel composites can not only achieve efficient carrier separation but also enhance the adhesion and toughness of the interface. This paper focuses on the preparation and classification of heterojunction hydrogels, as well as the electron transfer pathways when different types of heterojunction hydrogels function, and evaluates different heterojunction hydrogels. In addition, the latest progress in the application of heterojunction hydrogels in antibacterial, wound healing, tumor treatment, environmental remediation, and biosensing is summarized. Finally, a deep discussion is conducted on the prospects and challenges of heterojunction hydrogels in practical applications. This review comprehensively introduces heterojunction hydrogels and aims to provide a new perspective for the development and application of heterojunction hydrogels.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Biomedicine",
+        "Biosensing",
+        "Environmental remediation",
+        "Heterojunction",
+        "Hydrogels"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "The inter-relationships between sensory processing sensitivity and mental health problems among college students: A network analysis.",
+      "journal": "Acta psychologica",
+      "date": "2026 Jul",
+      "abstract": "Mental health problems are increasingly prevalent among college students. Sensory processing sensitivity (SPS) has been linked to mental health problems, but the specific roles of different SPS dimensions in terms of risk or plasticity for college students' mental health are not well understood. This network analysis study, involving 678 Chinese college students, investigated the inter-relationships between mental health problems and SPS dimensions. Mental health problems and SPS were evaluated using the Symptom Checklist-90 and the Sensory Processing Sensitivity Questionnaire. Regularized partial correlation network analysis was conducted to construct the network structure of SPS and mental health problems. Centrality indices were estimated to identify important variables within the network. Group differences in network structures were also examined by gender and socio-economic status. Our network revealed that the emotional/physiological reactivity dimension of SPS was positively connected with obsessive-compulsive symptoms, interpersonal sensitivity and depression, while showing a negative association with somatization and psychoticism. Bridge centrality estimation identified emotional/physiological reactivity as a central hub bridging SPS and mental health problems, with high bridge strength and bridge expected influence within the network. These findings suggest that emotional/physiological reactivity may represent a potentially important dimension of SPS with possible clinical and educational relevance. However, SPS was assessed using a self-report questionnaire with potential psychometric limitations, and therefore the findings should be interpreted with caution. In addition, the cross-sectional design precludes causal inference. Future research could explore the role of emotional/physiological reactivity in promoting mental health and academic adjustment among highly sensitive college students.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "College students",
+        "Mental health problems",
+        "Network analysis",
+        "Sensory processing sensitivity"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Single-cell and spatial omics in liver identify cell-cell communication regulators in aging and insulin resistance.",
+      "journal": "Metabolism: clinical and experimental",
+      "date": "2026 Aug",
+      "abstract": "The liver is a major metabolic organ regulating systemic insulin sensitivity, which progressively declines with age. Due to the complexity of cellular components and spatial structures, how the liver regulates insulin resistance during aging remains to be elucidated. Using single-cell RNA-seq, ATAC-seq, and spatial transcriptomics, we studied liver cellular composition and zonation in young, insulin-sensitive mice and old mice with varying degrees of insulin resistance. Aging reduced pericentral zone 3 hepatocyte population but increased mid-zone 2 hepatocytes and hepatic stellate cells (HSCs). The interaction of aging and insulin resistance led to further zone 3 contraction and zone 2 expansion. Cell-cell communication and spatial proximity analysis revealed reduced hepatocyte growth factor (HGF) signaling activity from HSCs to zone 3 hepatocytes in aging and insulin resistance. In HGF activator (HGFAC)-knockout mice, a significant reduction in the zone 3 hepatocyte proportion was observed. Treating insulin-resistant aged mice with HGF reversed zone 3 contraction and improved insulin sensitivity. These findings highlight the significance of liver zonation dynamics in aging-associated insulin resistance.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Aging",
+        "Cell-cell communication",
+        "Insulin resistance",
+        "Liver zonation",
+        "Single-cell analysis"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Curcumol induces autophagy-dependent hepatic stellate cell death through methionine metabolism disruption.",
+      "journal": "Toxicology and applied pharmacology",
+      "date": "2026 Jul",
+      "abstract": "Hepatic stellate cell (HSC) activation is a key driver of extracellular matrix (ECM) accumulation and liver fibrosis. Autophagy plays an essential role in regulating HSC activation, yet its metabolic regulation remains largely undefined. Curcumol, a bioactive compound derived from Curcuma longa, possesses potent antifibrotic activity, but the underlying metabolic mechanisms are unclear. In this study, we found that curcumol suppressed HSC activation and induced autophagy-dependent cell death, together with inhibition of methionine metabolism. Curcumol treatment reduced LX-2 cell viability and downregulated profibrogenic markers &#x3b1;-smooth muscle actin (&#x3b1;-SMA) and collagen type I (COL1A1) in a dose-dependent manner. Mechanistically, curcumol enhanced LC3-II accumulation, diminished p62 levels, and promoted autophagic vacuole formation, effects that were reversed by the autophagy inhibitor 3-methyladenine (3-MA). Silencing of ATG7 attenuated curcumol-induced autophagy-associated changes and cell death, supporting the involvement of ATG7 in this process. Furthermore, curcumol significantly reduced the expression of key methionine cycle enzymes MAT2A and AHCY. Supplementation with S-adenosylmethionine (SAM) partially reversed curcumol-associated changes in methionine metabolism and autophagy-related markers, and improved HSC viability, supporting a functional link between methionine metabolism and the observed phenotype. Collectively, these findings suggest that curcumol promotes autophagy-dependent death of HSCs in association with disrupted methionine metabolism, providing new insight into the metabolic basis of its antifibrotic action.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Autophagy",
+        "Curcumol",
+        "Hepatic stellate cell",
+        "Liver fibrosis",
+        "Methionine metabolism"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Inhibition of FKBP10 attenuates hepatic stellate cell activation and liver fibrosis via RAS signaling.",
+      "journal": "Biochemical and biophysical research communications",
+      "date": "2026 Jul 9",
+      "abstract": "BACKGROUND & AIMS: Hepatic stellate cell (HSC) activation is a central driver of liver fibrogenesis. FKBP10, a collagen-associated chaperone involved in extracellular matrix remodeling, has not been fully characterized in liver fibrosis. Here, we investigated the functional role and underlying mechanism of FKBP10 in HSC activation and fibrotic progression. METHODS: FKBP10 expression and localization were examined in human cirrhotic livers of various etiologies and in multiple mouse fibrosis models. FKBP10 knockdown was performed in LX-2&#x202f;cells to assess effects on HSC activation, apoptosis, and extracellular matrix (ECM) synthesis. In vivo, the therapeutic potential of FKBP10 suppression was evaluated using AAV6-GFAP-mediated delivery in both CCl-&#xa0;and BDL-induced fibrosis models. Primary HSCs were subsequently isolated from fibrotic livers for transcriptomic sequencing, and LC-MS/MS combined with co-immunoprecipitation (Co-IP) was employed to identify FKBP10-interacting proteins. RESULTS: FKBP10 was markedly upregulated in human cirrhotic livers and in mouse fibrosis models. Silencing FKBP10 in LX-2&#x202f;cells attenuated HSC activation, reduced ECM production, and promoted apoptosis. In vivo, AAV-GFAP-shFKBP10 efficiently targeted activated HSCs, as shown by ZsGREEN co-localization with &#x3b1;-SMA-positive cells, and significantly alleviated fibrosis in both CCl-&#xa0;and BDL-treated mice, accompanied by reduced activated HSC abundance, decreased collagen deposition, and improved liver histology. Transcriptomic analysis of primary HSCs revealed that FKBP10 deficiency suppresses the RAS signaling pathway, while LC-MS/MS and Co-IP identified VPS4A as a potential FKBP10-binding partner that may facilitate RAS activation. CONCLUSION: FKBP10 promotes HSC activation and sustains their survival, at least in part through VPS4A-mediated regulation of RAS signaling. Targeting FKBP10 in HSCs provides functional, spatial, and mechanistic evidence supporting its po",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "AAV-Mediated gene silencing",
+        "FKBP10",
+        "Hepatic stellate cell activation",
+        "Liver fibrosis",
+        "RAS signaling pathway",
+        "VPS4A"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Low concentrations of sorafenib increase dihydrosphingomyelin during antifibrotic processes in human hepatic stellate cells.",
+      "journal": "Biochemical and biophysical research communications",
+      "date": "2026 Jul 9",
+      "abstract": "BACKGROUND: Inhibiting hepatic stellate cells (HSCs) activation, which represents the initial step of liver fibrosis, is a key strategy for fibrosis treatment. Sorafenib has been repurposed as an antifibrotic agent; however, its reported effects largely rely on cytotoxic mechanisms. The antifibrotic mechanisms induced by minimally cytotoxic sorafenib remain unclear. We aimed to elucidate the dynamic changes in gene expression and lipid metabolites that occur during HSC inactivation using low-concentration sorafenib. METHODS: Human HSCs (LX-2) were activated by treatment with transforming growth factor (TGF)-&#x3b2; to create a fibrotic environment. The activated cells were treated with sorafenib and then subjected to transcriptomic and lipidomic analyses. In the transcriptomic analysis, statistical significance was assessed using adjusted P-values based on the Benjamini-Hochberg method, whereas significance in the lipidomic analysis was evaluated using MetaboAnalyst. RESULTS: During fibrogenesis, we observed upregulation of extracellular matrix-related genes (COL1A1 (P&#x202f;<&#x202f;.001), FN1 (P&#x202f;<&#x202f;.001), THBS1 (P&#x202f;<&#x202f;.001), P4HA3 (P&#x202f;<&#x202f;.01)) and CXCL12 (P&#x202f;<&#x202f;.01), which is an upstream regulator of the Raf/MEK/ERK and PI3K/AKT signaling pathways. Meanwhile, dihydroceramide (dhCer) and dihydrosphingomyelin (dhSM) levels decreased (both P&#x202f;<&#x202f;.001). In contrast, sorafenib-induced antifibrotic conditions significantly reversed these molecular and lipidomic trends (all P&#x202f;<&#x202f;.01). CONCLUSIONS: In light of the observed trends, we propose that activating the dhSM synthesis pathway may play a regulatory role in fibrosis. Collectively, our study provides novel lipid-based insights into the molecular mechanisms underlying antifibrotic responses.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "CXCL12",
+        "Dihydrosphingomyelin",
+        "HSCs",
+        "Liver fibrosis",
+        "de novo ceramide synthesis"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Construction of Pickering emulsion based on cellulose nanocrystal/low-methoxyl pectin complex: Interaction, interfacial behaviors and enhancement mechanism.",
+      "journal": "Food research international (Ottawa, Ont.)",
+      "date": "2026 Jul 1",
+      "abstract": "Polysaccharide-polysaccharide complex effectively addresses the limited emulsifying activity of single-component and the environmental sensitivity of protein- polysaccharide complex. Current research primarily focuses on macro-scale emulsion stability, lacking a comprehensive understanding of its interactions and interfacial behaviors. Here, rod-like cellulose nanocrystal (CNC) and long-chain low-methoxyl pectin (LMP) were selected as representative polymers. Their interactions under neutral conditions were initially investigated, revealing the presence of substantial hydrophobic interactions beyond hydrogen bonding. Interfacial tension tests indicated that LMP markedly improved the emulsifying capacity of CNC and dominated in their complex. Meanwhile, quartz crystal microbalance with dissipation (QCM-D) and interfacial thickness measurements further demonstrated that the complex could form thicker and more stable interfacial layers (408.3&#xa0;ng/cm) at oil-water interface than pure CNC (44.1&#xa0;ng/cm) or LMP (155.3&#xa0;ng/cm). The complex-stabilized emulsions exhibited excellent storage stability (no creaming for 28&#xa0;days at 4&#xa0;&#xb0;C), pH tolerance (2.0-7.0), and salt resistance (0-200&#xa0;mM NaCl), validating its exceptional emulsifying capacity and practical utility. This work advances the fundamental understanding of polysaccharide- polysaccharide interactions and interfacial behaviors, hoping to pave the way for designing novels, high-performance, food-grade emulsifiers from natural sources.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Cellulose nanocrystal",
+        "Emulsification enhancement",
+        "Interaction",
+        "Interfacial behavior",
+        "Low-methoxyl pectin"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": {
+        "i": "Faecalibacterium prausnitzii",
+        "#text": "Intestinal epithelial Syndecan-1 maintains mucosal homeostasis in inflammatory bowel disease by enhancingbiofilm formation."
+      },
+      "journal": "Gut microbes",
+      "date": "2026 Dec 31",
+      "abstract": "Despite the rising global incidence of inflammatory bowel disease (IBD), curative therapies remain unavailable. While our previous work implicated the intestinal proteoglycan Syndecan-1 (SDC1) in IBD-associated barrier dysfunction and inflammation, the underlying mechanism was unclear. This study aimed to elucidate how SDC1 maintains intestinal barrier integrity through interactions with the gut microbiome. In DSS-induced colitis, global knockout of() exhibited exacerbated inflammatory infiltration and greater impairment of barrier structure and function than wild-type (WT). Formation of intestinal organoids was independent of genotype, indicating thatdoes not impair barrier function via disrupting epithelial development. The heightened colitis susceptibility inmice was abolished in the antibiotic-treated pseudo-germ-free models, and transmissible to WT mice via fecal microbiota transplantation. Similar results were reproduced in a germ-free mouse model. Metagenomic sequencing identifiedas the most significantly depleted species uponknockout., SDC1-attached glycosaminoglycans (heparan sulfate (HS) and chondroitin sulfate (CS)) but not the SDC1 core protein promotedgrowth. Prokaryotic transcriptome profiling indicated that HS/CS induces cobalamin biosynthesis in. The critical role of cobalamin as a mediator was confirmed, as its synthetic inhibition significantly diminished the growth-promoting effect of HS/CS. Mechanism studies showed that HS/CS enhanced biofilm formation in, thereby facilitating cobalamin biosynthesis. Oral administration of HS ameliorated DSS-induced colitis and promoted mucosal colonization of, independent of the host genotype. Finally, human IBD biopsies revealed a positive correlation between epithelial SDC1 and mucosalas well as an inverse correlation with bacterial translocation and the number of LPS&#x2011;positive cells. Our study elucidates a novel mechanism in which the glycosaminoglycan chains of SDC1 promotecolonization and growth throu",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Faecalibacterium prausnitzii",
+        "Syndecan-1",
+        "biofilm",
+        "cobalamin biosynthesis",
+        "heparan sulfate",
+        "inflammatory bowel disease"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Venom characterization and structural insights into phospholipase D isoforms from the spider Loxosceles aff. variegata.",
+      "journal": "Toxicon : official journal of the International Society on Toxinology",
+      "date": "2026 Sep 1",
+      "abstract": "Brown spider envenomation (loxoscelism) represents a significant public health concern in South America, yet most studies focus on a few medically recognized species. Here, we provide the first molecular and functional characterization of the venom gland extract from Loxosceles aff. variegata (LafvVGE), a brown spider collected in synanthropic habitats in Ituiutaba, Minas Gerais, Brazil. SDS-PAGE and immunoblot analyses revealed prominent protein bands consistent with phospholipase D (PLD) toxins, the main agents of loxoscelism symptoms. ELISA assays demonstrated that LafvVGE is effectively recognized by Brazilian therapeutic antivenoms, indicating immunological cross-reactivity. Enzymatic assays confirmed sphingomyelinase and collagenase/gelatinase activities comparable to those of Loxosceles gaucho (a species of acknowledged medical relevance), although LafvVGE from female individuals showed higher activities than male derived pools under our experimental conditions. Neutralization assays showed complete inhibition of sphingomyelinase activity but only partial inhibition of gelatinase activity by the anti-loxoscelic antivenom, highlighting differential susceptibility of venom components to antivenom-mediated neutralization under in vitro conditions. Molecular analysis of venom gland transcripts identified eight distinct PLD isoforms (LafvPLD1-8), all containing conserved catalytic and metal-binding residues characteristic of class II Loxosceles PLDs. Structural modeling revealed isoform-specific variations in the aromatic cage motif and electrostatic surface, suggesting potential effects on membrane interactions and substrate specificity. Collectively, these findings place L. aff. variegata within the biochemical and structural spectrum of medically relevant Loxosceles species, expanding comparative knowledge of PLD diversity and function. While clinical relevance remains to be established in vivo, this study underscores the value of integrating biochemical, immun",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Antivenom",
+        "Loxosceles aff. variegata",
+        "Loxoscelism",
+        "Phospholipases D",
+        "brown spider venom"
+      ]
+    }
+  ]
+}
