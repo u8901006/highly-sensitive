@@ -2,10 +2,10 @@
 import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync } from "fs";
 import { join, basename } from "path";
 
-const API_BASE = process.env.ZHIPU_API_BASE || "https://open.bigmodel.cn/api/coding/paas/v4";
-const MODEL_NAME = process.env.ZHIPU_MODEL || "GLM-5-Turbo";
-const FALLBACK_MODELS = ["GLM-5-Turbo", "GLM-4.7", "GLM-4.7-Flash"];
-const MAX_TOKENS = 100000;
+const API_BASE = process.env.NVIDIA_API_BASE || "https://integrate.api.nvidia.com/v1";
+const MODEL_NAME = process.env.NVIDIA_MODEL || "nvidia/nemotron-3-super-120b-a12b";
+const FALLBACK_MODELS = [MODEL_NAME, "nvidia/nemotron-3-nano-30b-a3b"];
+const MAX_TOKENS = 16384;
 const TIMEOUT_MS = 660000;
 
 const SYSTEM_PROMPT = `你是高敏感特質（Sensory Processing Sensitivity / Environmental Sensitivity）領域的資深研究員與科學傳播者。你的任務是：
@@ -23,7 +23,7 @@ const SYSTEM_PROMPT = `你是高敏感特質（Sensory Processing Sensitivity / 
 
 function parseArgs() {
   const args = process.argv.slice(2);
-  const opts = { input: "papers.json", output: "", apiKey: process.env.ZHIPU_API_KEY || "" };
+const opts = { input: "papers.json", output: "", apiKey: process.env.NVIDIA_API_KEY || "" };
   for (let i = 0; i < args.length; i++) {
     if (args[i] === "--input" && args[i + 1]) opts.input = args[i + 1];
     if (args[i] === "--output" && args[i + 1]) opts.output = args[i + 1];
@@ -148,9 +148,11 @@ ${papersText}
             { role: "system", content: SYSTEM_PROMPT },
             { role: "user", content: prompt },
           ],
-          temperature: 0.3,
-          top_p: 0.9,
+          temperature: 1.0,
+          top_p: 0.95,
           max_tokens: MAX_TOKENS,
+          stream: false,
+          chat_template_kwargs: { enable_thinking: false },
         };
         const resp = await fetch(`${API_BASE}/chat/completions`, {
           method: "POST",
@@ -361,7 +363,7 @@ function generateHtml(analysis) {
       <div class="header-meta">
         <span class="badge badge-date">📅 ${dateDisplay}</span>
         <span class="badge badge-count">📊 ${totalCount} 篇文獻</span>
-        <span class="badge badge-source">Powered by PubMed + Zhipu AI</span>
+        <span class="badge badge-source">Powered by PubMed + NVIDIA Nemotron</span>
       </div>
     </div>
   </header>
@@ -411,7 +413,7 @@ function generateHtml(analysis) {
 async function main() {
   const opts = parseArgs();
   if (!opts.apiKey) {
-    console.error("[ERROR] No API key. Set ZHIPU_API_KEY env var or use --api-key");
+    console.error("[ERROR] No API key. Set NVIDIA_API_KEY env var or use --api-key");
     process.exit(1);
   }
   if (!opts.output) {

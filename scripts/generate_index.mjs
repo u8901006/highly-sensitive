@@ -79,7 +79,7 @@ const index = `<!DOCTYPE html>
     </a>
   </div>
   <footer>
-    <p>Powered by PubMed + Zhipu AI · <a href="https://github.com/u8901006/highly-sensitive">GitHub</a></p>
+    <p>Powered by PubMed + NVIDIA Nemotron · <a href="https://github.com/u8901006/highly-sensitive">GitHub</a></p>
   </footer>
 </div>
 </body>
