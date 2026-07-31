@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Highly Sensitive &middot; 高敏感研究文獻日報 &middot; 2026年7月31日</title>
+<meta name="description" content="2026年7月31日 高敏感研究文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<style>
+  :root { --bg: #f6f1e8; --surface: #fffaf2; --line: #d8c5ab; --text: #2b2118; --muted: #766453; --accent: #8c4f2b; --accent-soft: #ead2bf; --card-bg: color-mix(in srgb, var(--surface) 92%, white); }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: radial-gradient(circle at top, #fff6ea 0, var(--bg) 55%, #ead8c6 100%); color: var(--text); font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  .container { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 60px 32px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 52px; animation: fadeDown 0.6s ease both; }
+  .logo { width: 48px; height: 48px; border-radius: 14px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; box-shadow: 0 4px 20px rgba(140,79,43,0.25); }
+  .header-text h1 { font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+  .header-meta { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; align-items: center; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; letter-spacing: 0.3px; }
+  .badge-date { background: var(--accent-soft); border: 1px solid var(--line); color: var(--accent); }
+  .badge-count { background: rgba(140,79,43,0.06); border: 1px solid var(--line); color: var(--muted); }
+  .badge-source { background: transparent; color: var(--muted); font-size: 11px; padding: 0 4px; }
+  .summary-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 28px 32px; margin-bottom: 32px; box-shadow: 0 20px 60px rgba(61,36,15,0.06); animation: fadeUp 0.5s ease 0.1s both; }
+  .summary-card h2 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; color: var(--accent); margin-bottom: 16px; }
+  .summary-text { font-size: 15px; line-height: 1.8; color: var(--text); }
+  .section { margin-bottom: 36px; animation: fadeUp 0.5s ease both; }
+  .section-title { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .section-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; background: var(--accent-soft); }
+  .news-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 22px 26px; margin-bottom: 12px; box-shadow: 0 8px 30px rgba(61,36,15,0.04); transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+  .news-card:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .news-card.featured { border-left: 3px solid var(--accent); }
+  .news-card.featured:hover { border-color: var(--accent); }
+  .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .rank-badge { background: var(--accent); color: #fff7f0; font-weight: 700; font-size: 12px; padding: 2px 8px; border-radius: 6px; }
+  .emoji-icon { font-size: 18px; }
+  .card-header-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .emoji-sm { font-size: 14px; }
+  .news-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.5; }
+  .journal-source { font-size: 12px; color: var(--accent); margin-bottom: 8px; opacity: 0.8; }
+  .news-card p { font-size: 13.5px; line-height: 1.75; color: var(--muted); }
+  .card-footer { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .tag { padding: 2px 9px; background: var(--accent-soft); border-radius: 999px; font-size: 11px; color: var(--accent); }
+  .news-card a { font-size: 12px; color: var(--accent); text-decoration: none; opacity: 0.7; margin-left: auto; }
+  .news-card a:hover { opacity: 1; }
+  .utility-high { color: #5a7a3a; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(90,122,58,0.1); border-radius: 4px; }
+  .utility-mid { color: #9f7a2e; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(159,122,46,0.1); border-radius: 4px; }
+  .utility-low { color: var(--muted); font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(118,100,83,0.08); border-radius: 4px; }
+  .utility-sm { font-size: 10px; }
+  .pico-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; padding: 12px; background: rgba(255,253,249,0.8); border-radius: 14px; border: 1px solid var(--line); }
+  .pico-item { display: flex; gap: 8px; align-items: baseline; }
+  .pico-label { font-size: 10px; font-weight: 700; color: #fff7f0; background: var(--accent); padding: 2px 6px; border-radius: 4px; flex-shrink: 0; }
+  .pico-text { font-size: 12px; color: var(--muted); line-height: 1.4; }
+  .keywords-section { margin-bottom: 36px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .keyword { padding: 5px 14px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 20px; font-size: 12px; color: var(--accent); cursor: default; transition: background 0.2s; }
+  .keyword:hover { background: rgba(140,79,43,0.18); }
+  .topic-section { margin-bottom: 36px; }
+  .topic-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .topic-name { font-size: 13px; color: var(--muted); width: 100px; flex-shrink: 0; text-align: right; }
+  .topic-bar-bg { flex: 1; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+  .topic-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #c47a4a); border-radius: 4px; transition: width 0.6s ease; }
+  .topic-count { font-size: 12px; color: var(--accent); width: 24px; }
+  .clinic-banner { margin-top: 48px; animation: fadeUp 0.5s ease 0.4s both; }
+  .clinic-links { display: flex; flex-direction: column; gap: 10px; }
+  .clinic-link { display: flex; align-items: center; gap: 14px; padding: 18px 24px; background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; text-decoration: none; color: var(--text); transition: all 0.2s; box-shadow: 0 8px 30px rgba(61,36,15,0.04); }
+  .clinic-link:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .clinic-icon { font-size: 28px; flex-shrink: 0; }
+  .clinic-name { font-size: 15px; font-weight: 700; color: var(--text); flex: 1; }
+  .clinic-desc { font-size: 12px; color: var(--muted); margin-top: 2px; font-weight: 400; }
+  .clinic-arrow { font-size: 18px; color: var(--accent); font-weight: 700; }
+  footer { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); display: flex; justify-content: space-between; animation: fadeUp 0.5s ease 0.5s both; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 600px) { .container { padding: 36px 18px 60px; } .summary-card, .news-card { padding: 20px 18px; } .pico-grid { grid-template-columns: 1fr; } footer { flex-direction: column; gap: 6px; text-align: center; } .topic-name { width: 70px; font-size: 11px; } .clinic-links { gap: 8px; } .clinic-link { padding: 14px 18px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🌸</div>
+    <div class="header-text">
+      <h1>Highly Sensitive &middot; 高敏感研究文獻日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年7月31日</span>
+        <span class="badge badge-count">📊 16 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + NVIDIA Nemotron</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻聚焦於高敏感特質（Sensory Processing Sensitivity, SPS）的神經生理機制，特別是腦波調節與情緒處理的關聯，顯示出從心理特質到客觀生理標誌的重要進展；同時，多篇與肝纖維化相關的基礎研究雖數量眾多，但與 SPS 直接關聯性較低。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#1</span>
+            <span class="emoji-icon">🧠</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>高敏感特質個體的 θ 頻段感官閘機制異常：揭示 SPS 的神經生理基礎</h3>
+          <p class="journal-source">Brain research &middot; Altered theta-band sensory gating in individuals with high sensory processing sensitivity (SPS).</p>
+          <p>首次證實高敏感特質（SPS）個體在 θ 波段 exhibits significantly stronger sensory gating，顯示 SPS 並非單純感官過載，而是涉及特異的抑制性神經動態調整，為客觀生理標誌提供了關鍵證據。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">518 名成人，篩選出高敏感人士（HSP Scale 前 10%）與低敏感人士（後 10%），皆為 5-HTTLPR SS 基因型 homozygous</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">使用 paired-stimulus 聽覺感官閘範式（auditory SG paradigm）進行時間域與時間-頻域腦電圖（EEG）分析</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">高 SPS 組（n=26） vs 低 SPS 組（n=25），嚴格控制 5-HTTLPR 基因型以消除混雜因素</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">時間域分析顯示 N100 元件無顯著差異；但時間-頻域分析發現高 SPS 組在 θ 波段（4–8 Hz）具有顯著更強的感官閘抑制（FDR 校正 p < 0.05），提示 SPS 涉及異常但非弱化的振盪性感官過濾機制</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">高敏感特質</span><span class="tag">神經科學</span><span class="tag">腦造影</span><span class="tag">感覺處理</span><span class="tag">情緒調節</span><span class="tag">量表驗證</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#2</span>
+            <span class="emoji-icon">🌸</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>高敏感人士在後疫情時代東京的身份建構：從流行心理學術語到社會苦悶的 idiom</h3>
+          <p class="journal-source">Culture, medicine and psychiatry &middot; Highly Sensitive Person: Idiomizing Distress in Pandemic-Era Tokyo.</p>
+          <p>透過二十個月東京民族志田野調查，揭示「Highly Sensitive Person (HSP)」如何從西方 pop-psychology 概念轉化為日本社會中可說出、可被理解的痛苦語彙，尤其在疫情期間成為社會可論述情緒過載與退縮的文化性護身符，而非純粹精神病診斷。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">東京 Raku-no-Kai 非營利組織參與者，長期經歷社會退縮與相關痛苦者</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">民族誌田野調查（participant observation）、半結構訪談、媒體與數據內容分析</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">未進行分組比較，為深度敘述性質化研究，聚焦意義建構過程</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">HSP 作為一種「痛苦的 idiom」（idiom of distress）運作：讓敏感性變得可言說、可被照顧，但不必然導致精神病診斷；疫情擴大了其社會可議論性；然而其彈性也造成臨床溝通障礙，難以對應診斷分類。</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">高敏感特質</span><span class="tag">跨文化研究</span><span class="tag">情緒調節</span><span class="tag">過度刺激</span><span class="tag">心理治療</span><span class="tag">身心健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#3</span>
+            <span class="emoji-icon">😴</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>環境毒素與阻塞性睡眠呼吸暫停的關聯：基於 NHANES 大規模橫斷面研究證實多種毒物顯著增加風險</h3>
+          <p class="journal-source">Future science OA &middot; Exposure to environmental toxicants and obstructive sleep apnea: a cross-sectional study.</p>
+          <p>在超過 13,000 名美國成人中，九類環境毒物（包括 cadmium、VOC 代謝物、半胱氨酸衍生物）與物）顯著與 OSA 相關，且影響在女性與 65 歲以下者更顯著，提示環境暴露是可預防的睡眠健康風險因子。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">13,161 名來自 NHANES 2015–2016 與 2017–Mar 2020 的參與者</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">測量 56 種環境毒物（砷、乙烯氧化物、重金属、尼古丁代謝物、VOC 代謝物、甲狀腺干擾物）</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">以自報問診斷 OSA（49% 陽性）為依據，進行 exposome-wide association study (ExWAS) 並調整社會人口、生活型態與臨床變項</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">九種毒物與 OSA 顯著相關（血/尿 cadmium、七種 VOC 代謝物如 2,5-dimethylfuran、三種半胱氨酸衍生物）；關係呈非線性非單調（RCS 分析）；女性及 <65 歲族群易感性更高</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">睡眠</span><span class="tag">過度刺激</span><span class="tag">生理健康</span><span class="tag">慢性壓力</span><span class="tag">跨文化研究</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#4</span>
+            <span class="emoji-icon">🐟</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>熱� integrally 崗蝶魚（珊瑚斑）在複合熱鹽應力下的轉錄組揭示：HSP 與離子穩定基因為氣候適應關鍵分子標誌</h3>
+          <p class="journal-source">Aquatic toxicology (Amsterdam, Netherlands) &middot; Deciphering transcriptomic insights into climate adaptation in Etroplus suratensis (pearl spot) under combined thermal-saline stress.</p>
+          <p>在模擬未來氣候條件（溫度 34°C＋鹽度 15 ppt）下，珊瑚斑魚的肝臟、鰓與腎臟展現組織特異性應答：肝臟代謝重塑、鰓調節離子與氧氣輸送、腎臟 DNA 修復；HSP70/90 在肝臟被上調，與 STC 基因共同成為耐熱鹽複合應力的預測性標誌。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">幼魚珊瑚斑（Etroplus suratensis），暴露於三種溫度（28°C 控制、31°C 中間、34°C 壓力）× 二種鹽度（0 ppt 淡水、15 ppt 淡鹹水）的三重複設計，持續 90 天</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">de novo 轉錄組定序（Illumina NovaSeq 6000）、基因表達分析、GO/KEGG 濫積、qPCR 驗證</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">不同組織（肝臟、鰓、腎臟）在不同溫鹽條件下的基因表達差異</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">肝臟：上調 FASN、ACC、HK4（代謝）、HSP70/90、HYOU1（蛋白質穩定）；鰓：下調 Na+/K+-ATPase、上調 Piezo2（離子與觸覺）；腎臟：上調 STC、CEBPD（離子穩定、DNA 修復）；GSEA 證實脂肪酸合成、類固醇合成、ARG 代謝、氧化磷酸化通路顯著富集；六個關鍵 DEGs qPCR 驗證 R² = 0.9</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">感覺處理</span><span class="tag">生理健康</span><span class="tag">過度刺激</span><span class="tag">壓力反應</span><span class="tag">熱休克蛋白</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#5</span>
+            <span class="emoji-icon">👶</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>孕早期壓力調節與兒童中期焦慮的性別關聯：母親抑鬱、胎盤皮質醇及婴兒皮質醇反應預測女童焦慮風險</h3>
+          <p class="journal-source">Psychoneuroendocrinology &middot; Sex-specific links between stress regulation in early life and anxiety in middle childhood.</p>
+          <p>在女童中，嬰兒 12 個月皮質醇反應升高與胎盤 11β-HSD2 表達降低獨立預測 8 歲焦慮症；母親孕期使用抗憂鬱藥則降低風險；男童則僅與母親在 8 歲時的同時抑鬱症狀相關，揭示早期生命壓力生物嵌入的性別差異機制。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">149 名孕婦（Mercy Pregnancy and Emotional Wellbeing Study）及其子女，追蹤至 8 歲</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">測量產前母親憂鬱（EPDS）、創傷（CTQ）、育兒壓力（PSI）、髮皮質醇；出生時胎盤 11β-HSD2 mRNA 推測胎兒皮質醇暴露；12 個月兒童唾液皮質醇反應；8 歲時診斷焦慮（DISC）與行為問題（CBCL）</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">女童 vs 男童，分別檢視預測因子對焦慮症的關聯</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">（i）在女童中：較高嬰兒 12 月皮質醇反應 + 較低胎盤 11β-HSD2 → 增加焦慮風險；（ii）母親產前抗憂鬱藥使用 → 降低女童焦慮風險；（iii）男童：僅 8 歲母親同時抑鬱 → 預測焦慮，無其他顯著早期預測因子</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">兒童發展</span><span class="tag">教養</span><span class="tag">焦慮</span><span class="tag">壓力反應</span><span class="tag">神經科學</span><span class="tag">情緒調節</span><span class="tag">性別差異</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div></div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🛢️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>方法學用於油污脆弱性評估：墨西哥灣的環境敏感度映射</h3>
+          <p class="journal-source">Marine pollution bulletin</p>
+          <p>開發 Oil Spill Physical Vulnerability Index (OSPVI) 基於 26 年超過 28,000 次 Lagrangian 模擬，識別韋拉克魯斯與塔巴斯科為全年高脆弱區（OSPVI 0.5–1.0），而塔毛利帕斯海岸則因近採油區而最高風險。</p>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>巨噬細胞 FOLR2 透過與 TGFβRII 的細胞間相互作用促進肝纖維化</h3>
+          <p class="journal-source">Acta pharmacologica Sinica</p>
+          <p>發現 FOLR2+ 修復型巨噬細胞透過直接結合肝星狀細胞上的 TGFβRII，維持 TGF-β1 訊號並推動纖維生成；天然化合物 fraxinellone 可干擾此互動並抑制纖維化，揭示新療法標的。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>染色質可接近性塑造造血系統發育特定的血統可塑性</h3>
+          <p class="journal-source">Blood advances</p>
+          <p>胎兒造血幹細胞表現較廣泛的血統潛能（混合系落殖），而成人細胞則偏向髓系；此差異源於胎兒細胞缺乏特定轉錄因子 motif 的染色質可接近性 enrichment，而 PAX5 在胎兒期可接近性降低，支持其較可塑的淋巴細胞發育狀態。</p>
+          <div class="card-footer">
+            <span class="tag">兒童發展</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🐛</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>在冷應力下雙種熱休克蛋白 (HSP70、HSP90) 在 Dastarcus helophoroides 中的分子克隆與表達分析</h3>
+          <p class="journal-source">Bulletin of entomological research</p>
+          <p>在寒冷應力下，HSP90 在 -15°C 時表達達對照組 9.45 倍，HSP70 在 -10°C 時達 60.42 倍增加，顯示兩種 HSP 在昆蟲對低溫的應答中具有不同的溫度靈敏度與功能分工。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">⚙️</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>p21 激活激酶 4 透過磷酸化 YAP 在 T428 位點驅動肝星狀細胞活化與肝纖維化</h3>
+          <p class="journal-source">Signal transduction and targeted therapy</p>
+          <p>PAK4 在活化的肝星狀細胞中顯著上調，並直接磷酸化 YAP 在 T428 位點（新發現），導致 YAP 穩定、進入核內並轉錄激活，進而促進纖維化；抑制 PAK4 或使用磷酸化不活性 YAP 突變可逆轉此過程，揭示新的抗纖維化標的。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌿</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>鹽素 Portulaca oleracea 中 AQPs、HSPs 和 LEA 蛋白的比較基因組學與轉錄調控網絡分析</h3>
+          <p class="journal-source">Plant science : an international journal of experimental plant biology</p>
+          <p>在耐鹽植物馬齒莧中，系統鑑定出 78 個 AQPs、525 個 HSPs 和 119 個 LEA 蛋白；發現葉片透過特殊 AQPs 調節細胞內水分平衡，而根部則依賴強烈 HSP20/HSP70 誘導維持蛋白質穩定；核心調控由 22 個壓力專一性轉錄因子網絡主導，強調蛋白質二聚體與染色質重塑，為耐鹽性提供網絡層級的育種藍圖。</p>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔋</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>仿松果層狀雙氫氧化鈷釩鉬碲（CoV-LDH@MoTe）複合陰極材料在高壓混合超級電容器與鋅鹼電池中的應用</h3>
+          <p class="journal-source">Small (Weinheim an der Bergstrasse, Germany)</p>
+          <p>透過將氧化鉬碲鈦 (MoTe) 與鈷釩層雙氫氧化物 (CoV-LDH) 異質結構整合，實現快速電子傳輸與穩定電活性框架； resultant 混合超級電容器 (HSC) 達到 230 F/g 比電容，鋅鹼電池 (AZB) 則在 1000 次循環後仍保持 308 mAh/g 高放電容量，證明異質結構工程在設計多平台高效能水基儲能陰極中的可行性。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌾</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>進展混合小麥育種：雄性生殖特徵的發育階段與遺傳控制分析</h3>
+          <p class="journal-source">Journal of experimental botany</p>
+          <p>透過增強版 Waddington 期別法與時間延遲成像，發現麥花粉成熟與活性呈近遠梯度與先梯度分布，W10 為峰值； pollen viability 在室溫 (22°C) 下可維持 8 小時，但在較低溫度 (15°C、8°C) 下衰減更快；QTL 分析識別出 2A（花粉數）與 5A（花粉活性）兩個主要位點， cultivar Piko 等位基因對兩者均有利。</p>
+          <div class="card-footer">
+            <span class="tag">兒童發展</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🫒</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>四種橄欖樹品種（Arbosana、Arbequina、Coratina、Maraqi）在埃及再造沙土上的生長、產量與生理反應比較研究</h3>
+          <p class="journal-source">Scientific reports</p>
+          <p>在鹽分與水分保持力低的沙土中，Coratina 生長最旺盛產量最高但耐旱性差；Arbequina 與 Arbosana 生長受限但水分保持力與果實著果率高，顯示出不同品種對環境資源的適應性差異；Maraqi 水分保持力最佳但產量效率低；顯著品種×年份交互作用提示環境敏感度在品種表現中的關鍵作用。</p>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧠</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>背海馬迴特定區域之鄰突網膜重塑驅動慢性壓力下的脆弱性與彈性：文拉法辛治療的角色</h3>
+          <p class="journal-source">British journal of pharmacology</p>
+          <p>在慢性輕度應力模型中，脆弱大鼠在 CA3 區域出現 PV+ 神經元周圍 PNN 增加及 BDNF-TrkB 通路受損，反彈性較低；反之，有彈性大鼠透過 MMP9 介導的 PNN 重塑來應對壓力；文拉法辛長期給藥能正常化 CA3 區域 PNN 組成及調節 MMP9，支持其透過調節海馬細胞外基質促進壓力適應力的機制。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span><span class="tag">壓力反應</span><span class="tag">情緒調節</span><span class="tag">焦慮</span><span class="tag">海馬</span><span class="tag">神經塑性</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌍</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>氣候變遷焦慮與成年女性永續消費行為的關聯：焦慮可驅動環境行為，公共衛生護理師應介入</h3>
+          <p class="journal-source">Public health nursing (Boston, Mass.)</p>
+          <p>在婦女中，氣候變遷焦慮顯著正相關於永續消費行為（特別是非必需購買），且經歷過氣候相關災害者焦慮與行為分數皆較高；結構方程模型證實焦慮可預測所有永續消費次維度，對非必需購買影響最大（β=0.562）；建議公衛護理師將氣候健康素養納入評估，並設計諮商方案將生態焦慮轉化為積極行動。</p>
+          <div class="card-footer">
+            <span class="tag">焦慮</span><span class="tag">壓力反應</span><span class="tag">情緒調節</span><span class="tag">永續消費</span><span class="tag">氣候變遷</span><span class="tag">女性健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div></div>
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div>
+            <div class="topic-row">
+              <span class="topic-name">高敏感特質</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">環境敏感度</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+              <span class="topic-count">4</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">神經科學</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:38%"></div></div>
+              <span class="topic-count">3</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">壓力反應</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+              <span class="topic-count">4</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">情緒調節</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+              <span class="topic-count">4</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">感覺處理</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:38%"></div></div>
+              <span class="topic-count">3</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">兒童發展</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:38%"></div></div>
+              <span class="topic-count">3</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">焦慮</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">教養</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">量表驗證</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:13%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">生理健康</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+              <span class="topic-count">8</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">過度刺激</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">睡眠</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:13%"></div></div>
+              <span class="topic-count">1</span>
+            </div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">高敏感特質</span><span class="keyword">環境敏感度</span><span class="keyword">感覺處理</span><span class="keyword">神經科學</span><span class="keyword">壓力反應</span><span class="keyword">情緒調節</span><span class="keyword">量表驗證</span><span class="keyword">兒童發展</span><span class="keyword">教養</span><span class="keyword">焦慮</span></div></div>
+
+  <div class="clinic-banner">
+    <div class="clinic-links">
+      <a href="https://www.leepsyclinic.com/" class="clinic-link" target="_blank">
+        <span class="clinic-icon">🏥</span>
+        <span class="clinic-name">李政洋身心診所首頁<span class="clinic-desc">專業身心健康服務</span></span>
+        <span class="clinic-arrow">→</span>
+      </a>
+      <a href="https://blog.leepsyclinic.com/" class="clinic-link" target="_blank">
+        <span class="clinic-icon">📬</span>
+        <span class="clinic-name">訂閱電子報<span class="clinic-desc">接收最新心理健康資訊</span></span>
+        <span class="clinic-arrow">→</span>
+      </a>
+      <a href="https://buymeacoffee.com/CYlee" class="clinic-link" target="_blank">
+        <span class="clinic-icon">☕</span>
+        <span class="clinic-name">Buy Me a Coffee<span class="clinic-desc">支持這個計畫持續運作</span></span>
+        <span class="clinic-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：nvidia/nemotron-3-super-120b-a12b</span>
+    <span><a href="https://github.com/u8901006/highly-sensitive">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
