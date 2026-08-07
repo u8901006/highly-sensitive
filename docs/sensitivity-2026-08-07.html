@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Highly Sensitive &middot; 高敏感研究文獻日報 &middot; 2026年8月7日</title>
+<meta name="description" content="2026年8月7日 高敏感研究文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<style>
+  :root { --bg: #f6f1e8; --surface: #fffaf2; --line: #d8c5ab; --text: #2b2118; --muted: #766453; --accent: #8c4f2b; --accent-soft: #ead2bf; --card-bg: color-mix(in srgb, var(--surface) 92%, white); }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: radial-gradient(circle at top, #fff6ea 0, var(--bg) 55%, #ead8c6 100%); color: var(--text); font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  .container { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 60px 32px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 52px; animation: fadeDown 0.6s ease both; }
+  .logo { width: 48px; height: 48px; border-radius: 14px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; box-shadow: 0 4px 20px rgba(140,79,43,0.25); }
+  .header-text h1 { font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+  .header-meta { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; align-items: center; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; letter-spacing: 0.3px; }
+  .badge-date { background: var(--accent-soft); border: 1px solid var(--line); color: var(--accent); }
+  .badge-count { background: rgba(140,79,43,0.06); border: 1px solid var(--line); color: var(--muted); }
+  .badge-source { background: transparent; color: var(--muted); font-size: 11px; padding: 0 4px; }
+  .summary-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 28px 32px; margin-bottom: 32px; box-shadow: 0 20px 60px rgba(61,36,15,0.06); animation: fadeUp 0.5s ease 0.1s both; }
+  .summary-card h2 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; color: var(--accent); margin-bottom: 16px; }
+  .summary-text { font-size: 15px; line-height: 1.8; color: var(--text); }
+  .section { margin-bottom: 36px; animation: fadeUp 0.5s ease both; }
+  .section-title { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .section-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; background: var(--accent-soft); }
+  .news-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 22px 26px; margin-bottom: 12px; box-shadow: 0 8px 30px rgba(61,36,15,0.04); transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+  .news-card:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .news-card.featured { border-left: 3px solid var(--accent); }
+  .news-card.featured:hover { border-color: var(--accent); }
+  .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .rank-badge { background: var(--accent); color: #fff7f0; font-weight: 700; font-size: 12px; padding: 2px 8px; border-radius: 6px; }
+  .emoji-icon { font-size: 18px; }
+  .card-header-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .emoji-sm { font-size: 14px; }
+  .news-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.5; }
+  .journal-source { font-size: 12px; color: var(--accent); margin-bottom: 8px; opacity: 0.8; }
+  .news-card p { font-size: 13.5px; line-height: 1.75; color: var(--muted); }
+  .card-footer { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .tag { padding: 2px 9px; background: var(--accent-soft); border-radius: 999px; font-size: 11px; color: var(--accent); }
+  .news-card a { font-size: 12px; color: var(--accent); text-decoration: none; opacity: 0.7; margin-left: auto; }
+  .news-card a:hover { opacity: 1; }
+  .utility-high { color: #5a7a3a; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(90,122,58,0.1); border-radius: 4px; }
+  .utility-mid { color: #9f7a2e; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(159,122,46,0.1); border-radius: 4px; }
+  .utility-low { color: var(--muted); font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(118,100,83,0.08); border-radius: 4px; }
+  .utility-sm { font-size: 10px; }
+  .pico-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; padding: 12px; background: rgba(255,253,249,0.8); border-radius: 14px; border: 1px solid var(--line); }
+  .pico-item { display: flex; gap: 8px; align-items: baseline; }
+  .pico-label { font-size: 10px; font-weight: 700; color: #fff7f0; background: var(--accent); padding: 2px 6px; border-radius: 4px; flex-shrink: 0; }
+  .pico-text { font-size: 12px; color: var(--muted); line-height: 1.4; }
+  .keywords-section { margin-bottom: 36px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .keyword { padding: 5px 14px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 20px; font-size: 12px; color: var(--accent); cursor: default; transition: background 0.2s; }
+  .keyword:hover { background: rgba(140,79,43,0.18); }
+  .topic-section { margin-bottom: 36px; }
+  .topic-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .topic-name { font-size: 13px; color: var(--muted); width: 100px; flex-shrink: 0; text-align: right; }
+  .topic-bar-bg { flex: 1; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+  .topic-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #c47a4a); border-radius: 4px; transition: width 0.6s ease; }
+  .topic-count { font-size: 12px; color: var(--accent); width: 24px; }
+  .clinic-banner { margin-top: 48px; animation: fadeUp 0.5s ease 0.4s both; }
+  .clinic-links { display: flex; flex-direction: column; gap: 10px; }
+  .clinic-link { display: flex; align-items: center; gap: 14px; padding: 18px 24px; background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; text-decoration: none; color: var(--text); transition: all 0.2s; box-shadow: 0 8px 30px rgba(61,36,15,0.04); }
+  .clinic-link:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .clinic-icon { font-size: 28px; flex-shrink: 0; }
+  .clinic-name { font-size: 15px; font-weight: 700; color: var(--text); flex: 1; }
+  .clinic-desc { font-size: 12px; color: var(--muted); margin-top: 2px; font-weight: 400; }
+  .clinic-arrow { font-size: 18px; color: var(--accent); font-weight: 700; }
+  footer { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); display: flex; justify-content: space-between; animation: fadeUp 0.5s ease 0.5s both; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 600px) { .container { padding: 36px 18px 60px; } .summary-card, .news-card { padding: 20px 18px; } .pico-grid { grid-template-columns: 1fr; } footer { flex-direction: column; gap: 6px; text-align: center; } .topic-name { width: 70px; font-size: 11px; } .clinic-links { gap: 8px; } .clinic-link { padding: 14px 18px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🌸</div>
+    <div class="header-text">
+      <h1>Highly Sensitive &middot; 高敏感研究文獻日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年8月7日</span>
+        <span class="badge badge-count">📊 10 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + NVIDIA Nemotron</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻聚焦於高敏感特質（Sensory Processing Sensitivity, SPS）的神經生理機制與實證研究，特別是腦波調節、環境敏感度與心理健康關聯。此外，尚有多篇與環境敏感度相關的基礎科學研究（如微塑料對微生物群落影響、熱應激反應）被納入，顯示跨領域整合趨勢。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#1</span>
+            <span class="emoji-icon">🧠</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>Altered theta-band sensory gating in individuals with high sensory processing sensitivity (SPS).</h3>
+          <p class="journal-source">Brain research &middot; Altered theta-band sensory gating in individuals with high sensory processing sensitivity (SPS).</p>
+          <p>發現高敏感特質者在 theta 頻帶下具較強的感官閘門機制，顯示 SPS 並非單純感官過載，而是涉及異樣的神經抑制動態，為 SPS 的生理基礎提供新證據。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">518 名成人，篩選出高敏感 (top 10%) 與低敏感 (bottom 10%) 組別，且皆為 5-HTTLPR SS 基因型</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無介入，為觀察性研究；使用 paired-stimulus 聽覺範式搭配時間域與時頻電生理測量（ERP 和 theta 搖波）</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">高敏感群體 (n=26) vs. 低敏感群體 (n=25)</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">高敏感群體在 theta 頻帶顯著較強的感官閘門 (SG) 活性 (FDR 校正後 p < 0.05)，但時間域 N100 元件無顯著差異</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">高敏感特質</span><span class="tag">神經科學</span><span class="tag">腦造影</span><span class="tag">感覺處理</span><span class="tag">壓力反應</span><span class="tag">量表驗證</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#2</span>
+            <span class="emoji-icon">🏃‍♀️</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>Examining relationships between sensory processing sensitivity (SPS), physical activity context preferences, and physical activity self-efficacy in undergraduate students.</h3>
+          <p class="journal-source">Journal of American college health : J of ACH &middot; Examining relationships between sensory processing sensitivity (SPS), physical activity context preferences, and physical activity self-efficacy in undergraduate students.</p>
+          <p>高敏感特質與偏好規律性、居家、可調整難度的運動環境呈正相關，與競爭性、團隊式及高強度運動呈負相關，並顯著預測較低的運動自我效能。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">425 名加拿大大學學生</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無介入，橫斷面設計；使用 HSP-12 調查 SPS，Self-Efficacy for Physical Activity Scale 量測自我效能，以及 Likert 項目評量運動環境偏好</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">高 SPS vs. 低 SPS 群體（依 HSP-12 分數中高低 50% 分組）</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">高 SPS 顯著關聯於偏好 scheduled, at-home, adjustable-difficulty PA 設定（r > 0，p < .05），競爭性、團隊式、高量 PA 偏好降低；且 SPS 與 PA self-efficacy 負相關 (β = -0.240, p < .001)</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">高敏感特質</span><span class="tag">過度刺激</span><span class="tag">生活品質</span><span class="tag">兒童發展</span><span class="tag">壓力反應</span><span class="tag">自我效能</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#3</span>
+            <span class="emoji-icon">🌊</span>
+            <span class="utility-low">低實用性</span>
+          </div>
+          <h3>Microplastic Pollution Is Associated with Fragmentation and Environmental Sensitivity of Marine Planktonic Microbial Communities.</h3>
+          <p class="journal-source">Environmental science & technology &middot; Microplastic Pollution Is Associated with Fragmentation and Environmental Sensitivity of Marine Planktonic Microbial Communities.</p>
+          <p>高濃度微塑料環境導致海洋微生物群落功能分散、種群主導增強，同時提升其對環境變化的敏感度，顯示生態系統韌性降低。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">Tara Oceans metagenomic 數據中的自由生活海洋微生物 (0.8–5 μm)</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">天然微塑濃度梯度暴露（非實驗操縱）；高 MP 區域定義為 >5,500 items·km⁻²</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">高微塑環境 vs. 低/中微塑環境</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">高 MP 環境中非優勢種減少 (17–21% → 6.53–9.45%)，功能基因（C/N/S 循環）增加，網絡連通性降低，環境反應集中化，顯示較高環境敏感度與較低系統穩定性</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">差異易感性</span><span class="tag">生理健康</span><span class="tag">慢性壓力</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#4</span>
+            <span class="emoji-icon">🌱</span>
+            <span class="utility-low">低實用性</span>
+          </div>
+          <h3>Adaptive response to long-term high temperatures during the reproductive development in Arabidopsis thaliana.</h3>
+          <p class="journal-source">Planta &middot; Adaptive response to long-term high temperatures during the reproductive development in Arabidopsis thaliana.</p>
+          <p>長期高溫誘導拟南芥提早開花但降低生育力，且證實 HSP101 在生殖階段熱耐受中具有關鍵作用，提示熱應激反應在發育關鍵期的保守功能。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">拟南芥 (Arabidopsis thaliana) 品系，包括 wild-type 與 hot1-3 突變體（缺乏 HSP101）</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">長期高溫處理（具體溫度未提，但標稱「long-term high temperature」）</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">對照溫度 vs. 長期高溫；wild-type vs. hot1-3 突變體</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">熱應激劑泡發育劑量依賴性受損；hot1-3 突變體顯著降低繁殖成功率，證實 HSP101 對生殖熱耐受必要；同時發現 hot1-3 為四倍體，提示基因組不穩定可能為熱應激副產物</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">生理健康</span><span class="tag">壓力反應</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#5</span>
+            <span class="emoji-icon">🪰</span>
+            <span class="utility-low">低實用性</span>
+          </div>
+          <h3>Thermal stress-induced cell death pathways in Drosophila: molecular insights into apoptosis, necrosis, and autophagy.</h3>
+          <p class="journal-source">Insect biochemistry and molecular biology &middot; Thermal stress-induced cell death pathways in Drosophila: molecular insights into apoptosis, necrosis, and autophagy.</p>
+          <p>熱應激在果蠅幼蟲中觸發階梯式細胞反應：輕度激活保護途徑（HSPs），中度導致凋亡，嚴重則引發壞死及黑斑形成，且熱適應僅在匹配後續壓力時有效。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">Drosophila melanogaster 第三齡幼蟲</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">冷應激 (-3°C) 或熱應激 (38°C)，分為不同適應型態（冷適應/熱適應/無適應）</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">冷 vs. 熱應激；適應 vs. 無適應組別</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">熱應激強烈上調 Hsp 基因（>4000 倍）與部分自噬基因；壞死由細胞骨架崩解、細胞質鈣升高及黑斑（Melanization）標誌；冷誘導凋亡 (reaper, grim, sickle, Dronc, Dcp-1)；熱適應降低黑斑發生率從 82% 至 13%</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">壓力反應</span><span class="tag">生理健康</span><span class="tag">過度刺激</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div></div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🏃‍♀️</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>Examining relationships between sensory processing sensitivity (SPS), physical activity context preferences, and physical activity self-efficacy in undergraduate students.</h3>
+          <p class="journal-source">Journal of American college health : J of ACH</p>
+          <p>高敏感特質與偏好規律性、居家、可調整難度的運動環境呈正相關，與競爭性、團隊式及高強度運動呈負相關，並顯著預測較低的運動自我效能。</p>
+          <div class="card-footer">
+            <span class="tag">高敏感特質</span><span class="tag">過度刺激</span><span class="tag">生活品質</span><span class="tag">兒童發展</span><span class="tag">壓力反應</span><span class="tag">自我效能</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧠</span>
+            <span class="utility-high utility-sm">高</span>
+          </div>
+          <h3>Altered theta-band sensory gating in individuals with high sensory processing sensitivity (SPS).</h3>
+          <p class="journal-source">Brain research</p>
+          <p>發現高敏感特質者在 theta 頻帶下具較強的感官閘門機制，顯示 SPS 並非單純感官過載，而是涉及異樣的神經抑制動態，為 SPS 的生理基礎提供新證據。</p>
+          <div class="card-footer">
+            <span class="tag">高敏感特質</span><span class="tag">神經科學</span><span class="tag">腦造影</span><span class="tag">感覺處理</span><span class="tag">壓力反應</span><span class="tag">量表驗證</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Microplastic Pollution Is Associated with Fragmentation and Environmental Sensitivity of Marine Planktonic Microbial Communities.</h3>
+          <p class="journal-source">Environmental science & technology</p>
+          <p>高濃度微塑料環境導致海洋微生物群落功能分散、種群主導增強，同時提升其對環境變化的敏感度，顯示生態系統韌性降低。</p>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">差異易感性</span><span class="tag">生理健康</span><span class="tag">慢性壓力</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌱</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Adaptive response to long-term high temperatures during the reproductive development in Arabidopsis thaliana.</h3>
+          <p class="journal-source">Planta</p>
+          <p>長期高溫誘導拟南芥提早開花但降低生育力，且證實 HSP101 在生殖階段熱耐受中具有關鍵作用，提示熱應激反應在發育關鍵期的保守功能。</p>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">生理健康</span><span class="tag">壓力反應</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🪰</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Thermal stress-induced cell death pathways in Drosophila: molecular insights into apoptosis, necrosis, and autophagy.</h3>
+          <p class="journal-source">Insect biochemistry and molecular biology</p>
+          <p>熱應激在果蠅幼蟲中觸發階梯式細胞反應：輕度激活保護途徑（HSPs），中度導致凋亡，嚴重則引發壞死及黑斑形成，且熱適應僅在匹配後續壓力時有效。</p>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">壓力反應</span><span class="tag">生理健康</span><span class="tag">過度刺激</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div></div>
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div>
+            <div class="topic-row">
+              <span class="topic-name">高敏感特質</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:67%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">環境敏感度</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+              <span class="topic-count">3</span>
+            </div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">高敏感特質</span><span class="keyword">環境敏感度</span><span class="keyword">感覺處理</span><span class="keyword">神經科學</span><span class="keyword">壓力反應</span></div></div>
+
+  <div class="clinic-banner">
+    <div class="clinic-links">
+      <a href="https://www.leepsyclinic.com/" class="clinic-link" target="_blank">
+        <span class="clinic-icon">🏥</span>
+        <span class="clinic-name">李政洋身心診所首頁<span class="clinic-desc">專業身心健康服務</span></span>
+        <span class="clinic-arrow">→</span>
+      </a>
+      <a href="https://blog.leepsyclinic.com/" class="clinic-link" target="_blank">
+        <span class="clinic-icon">📬</span>
+        <span class="clinic-name">訂閱電子報<span class="clinic-desc">接收最新心理健康資訊</span></span>
+        <span class="clinic-arrow">→</span>
+      </a>
+      <a href="https://buymeacoffee.com/CYlee" class="clinic-link" target="_blank">
+        <span class="clinic-icon">☕</span>
+        <span class="clinic-name">Buy Me a Coffee<span class="clinic-desc">支持這個計畫持續運作</span></span>
+        <span class="clinic-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：nvidia/nemotron-3-super-120b-a12b</span>
+    <span><a href="https://github.com/u8901006/highly-sensitive">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
