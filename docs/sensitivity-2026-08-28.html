@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Highly Sensitive &middot; 高敏感研究文獻日報 &middot; 2026年8月28日</title>
+<meta name="description" content="2026年8月28日 高敏感研究文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<style>
+  :root { --bg: #f6f1e8; --surface: #fffaf2; --line: #d8c5ab; --text: #2b2118; --muted: #766453; --accent: #8c4f2b; --accent-soft: #ead2bf; --card-bg: color-mix(in srgb, var(--surface) 92%, white); }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: radial-gradient(circle at top, #fff6ea 0, var(--bg) 55%, #ead8c6 100%); color: var(--text); font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  .container { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 60px 32px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 52px; animation: fadeDown 0.6s ease both; }
+  .logo { width: 48px; height: 48px; border-radius: 14px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; box-shadow: 0 4px 20px rgba(140,79,43,0.25); }
+  .header-text h1 { font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+  .header-meta { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; align-items: center; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; letter-spacing: 0.3px; }
+  .badge-date { background: var(--accent-soft); border: 1px solid var(--line); color: var(--accent); }
+  .badge-count { background: rgba(140,79,43,0.06); border: 1px solid var(--line); color: var(--muted); }
+  .badge-source { background: transparent; color: var(--muted); font-size: 11px; padding: 0 4px; }
+  .summary-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 28px 32px; margin-bottom: 32px; box-shadow: 0 20px 60px rgba(61,36,15,0.06); animation: fadeUp 0.5s ease 0.1s both; }
+  .summary-card h2 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; color: var(--accent); margin-bottom: 16px; }
+  .summary-text { font-size: 15px; line-height: 1.8; color: var(--text); }
+  .section { margin-bottom: 36px; animation: fadeUp 0.5s ease both; }
+  .section-title { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .section-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; background: var(--accent-soft); }
+  .news-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 22px 26px; margin-bottom: 12px; box-shadow: 0 8px 30px rgba(61,36,15,0.04); transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+  .news-card:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .news-card.featured { border-left: 3px solid var(--accent); }
+  .news-card.featured:hover { border-color: var(--accent); }
+  .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .rank-badge { background: var(--accent); color: #fff7f0; font-weight: 700; font-size: 12px; padding: 2px 8px; border-radius: 6px; }
+  .emoji-icon { font-size: 18px; }
+  .card-header-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .emoji-sm { font-size: 14px; }
+  .news-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.5; }
+  .journal-source { font-size: 12px; color: var(--accent); margin-bottom: 8px; opacity: 0.8; }
+  .news-card p { font-size: 13.5px; line-height: 1.75; color: var(--muted); }
+  .card-footer { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .tag { padding: 2px 9px; background: var(--accent-soft); border-radius: 999px; font-size: 11px; color: var(--accent); }
+  .news-card a { font-size: 12px; color: var(--accent); text-decoration: none; opacity: 0.7; margin-left: auto; }
+  .news-card a:hover { opacity: 1; }
+  .utility-high { color: #5a7a3a; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(90,122,58,0.1); border-radius: 4px; }
+  .utility-mid { color: #9f7a2e; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(159,122,46,0.1); border-radius: 4px; }
+  .utility-low { color: var(--muted); font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(118,100,83,0.08); border-radius: 4px; }
+  .utility-sm { font-size: 10px; }
+  .pico-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; padding: 12px; background: rgba(255,253,249,0.8); border-radius: 14px; border: 1px solid var(--line); }
+  .pico-item { display: flex; gap: 8px; align-items: baseline; }
+  .pico-label { font-size: 10px; font-weight: 700; color: #fff7f0; background: var(--accent); padding: 2px 6px; border-radius: 4px; flex-shrink: 0; }
+  .pico-text { font-size: 12px; color: var(--muted); line-height: 1.4; }
+  .keywords-section { margin-bottom: 36px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .keyword { padding: 5px 14px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 20px; font-size: 12px; color: var(--accent); cursor: default; transition: background 0.2s; }
+  .keyword:hover { background: rgba(140,79,43,0.18); }
+  .topic-section { margin-bottom: 36px; }
+  .topic-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .topic-name { font-size: 13px; color: var(--muted); width: 100px; flex-shrink: 0; text-align: right; }
+  .topic-bar-bg { flex: 1; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+  .topic-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #c47a4a); border-radius: 4px; transition: width 0.6s ease; }
+  .topic-count { font-size: 12px; color: var(--accent); width: 24px; }
+  .clinic-banner { margin-top: 48px; animation: fadeUp 0.5s ease 0.4s both; }
+  .clinic-links { display: flex; flex-direction: column; gap: 10px; }
+  .clinic-link { display: flex; align-items: center; gap: 14px; padding: 18px 24px; background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; text-decoration: none; color: var(--text); transition: all 0.2s; box-shadow: 0 8px 30px rgba(61,36,15,0.04); }
+  .clinic-link:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .clinic-icon { font-size: 28px; flex-shrink: 0; }
+  .clinic-name { font-size: 15px; font-weight: 700; color: var(--text); flex: 1; }
+  .clinic-desc { font-size: 12px; color: var(--muted); margin-top: 2px; font-weight: 400; }
+  .clinic-arrow { font-size: 18px; color: var(--accent); font-weight: 700; }
+  footer { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); display: flex; justify-content: space-between; animation: fadeUp 0.5s ease 0.5s both; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 600px) { .container { padding: 36px 18px 60px; } .summary-card, .news-card { padding: 20px 18px; } .pico-grid { grid-template-columns: 1fr; } footer { flex-direction: column; gap: 6px; text-align: center; } .topic-name { width: 70px; font-size: 11px; } .clinic-links { gap: 8px; } .clinic-link { padding: 14px 18px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🌸</div>
+    <div class="header-text">
+      <h1>Highly Sensitive &middot; 高敏感研究文獻日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年8月28日</span>
+        <span class="badge badge-count">📊 23 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + NVIDIA Nemotron</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻聚焦於肝纖維化、造血幹細胞老化及代謝途徑的分子機制研究，唯一與高敏感特質相關之論文探討感覺處理敏感度與大腦theta帶感官閘動態之關聯，顯示神經生理層面的證據尚屬初步。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#1</span>
+            <span class="emoji-icon">🧠</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>Altered theta-band sensory gating in individuals with high sensory processing sensitivity (SPS).</h3>
+          <p class="journal-source">Brain research &middot; Altered theta-band sensory gating in individuals with high sensory processing sensitivity (SPS).</p>
+          <p>發現高感覺處理敏感度者在重複聲刺激下表現出較強的theta帶感官閘抑制，顯示其感官處理具獨特的神經振盪模式，而非單纯感官閘降低。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">518名成人，篩選出HSP Scale上下10%（26高SPS、25低SPS）、SS型5-HTTLPR基因型者</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無介入，觀察高低SPS組在聽覺成對刺激範式下的腦電波活動</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">高SPS組 vs 低SPS組</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">高SPS組在theta頻帶（4-8 Hz）表現顯著更強的感官閘（False Discovery Rate校正 p < 0.05），但在N100的時域SG比值或差異上無顯著差異</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">高敏感特質</span><span class="tag">神經科學</span><span class="tag">腦造影</span><span class="tag">感覺處理</span><span class="tag">過度刺激</span><span class="tag">情緒調節</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div></div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌿</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>Associations of sensory processing sensitivity with cannabis motives and consumption in young adults.</h3>
+          <p class="journal-source">Addictive behaviors</p>
+          <p>在年輕成人中，SPS與使用頻率或濫用症狀無關，但與社交、應對與擴張動機顯著相關，其中低感官閾值/易激惹與社交與從眾動機相關，審美敏感度則與增強與擴張動機相關。</p>
+          <div class="card-footer">
+            <span class="tag">高敏感特質</span><span class="tag">物質使用</span><span class="tag">動機</span><span class="tag">年輕成人</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌡️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Using High-Dimensional Environmental Covariates to Study Genotype by Environment Interaction for Reproductive Traits in Duroc Boars.</h3>
+          <p class="journal-source">Journal of animal science</p>
+          <p>透過納入NASA POWER資料庫的環境共變量（溫度、濕度、氣壓、風速/方向），發現基因型×環境互動對 Duquec 公豬的精子 motility 和 morphology 的表型變異解釋力最高可達44%。</p>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">基因環境互動</span><span class="tag">動物模型</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>Epigenetic regulation in liver fibrosis: Focus on the chromatin accessibility landscape.</h3>
+          <p class="journal-source">European journal of pharmacology</p>
+          <p>蕊質質可及性作為表觀遺傳調控的核心層，動態調控肝纖維化關鍵基因的表達「開關」，並由組蛋白修飾、ATP依賴性染色質重塑、CpG甲基化及增強子等協同調整，具備成為精準抗纖維化藥物標的的潛力。</p>
+          <div class="card-footer">
+            <span class="tag">表觀遺傳學</span><span class="tag">肝纖維化</span><span class="tag">肝星狀細胞</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>The m6A reader IGF2BP2 promotes hepatic fibrosis by stabilizing AEBP1 mRNA and regulating GRB2-mediated hepatic stellate cell activation.</h3>
+          <p class="journal-source">Biochimica et biophysica acta. Molecular basis of disease</p>
+          <p>IGF2BP2透過結合AEBP1 mRNA上的m6A位點增強其穩定性，進而激活GRB2表達，促進肝星狀細胞活化與纖維化，揭示m6A-AEBP1-GRB2軸為肝纖維化的新調控機制。</p>
+          <div class="card-footer">
+            <span class="tag">表觀遺傳學</span><span class="tag">肝纖維化</span><span class="tag">m6A甲基化</span><span class="tag">肝星狀細胞</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🩸</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>Intrahepatic Platelets Orchestrate Microenvironmental Remodelling and Cellular Crosstalk in Liver Fibrosis.</h3>
+          <p class="journal-source">Liver international : official journal of the International Association for the Study of the Liver</p>
+          <p>肝內血小板透過釋放TGF-β1、PDGF-BB、CXCL4等介質與肝細胞、Kupffer細胞、肝竇內皮細胞及肝星狀細胞進行多方位訊號交織，參與促纖維性與再生性雙向調節，其局部激活狀態與循環血小板計數不符，是評估纖維化活性的關鍵。</p>
+          <div class="card-footer">
+            <span class="tag">肝纖維化</span><span class="tag">血小板</span><span class="tag">肝星狀細胞</span><span class="tag">微環境</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>Decoding fibroblast activation: Transcriptional networks in hepatic stellate cells and across fibrotic organs (Review).</h3>
+          <p class="journal-source">International journal of molecular medicine</p>
+          <p>肝星狀細胞轉變為促纖維性成纖維細胞受複雜轉錄網路調控，整合來自炎症、代謝與機械訊號，此網路不僅維持纖維生成，也決定纖維反應是解決或進展為慢性疤痕，為抗纖維療法提供轉錄因子標的。</p>
+          <div class="card-footer">
+            <span class="tag">轉錄調控</span><span class="tag">肝纖維化</span><span class="tag">肝星狀細胞</span><span class="tag">轉錄因子</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧫</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>Hepatic stellate cell subpopulations in human MASLD-related hepatocellular carcinoma upregulate YAP via geranylgeranyl pyrophosphate.</h3>
+          <p class="journal-source">Hepatology communications</p>
+          <p>在人類MASLD相關肝癌中，經活化的肝星狀細胞亞族透過Mevalonate途徑產生的雙癸基焦磷酸（GGPP）上調YAP效應基因，促進癌症進展，而他汀藉由降低GGPP可逆此過程。</p>
+          <div class="card-footer">
+            <span class="tag">肝癌</span><span class="tag">肝星狀細胞</span><span class="tag">YAP訊號</span><span class="tag">Mevalonate途徑</span><span class="tag">他汀類藥物</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🫚</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>6-Shogaol attenuates liver fibrosis by driving hepatic stellate cell senescence through the cGAS-STING-NF-κB axis.</h3>
+          <p class="journal-source">Phytomedicine : international journal of phytotherapy and phytopharmacology</p>
+          <p>薑中的活性成分6-ショウガール透過誘導肝星狀細胞在cGAS-STING-NF-κB軸介導的細胞 senescence 來抑制其活化，從而減輕肝纖維化，提供天然化合物的抗纖維化新機制。</p>
+          <div class="card-footer">
+            <span class="tag">天然藥物</span><span class="tag">肝纖維化</span><span class="tag">細胞 senescence</span><span class="tag">cGAS-STING-NF-κB</span><span class="tag">肝星狀細胞</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌿</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>Morroniside ameliorates hepatic fibrosis in mice by targeting ACYP1 to promote NCOA4-mediated ferritinophagy and ferroptosis.</h3>
+          <p class="journal-source">Phytomedicine : international journal of phytotherapy and phytopharmacology</p>
+          <p>肉桂苷透過抑制ACYP1，阻斷HERC2介導的NCOA4泛素化，促進鐵蛋白亞生與鐵死亡在肝星狀細胞中發生，從而抑制纖維化活化，揭示ACYP1/HERC2/NCOA4軸為肝纖維化的關鍵調控點。</p>
+          <div class="card-footer">
+            <span class="tag">天然藥物</span><span class="tag">肝纖維化</span><span class="tag">鐵死亡</span><span class="tag">ferritinophagy</span><span class="tag">肝星狀細胞</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌿</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>Bupleuri radix total saikosaponins alleviate liver fibrosis by inhibiting hepatic stellate cell activation via SIRT3-SMAD3/HIF-1α-mediated glycolysis.</h3>
+          <p class="journal-source">Phytomedicine : international journal of phytotherapy and phytopharmacology</p>
+          <p>柴胡總皂苷透過SIRT3脫乙酰化SMAD3並抑制HIF-1α誘導的糖酵解，阻斷肝星狀細胞的活化與纖維生成，提供代謝重程的抗纖維化策略。</p>
+          <div class="card-footer">
+            <span class="tag">中醫藥</span><span class="tag">肝纖維化</span><span class="tag">糖酵解</span><span class="tag">SIRT3</span><span class="tag">HIF-1α</span><span class="tag">肝星狀細胞</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>Epigenetic regulation in liver fibrosis: Focus on the chromatin accessibility landscape.</h3>
+          <p class="journal-source">European journal of pharmacology</p>
+          <p>蕊質質可及性作為表觀遺傳調控的核心層，動態調控肝纖維化關鍵基因的表達「開關」，並由組蛋白修飾、ATP依賴性染色質重塑、CpG甲基化及增強子等協同調整，具備成為精準抗纖維化藥物標的的潛力。</p>
+          <div class="card-footer">
+            <span class="tag">表觀遺傳學</span><span class="tag">肝纖維化</span><span class="tag">肝星狀細胞</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>The m6A reader IGF2BP2 promotes hepatic fibrosis by stabilizing AEBP1 mRNA and regulating GRB2-mediated hepatic stellate cell activation.</h3>
+          <p class="journal-source">Biochimica et biophysica acta. Molecular basis of disease</p>
+          <p>IGF2BP2透過結合AEBP1 mRNA上的m6A位點增強其穩定性，進而激活GRB2表達，促進肝星狀細胞活化與纖維化，揭示m6A-AEBP1-GRB2軸為肝纖維化的新調控機制。</p>
+          <div class="card-footer">
+            <span class="tag">表觀遺傳學</span><span class="tag">肝纖維化</span><span class="tag">m6A甲基化</span><span class="tag">肝星狀細胞</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🩸</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>Intrahepatic Platelets Orchestrate Microenvironmental Remodelling and Cellular Crosstalk in Liver Fibrosis.</h3>
+          <p class="journal-source">Liver international : official journal of the International Association for the Study of the Liver</p>
+          <p>肝內血小板透過釋放TGF-β1、PDGF-BB、CXCL4等介質與肝細胞、Kupffer細胞、肝竇內皮細胞及肝星狀細胞進行多方位訊號交織，參與促纖維性與再生性雙向調節，其局部激活狀態與循環血小板計數不符，是評估纖維化活性的關鍵。</p>
+          <div class="card-footer">
+            <span class="tag">肝纖維化</span><span class="tag">血小板</span><span class="tag">肝星狀細胞</span><span class="tag">微環境</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>Decoding fibroblast activation: Transcriptional networks in hepatic stellate cells and across fibrotic organs (Review).</h3>
+          <p class="journal-source">International journal of molecular medicine</p>
+          <p>肝星狀細胞轉變為促纖維性成纖維細胞受複雜轉錄網路調控，整合來自炎症、代謝與機械訊號，此網路不僅維持纖維生成，也決定纖維反應是解決或進展為慢性疤痕，為抗纖維療法提供轉錄因子標的。</p>
+          <div class="card-footer">
+            <span class="tag">轉錄調控</span><span class="tag">肝纖維化</span><span class="tag">肝星狀細胞</span><span class="tag">轉錄因子</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧫</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>Hepatic stellate cell subpopulations in human MASLD-related hepatocellular carcinoma upregulate YAP via geranylgeranyl pyrophosphate.</h3>
+          <p class="journal-source">Hepatology communications</p>
+          <p>在人類MASLD相關肝癌中，經活化的肝星狀細胞亞族透過Mevalonate途徑產生的雙癸基焦磷酸（GGPP）上調YAP效應基因，促進癌症進展，而他汀藉由降低GGPP可逆此過程。</p>
+          <div class="card-footer">
+            <span class="tag">肝癌</span><span class="tag">肝星狀細胞</span><span class="tag">YAP訊號</span><span class="tag">Mevalonate途徑</span><span class="tag">他汀類藥物</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🫚</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>6-Shogaol attenuates liver fibrosis by driving hepatic stellate cell senescence through the cGAS-STING-NF-κB axis.</h3>
+          <p class="journal-source">Phytomedicine : international journal of phytotherapy and phytopharmacology</p>
+          <p>薑中的活性成分6-ショウガール透過誘導肝星狀細胞在cGAS-STING-NF-κB軸介導的細胞 senescence 來抑制其活化，從而減輕肝纖維化，提供天然化合物的抗纖維化新機制。</p>
+          <div class="card-footer">
+            <span class="tag">天然藥物</span><span class="tag">肝纖維化</span><span class="tag">細胞 senescence</span><span class="tag">cGAS-STING-NF-κB</span><span class="tag">肝星狀細胞</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌿</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>Morroniside ameliorates hepatic fibrosis in mice by targeting ACYP1 to promote NCOA4-mediated ferritinophagy and ferroptosis.</h3>
+          <p class="journal-source">Phytomedicine : international journal of phytotherapy and phytopharmacology</p>
+          <p>肉桂苷透過抑制ACYP1，阻斷HERC2介導的NCOA4泛素化，促進鐵蛋白亞生與鐵死亡在肝星狀細胞中發生，從而抑制纖維化活化，揭示ACYP1/HERC2/NCOA4軸為肝纖維化的關鍵調控點。</p>
+          <div class="card-footer">
+            <span class="tag">天然藥物</span><span class="tag">肝纖維化</span><span class="tag">鐵死亡</span><span class="tag">ferritinophagy</span><span class="tag">肝星狀細胞</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌿</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>Bupleuri radix total saikosaponins alleviate liver fibrosis by inhibiting hepatic stellate cell activation via SIRT3-SMAD3/HIF-1α-mediated glycolysis.</h3>
+          <p class="journal-source">Phytomedicine : international journal of phytotherapy and phytopharmacology</p>
+          <p>柴胡總皂苷透過SIRT3脫乙酰化SMAD3並抑制HIF-1α誘導的糖酵解，阻斷肝星狀細胞的活化與纖維生成，提供代謝重程的抗纖維化策略。</p>
+          <div class="card-footer">
+            <span class="tag">中醫藥</span><span class="tag">肝纖維化</span><span class="tag">糖酵解</span><span class="tag">SIRT3</span><span class="tag">HIF-1α</span><span class="tag">肝星狀細胞</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>Extracellular matrix stiffness in chronic liver disease: From mechanisms to treatments.</h3>
+          <p class="journal-source">Biochemical pharmacology</p>
+          <p>肝纖維化進程中，細胞外基質硬度（stiffness）透過integrin-FAK、Hippo-YAP/TAZ、TGF-β-Smad、Piezo1及Wnt/β-catenin等機轉感應路徑，調節細胞功能、免疫細胞極化與ECM合成/降解，形成「硬度升高－細胞活化－ECM沉積」惡性循環，是肝纖維化的核心機制且具備成為非侵入式診斷與治療標的的潛力。</p>
+          <div class="card-footer">
+            <span class="tag">肝纖維化</span><span class="tag">細胞外基質硬度</span><span class="tag">機轉訊號</span><span class="tag">肝星狀細胞</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💉</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>Semaglutide exerts anti-pulmonary fibrosis effects by inhibiting cellular senescence through activation of the Sirt1/HSF1/HSPs pathway.</h3>
+          <p class="journal-source">Biochemical pharmacology</p>
+          <p>Semaglutide透過激活Sirt1去乙酰化HSF1，促進熱震蛋白(HSPs)表達，從而抑制肺纖維化中的細胞senescence，證明GLP-1受體激動劑在纖維化領域的新治療潛力。</p>
+          <div class="card-footer">
+            <span class="tag">細胞 senescence</span><span class="tag">肺纖維化</span><span class="tag">Semaglutide</span><span class="tag">Sirt1/HSF1/HSPs</span><span class="tag">GLP-1</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>G22037, a novel oxadiazole-pyrazole derivative, attenuates liver fibrosis by targeting annexin A5 and inhibition of ER stress-dependent hepatic stellate cell activation.</h3>
+          <p class="journal-source">Biochemical pharmacology</p>
+          <p>新穩定劑G22037直接結合ANXA5，抑制鈣過載與下游ER壓力與ROS積聚，同時調節巨噬細胞發炎，雙重作用下顯著抑制肝星狀細胞活化與肝纖維化，具備開發為安全抗纖維化藥物的潛力。</p>
+          <div class="card-footer">
+            <span class="tag">肝纖維化</span><span class="tag">ER壓力</span><span class="tag">ANXA5</span><span class="tag">氧化應力</span><span class="tag">巨噬細胞調節</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🍄</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>Discovery of Arenarine D and its active derivatives as a novel lead targeting DYRK1B/MYH9 in hepatic fibrosis.</h3>
+          <p class="journal-source">European journal of medicinal chemistry</p>
+          <p>從內生真菌分離的天然化合物Arenarine D及其經結構優化的衍生物（8a, 5b, 11a, 11b）顯示強效抑制肝星狀細胞活化與膽管結扎或四氯化碳誘導的肝纖維化，經由靶向DYRK1B與MYH9，為開發新班抗纖維化藥物提供重要先導化合物。</p>
+          <div class="card-footer">
+            <span class="tag">天然藥物</span><span class="tag">肝纖維化</span><span class="tag">DYRK1B</span><span class="tag">MYH9</span><span class="tag">結構優化</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div></div>
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div>
+            <div class="topic-row">
+              <span class="topic-name">高敏感特質</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:13%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">環境敏感度</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:7%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">肝纖維化</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+              <span class="topic-count">15</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">造血幹細胞</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:40%"></div></div>
+              <span class="topic-count">6</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">表觀遺傳學</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:27%"></div></div>
+              <span class="topic-count">4</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">神經科學</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:7%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">天然藥物</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:53%"></div></div>
+              <span class="topic-count">8</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">代謝途徑</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+              <span class="topic-count">5</span>
+            </div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">高敏感特質</span><span class="keyword">環境敏感度</span><span class="keyword">感覺處理</span><span class="keyword">神經科學</span><span class="keyword">腦電波</span><span class="keyword">肝纖維化</span><span class="keyword">肝星狀細胞</span><span class="keyword">表觀遺傳學</span><span class="keyword">細胞 signalling</span><span class="keyword">天然藥物</span></div></div>
+
+  <div class="clinic-banner">
+    <div class="clinic-links">
+      <a href="https://www.leepsyclinic.com/" class="clinic-link" target="_blank">
+        <span class="clinic-icon">🏥</span>
+        <span class="clinic-name">李政洋身心診所首頁<span class="clinic-desc">專業身心健康服務</span></span>
+        <span class="clinic-arrow">→</span>
+      </a>
+      <a href="https://blog.leepsyclinic.com/" class="clinic-link" target="_blank">
+        <span class="clinic-icon">📬</span>
+        <span class="clinic-name">訂閱電子報<span class="clinic-desc">接收最新心理健康資訊</span></span>
+        <span class="clinic-arrow">→</span>
+      </a>
+      <a href="https://buymeacoffee.com/CYlee" class="clinic-link" target="_blank">
+        <span class="clinic-icon">☕</span>
+        <span class="clinic-name">Buy Me a Coffee<span class="clinic-desc">支持這個計畫持續運作</span></span>
+        <span class="clinic-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：nvidia/nemotron-3-super-120b-a12b</span>
+    <span><a href="https://github.com/u8901006/highly-sensitive">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
