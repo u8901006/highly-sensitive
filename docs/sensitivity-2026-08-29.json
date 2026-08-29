@@ -284,15 +284,6 @@
     },
     {
       "pmid": "[object Object]",
-      "title": "Geneformer-guided multiomics integration identifies Pbx1 as a network hub of hematopoietic stem cell aging.",
-      "journal": "Science advances",
-      "date": "2026 Aug 21",
-      "abstract": "Hematopoietic stem cells (HSCs) constitute an organized hematopoietic system that undergoes age-related alterations, including increased platelet production and decreased erythropoiesis. The fundamental mechanisms driving these shifts remain incompletely understood. We used single-cell RNA sequencing data to show that old HSCs contain two distinct transcriptional programs: one shared with megakaryocytes and the other reflecting the most primitive HSC state. Developmental time-series profiling further suggests that the acquisition of these programs begins early in life, with the primitive module rising prenatally and megakaryocytic priming emerging after birth. Using a fine-tuned Geneformer (transformer-based deep learning model) to capture higher-order differences between young and old HSCs, coupled with transcriptomic and epigenetic profiling, as well as transcription factor screens, we identified Pbx1 as a key regulator of these age-related transcriptional and differentiation changes. Specifically, Pbx1 suppresses erythroid differentiation by repressing Gata1 expression. These findings provide insight into HSC aging and may inform approaches to modulate age-associated HSC dysfunction.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
-      "keywords": []
-    },
-    {
-      "pmid": "[object Object]",
       "title": "Intrahepatic Platelets Orchestrate Microenvironmental Remodelling and Cellular Crosstalk in Liver Fibrosis.",
       "journal": "Liver international : official journal of the International Association for the Study of the Liver",
       "date": "2026 Sep",
@@ -319,6 +310,21 @@
         "fibrosis",
         "hepatic stellate cell",
         "transcription factor"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Beyond proteostasis: the HSF1-Hsp axis in inflammation.",
+      "journal": "Journal of leukocyte biology",
+      "date": "2026 Aug 27",
+      "abstract": "Inflammation is a multifaceted response involving molecular and cellular components triggered by diverse stimuli, including physical, chemical, and biological factors. The connection between these stimuli and inflammatory cellular responses involves numerous interactions among molecular components, resulting in cell outputs that can either help resolve potential harmful outcomes or amplify them, leading to further complications. Notably, heat shock factor 1 (HSF1), a transcription factor primarily associated with cellular responses to elevated temperatures, has also been reported to play a key role in modulating inflammation. Indeed, growing evidence suggests a close relationship between HSF1 and intracellular signaling pathways that regulate the secretion of inflammatory cytokines, impacting both infectious and non-infectious diseases. Furthermore, chaperone proteins known as heat shock proteins (Hsps), which HSF1 transcriptionally regulates, also play important roles during inflammation by modulating numerous host factors involved in this process. Here, we examine the interplay between HSF1 and Hsps in the context of inflammation caused by infectious and non-infectious diseases. We also discuss the potential benefits of targeting these factors as strategies for reducing the effects of exacerbated or damaging inflammation.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "cytokines",
+        "heat shock factor 1 (HSF1)",
+        "heat shock proteins (Hsps)",
+        "inflammasome",
+        "inflammation"
       ]
     },
     {
