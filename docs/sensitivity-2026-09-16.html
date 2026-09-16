@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Highly Sensitive &middot; 高敏感研究文獻日報 &middot; 2026年9月16日</title>
+<meta name="description" content="2026年9月16日 高敏感研究文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<style>
+  :root { --bg: #f6f1e8; --surface: #fffaf2; --line: #d8c5ab; --text: #2b2118; --muted: #766453; --accent: #8c4f2b; --accent-soft: #ead2bf; --card-bg: color-mix(in srgb, var(--surface) 92%, white); }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: radial-gradient(circle at top, #fff6ea 0, var(--bg) 55%, #ead8c6 100%); color: var(--text); font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  .container { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 60px 32px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 52px; animation: fadeDown 0.6s ease both; }
+  .logo { width: 48px; height: 48px; border-radius: 14px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; box-shadow: 0 4px 20px rgba(140,79,43,0.25); }
+  .header-text h1 { font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+  .header-meta { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; align-items: center; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; letter-spacing: 0.3px; }
+  .badge-date { background: var(--accent-soft); border: 1px solid var(--line); color: var(--accent); }
+  .badge-count { background: rgba(140,79,43,0.06); border: 1px solid var(--line); color: var(--muted); }
+  .badge-source { background: transparent; color: var(--muted); font-size: 11px; padding: 0 4px; }
+  .summary-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 28px 32px; margin-bottom: 32px; box-shadow: 0 20px 60px rgba(61,36,15,0.06); animation: fadeUp 0.5s ease 0.1s both; }
+  .summary-card h2 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; color: var(--accent); margin-bottom: 16px; }
+  .summary-text { font-size: 15px; line-height: 1.8; color: var(--text); }
+  .section { margin-bottom: 36px; animation: fadeUp 0.5s ease both; }
+  .section-title { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .section-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; background: var(--accent-soft); }
+  .news-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 22px 26px; margin-bottom: 12px; box-shadow: 0 8px 30px rgba(61,36,15,0.04); transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+  .news-card:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .news-card.featured { border-left: 3px solid var(--accent); }
+  .news-card.featured:hover { border-color: var(--accent); }
+  .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .rank-badge { background: var(--accent); color: #fff7f0; font-weight: 700; font-size: 12px; padding: 2px 8px; border-radius: 6px; }
+  .emoji-icon { font-size: 18px; }
+  .card-header-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .emoji-sm { font-size: 14px; }
+  .news-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.5; }
+  .journal-source { font-size: 12px; color: var(--accent); margin-bottom: 8px; opacity: 0.8; }
+  .news-card p { font-size: 13.5px; line-height: 1.75; color: var(--muted); }
+  .card-footer { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .tag { padding: 2px 9px; background: var(--accent-soft); border-radius: 999px; font-size: 11px; color: var(--accent); }
+  .news-card a { font-size: 12px; color: var(--accent); text-decoration: none; opacity: 0.7; margin-left: auto; }
+  .news-card a:hover { opacity: 1; }
+  .utility-high { color: #5a7a3a; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(90,122,58,0.1); border-radius: 4px; }
+  .utility-mid { color: #9f7a2e; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(159,122,46,0.1); border-radius: 4px; }
+  .utility-low { color: var(--muted); font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(118,100,83,0.08); border-radius: 4px; }
+  .utility-sm { font-size: 10px; }
+  .pico-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; padding: 12px; background: rgba(255,253,249,0.8); border-radius: 14px; border: 1px solid var(--line); }
+  .pico-item { display: flex; gap: 8px; align-items: baseline; }
+  .pico-label { font-size: 10px; font-weight: 700; color: #fff7f0; background: var(--accent); padding: 2px 6px; border-radius: 4px; flex-shrink: 0; }
+  .pico-text { font-size: 12px; color: var(--muted); line-height: 1.4; }
+  .keywords-section { margin-bottom: 36px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .keyword { padding: 5px 14px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 20px; font-size: 12px; color: var(--accent); cursor: default; transition: background 0.2s; }
+  .keyword:hover { background: rgba(140,79,43,0.18); }
+  .topic-section { margin-bottom: 36px; }
+  .topic-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .topic-name { font-size: 13px; color: var(--muted); width: 100px; flex-shrink: 0; text-align: right; }
+  .topic-bar-bg { flex: 1; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+  .topic-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #c47a4a); border-radius: 4px; transition: width 0.6s ease; }
+  .topic-count { font-size: 12px; color: var(--accent); width: 24px; }
+  .clinic-banner { margin-top: 48px; animation: fadeUp 0.5s ease 0.4s both; }
+  .clinic-links { display: flex; flex-direction: column; gap: 10px; }
+  .clinic-link { display: flex; align-items: center; gap: 14px; padding: 18px 24px; background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; text-decoration: none; color: var(--text); transition: all 0.2s; box-shadow: 0 8px 30px rgba(61,36,15,0.04); }
+  .clinic-link:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .clinic-icon { font-size: 28px; flex-shrink: 0; }
+  .clinic-name { font-size: 15px; font-weight: 700; color: var(--text); flex: 1; }
+  .clinic-desc { font-size: 12px; color: var(--muted); margin-top: 2px; font-weight: 400; }
+  .clinic-arrow { font-size: 18px; color: var(--accent); font-weight: 700; }
+  footer { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); display: flex; justify-content: space-between; animation: fadeUp 0.5s ease 0.5s both; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 600px) { .container { padding: 36px 18px 60px; } .summary-card, .news-card { padding: 20px 18px; } .pico-grid { grid-template-columns: 1fr; } footer { flex-direction: column; gap: 6px; text-align: center; } .topic-name { width: 70px; font-size: 11px; } .clinic-links { gap: 8px; } .clinic-link { padding: 14px 18px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🌸</div>
+    <div class="header-text">
+      <h1>Highly Sensitive &middot; 高敏感研究文獻日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年9月16日</span>
+        <span class="badge badge-count">📊 18 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + NVIDIA Nemotron</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻圍繞高敏感特質（Sensory Processing Sensitivity, SPS）與環境敏感度之關聯展開，尤其聚焦於其在兒童選擇性緘默、認知表現與情緒調節中的調節角色。多篇研究證實 SPS 不僅為風險因子，更具雙向敏感性（差異易感性），在支持性環境中可帶來優勢，暗臨床干預具有潛力。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#1</span>
+            <span class="emoji-icon">⚖️</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>感覺處理敏感度作為成人有無憂鬱症之認知表現調節因子</h3>
+          <p class="journal-source">Journal of affective disorders &middot; Sensory processing sensitivity as a modulator of cognitive performance in adults with and without depression.</p>
+          <p>研究發現正向敏感度（Positive Sensitivity）在低憂鬱群體中與較佳認知表現相關，但在高憂鬱群體中則與較差表現相關，支持 SPS 具情境依賴的差異易感性特質。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">120 名西班牙語成人，年齡 18–70，具 varying levels of depressive symptoms</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">Sensory Processing Sensitivity (SPS) 透過 S-SPSQ-26 量表評估，區分 Positive 和 Negative Sensitivity 子量表</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">低憂鬱症狀群 vs 高憂鬱症狀群（依 BDI-II 分組）</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">在低憂鬱群體中，Positive Sensitivity 與 WAIS-IV General Ability Index (GAI) 正相關；在高憂鬱群體中則呈負相關，顯著交互效應支持情境依賴的認知調節模式</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">高敏感特質</span><span class="tag">差異易感性</span><span class="tag">憂鬱</span><span class="tag">認知功能</span><span class="tag">情緒調節</span><span class="tag">人格特質</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#2</span>
+            <span class="emoji-icon">🧒</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>選擇性緘默兒童之社會焦慮、自閉症特質、極端需求迴避與感覺處理敏感度的關聯：一項初步調查</h3>
+          <p class="journal-source">Clinical child psychology and psychiatry &middot; Correlates of Selective Mutism in Young Children: A Preliminary Investigation of Social Anxiety, Autistic Traits, Extreme Demand Avoidance, and Sensory Processing Sensitivity.</p>
+          <p>被診斷為選擇性緘默（SM）的 3–6 歲兒童在社會焦慮、自閉症特質、極端需求迴避及感覺處理敏感度上皆顯著高於非臨床對照組，且症狀嚴重程度與這四個維度呈正相關。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">3–6 歲兒童，SM 診斷組 (n=11)、高 SM 症狀組 (n=22)、非臨床對照組 (n=55)</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無介入，為橫斷式親報調查</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">SM 組 vs 高症狀組 vs 非臨床對照組</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">SM 組在社會焦慮、自閉症特質、極端需求迴避與感覺處理敏感度四個維度皆顯著高於其他兩組；症狀嚴重程度與這四個特質呈正相關，支持其為 SM 的共病與潛在機制</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">高敏感特質</span><span class="tag">兒童發展</span><span class="tag">焦慮</span><span class="tag">自閉症</span><span class="tag">過度刺激</span><span class="tag">感覺處理</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#3</span>
+            <span class="emoji-icon">🌱</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>青少年藥物使用中家族脆弱性與環境逆境的互動：來自 cVEDA 隊列的差異易感性證據</h3>
+          <p class="journal-source">Asian journal of psychiatry &middot; For better and for worse: Evidence of differential susceptibility to environmental adversity in youth substance use from the cVEDA cohort.</p>
+          <p>家族脆弱性（透過家族病史密度）不僅直接增加青少年藥物使用風險，還放大環境逆境（如不良童年經驗、不安全校園氣氛）的負面影響，支持「因境遇而異」的差異易感性模式。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">3786 名 12–24 歲青少年和年輕成人（cVEDA 隊列）</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無直接介入，使用潛在基因-環境 (GxE) 框架分析家族脆弱性 (FHD) 與環境逆境對物質使用 (WHO ASSIST) 的交互效應</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">高 vs 低 家族脆弱性；高 vs 低 環境逆境</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">家族脆弱性與環境逆境皆預測增加物質使用，且家族脆弱性顯著調節環境效應（β=0.044 for psychiatric disorders, 0.03 for alcohol dependence），距驗證顯示良好區分度 (AUC=0.84)</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">差異易感性</span><span class="tag">兒童發展</span><span class="tag">教養</span><span class="tag">學校氣氛</span><span class="tag">童年逆境</span><span class="tag">物質使用</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#4</span>
+            <span class="emoji-icon">⚗️</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>轉錄組分析識別鄰苯二甲酸二丁酯（DBP）對肝星狀細胞的關鍵基因與機制</h3>
+          <p class="journal-source">Toxicology in vitro : an international journal published in association with BIBRA &middot; Transcriptomic analysis identifies key genes and mechanisms involved in dibutyl phthalate-induced alteration in hepatic stellate cells.</p>
+          <p>DBP 暴露顯著激活肝星狀細胞（HSCs）中的內質網應激、自噬、凋亡與鈣訊號通路，並擾乱 Ca²⁺ 稅態，揭示環境毒素如何透過細胞壓力反應促進纖維化，提示敏感個體可能更易受此類內分泌擾亂物影響。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">人類肝星狀細胞 (HSCs)</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">鄰苯二甲酸二丁酯 (DBP) 暴露</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">對照組 (未處理) vs DBP 處理組</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">981 個顯著差異表達基因 (FDR < 0.05)，富集於 ER 壓力、自噬、凋亡、鈣訊號；Ca²⁺ 通路基因顯著失調，提示離子動態轉為致病態</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">生理健康</span><span class="tag">壓力反應</span><span class="tag">毒物</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#5</span>
+            <span class="emoji-icon">🔬</span>
+            <span class="utility-low">低實用性</span>
+          </div>
+          <h3>鐵-碳複合材料強化嫌氣氨氧化（anammox）：電子傳遞機制、鐵亡調節及放大挑戰的批判性回顧</h3>
+          <p class="journal-source">Bioresource technology &middot; Iron-carbon composites for anammox enhancement: a critical review of electron transfer mechanisms, ferroptosis regulation and scale-up challenges.</p>
+          <p>鐵-碳（Fe-C）複合材料可透過促進細胞間電子傳遞 (EET) 和穩定微聚集來強化嫌氣氨氧化菌的氮去除效率，但其效應受環境敏感度影響大，需建構多尺度框架以區分自然生理變化與壓力特異性反應。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">嫌氣氨氧化 (anammox) 菌種</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">鐵-碳 (Fe-C) 複合材料</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">無 Fe-C 複合材料 vs 各種 Fe-C 配比</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">Fe-C 複合材料促進細胞間直接電子傳遞 (DIET) 和液相氧化還原穿梭，但實驗室與實地劑量差異達三個數量級，主要因環境敏感度導致的淘汰率與再生能力差異</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">壓力反應</span><span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div></div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧫</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>肝星狀細胞促進三維肝癌細胞球體的結構與功能重塑</h3>
+          <p class="journal-source">Molecular biology reports</p>
+          <p>肝星狀細胞 (HSCs) 加入可促進肝癌球體結構致密化、膠原沉積增加及對耐藥性的提升，顯示其在腫瘤微環境中的主動角色。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🐛</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>轉錄組洞察熱應力揭示 Spodoptera litura 在適應與繁殖投入之間的生理權衡</h3>
+          <p class="journal-source">Comparative biochemistry and physiology. Part D, Genomics & proteomics</p>
+          <p>熱應力誘導 HSPs 上調但生殖基因下調，證明昆蟲在壓力下會犧牲繁殖以求生存，此種資源分配權衡與人類高敏感個體在慢性壓力下的疲勞與回避行為具類比性。</p>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">壓力反應</span><span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔥</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>NRF2 介導的細胞防御通路在腫瘤代謝重編程中的角色</h3>
+          <p class="journal-source">MedComm</p>
+          <p>熱休克蛋白 (HSPs) 在腫瘤中協調蛋白穩態與代謝重編程，雖促進癌細胞存活同時也創造可標的之脆弱點，提示壓力反應通路在疾病中的雙刃劍特性。</p>
+          <div class="card-footer">
+            <span class="tag">壓力反應</span><span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌡️</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>氣候變遷中之極端溫度事件對免疫系統的影響及與免疫相關疾病的關聯</h3>
+          <p class="journal-source">Clinical reviews in allergy & immunology</p>
+          <p>極端溫度事件透過激活神經內分泌系統、誘發細胞因子釋放、調節 HSPs 及表觀遺傳修飾來擾亂免疫系統，增加過敏、自體免疫與傳染病風險，特別影響兒童、長者與弱勢族群。</p>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">壓力反應</span><span class="tag">免疫系統</span><span class="tag">過敏症</span><span class="tag">自體免疫</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>轉錄組景觀：直接重新編程向造血細胞系統</h3>
+          <p class="journal-source">iScience</p>
+          <p>經由單細胞 RNA 測序與算法預測的轉錄因子組合，揭示成纖維細胞向造血幹細胞重新編程的中介狀態，為低效率的細胞療法提供機制圖譜。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌿</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>Xiao 某種草本藥物透過誘導肝星狀細胞老化來抑制肝纖維化，經由 cGAS-STING-NF-κB 軸</h3>
+          <p class="journal-source">Phytomedicine : international journal of phytotherapy and phytopharmacology</p>
+          <p>薑黃酚衍生物 6-shogaol 可促進肝星狀細胞老化，透過激活 cGAS-STING-NF-κB 通路減少纖維化，證明天然化合物可靠調節壓力敏感細胞的命運。</p>
+          <div class="card-footer">
+            <span class="tag">壓力反應</span><span class="tag">生理健康</span><span class="tag">神經科學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Morroniside 藉由靶向 ACYP1 促進 NCOA4 介導的鐵養內吞與鐵亡來改善小鼠肝纖維化</h3>
+          <p class="journal-source">Phytomedicine : international journal of phytotherapy and phytopharmacology</p>
+          <p>Morroniside 透過抑制 HERC2 介導的 NCOA4 泛素化，促進鐵養內吞與鐵亡，從而減少肝星狀細胞活化與纖維化，揭示新興代謝-鐵死亡軸在纖維化中的角色。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🍵</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Bupleuri radix 總柴胡皂苷透過抑制 SIRT3-SMAD3/HIF-1α-介導的糖酵解來減少肝星狀細胞激活並緩解肝纖維化</h3>
+          <p class="journal-source">Phytomedicine : international journal of phytotherapy and phytopharmacology</p>
+          <p>柴胡總皂苷透過減少肝星狀細胞中的糖酵解流抑制其激活，證明代謝重編程是抗纖維化的有效策略，特別是經由 HIF-1α 調節的途徑。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">壓力反應</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">⏰</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Ginsenosides 藉由調節肝臟 circadian clock 基因 CLOCK 來緩解肝纖維化進展</h3>
+          <p class="journal-source">Molecular medicine reports</p>
+          <p>總人參皂苷 (GSS) 可逆轉肝臟 circadian 基因 (如 CLOCK) 的失調，同時減少纖維化標誌，提示昆夜節律與纖維化過程間存在調節聯繫，具 circadian 介入的潛力。</p>
+          <div class="card-footer">
+            <span class="tag">壓力反應</span><span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌿</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>比較基因組與轉錄調控網絡：在鹽壓力下的 Portulaca oleracea 中 AQPs、HSPs 與 LEA 蛋白的協同機制</h3>
+          <p class="journal-source">Plant science : an international journal of experimental plant biology</p>
+          <p>在鹽壓力下，Portulaca oleracea 透過 AQPs 調節細胞水分、HSPs 維持蛋白穩態與 LEA 蛋白防止細胞凋亡，並經由轉錄網絡重編程實現壓力適應，其模式為理解多細胞生物環境敏感度提供啟發。</p>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">壓力反應</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧫</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>m6A 讀取蛋白 IGF2BP2 穩定 AEBP1 mRNA 並調節 GRB2 來促進肝星狀細胞激活與肝纖維化</h3>
+          <p class="journal-source">Biochimica et biophysica acta. Molecular basis of disease</p>
+          <p>IGF2BP2 透過結合 AEBP1 mRNA 上的 m6A 位點增進其穩定性，進而激活 GRB2 介導的肝星狀細胞激活與纖維化，揭示 epitranscriptional 調節在纖維化中的新 механизмы。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">☢️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>穩定同位素追蹤揭示淡水中鉈的快速周轉：高環境敏感度下的毒物動力學新觀點</h3>
+          <p class="journal-source">Aquatic toxicology (Amsterdam, Netherlands)</p>
+          <p>儘管水體中鉈濃度超標，但淡水螺 Corbicula fluminea 中的鉈組織濃度維持較低，原因在於其排除速率 (k) 顯著高於攝取速率，顯示環境條件（如溫度）對消除過程具有更強敏感性，挑戰傳統實驗室到實地的擴張假設。</p>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">壓力反應</span><span class="tag">毒物</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🍵</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>小檗總皂苷透過調節肝星狀細胞的糖酵解來抑制肝纖維化，經由 SIRT3-SMAD3/HIF-1α 路徑</h3>
+          <p class="journal-source">Phytomedicine : international journal of phytotherapy and phytopharmacology</p>
+          <p>柴胡總皂苷透過減少肝星狀細胞中的糖酵解流抑制其激活，證明代謝重編程是抗纖維化的有效策略，特別是經由 HIF-1α 調節的途徑。</p>
+          <div class="card-footer">
+            <span class="tag">生理健康</span><span class="tag">壓力反應</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div></div>
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div>
+            <div class="topic-row">
+              <span class="topic-name">高敏感特質</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:80%"></div></div>
+              <span class="topic-count">4</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">環境敏感度</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:80%"></div></div>
+              <span class="topic-count">4</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">差異易感性</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:40%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">兒童發展</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:40%"></div></div>
+              <span class="topic-count">2</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">壓力反應</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:80%"></div></div>
+              <span class="topic-count">4</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">憂鬱</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:20%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">認知功能</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:20%"></div></div>
+              <span class="topic-count">1</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">生理健康</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+              <span class="topic-count">5</span>
+            </div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">高敏感特質</span><span class="keyword">差異易感性</span><span class="keyword">環境敏感度</span><span class="keyword">兒童發展</span><span class="keyword">壓力反應</span><span class="keyword">憂鬱</span><span class="keyword">認知功能</span><span class="keyword">生理健康</span></div></div>
+
+  <div class="clinic-banner">
+    <div class="clinic-links">
+      <a href="https://www.leepsyclinic.com/" class="clinic-link" target="_blank">
+        <span class="clinic-icon">🏥</span>
+        <span class="clinic-name">李政洋身心診所首頁<span class="clinic-desc">專業身心健康服務</span></span>
+        <span class="clinic-arrow">→</span>
+      </a>
+      <a href="https://blog.leepsyclinic.com/" class="clinic-link" target="_blank">
+        <span class="clinic-icon">📬</span>
+        <span class="clinic-name">訂閱電子報<span class="clinic-desc">接收最新心理健康資訊</span></span>
+        <span class="clinic-arrow">→</span>
+      </a>
+      <a href="https://buymeacoffee.com/CYlee" class="clinic-link" target="_blank">
+        <span class="clinic-icon">☕</span>
+        <span class="clinic-name">Buy Me a Coffee<span class="clinic-desc">支持這個計畫持續運作</span></span>
+        <span class="clinic-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：nvidia/nemotron-3-super-120b-a12b</span>
+    <span><a href="https://github.com/u8901006/highly-sensitive">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
