@@ -4,7 +4,7 @@ import { join, basename } from "path";
 
 const API_BASE = process.env.NVIDIA_API_BASE || "https://integrate.api.nvidia.com/v1";
 const MODEL_NAME = process.env.NVIDIA_MODEL || "nvidia/nemotron-3-super-120b-a12b";
-const FALLBACK_MODELS = [MODEL_NAME, "nvidia/nemotron-3-nano-30b-a3b"];
+const FALLBACK_MODELS = [MODEL_NAME, "nvidia/nemotron-3.5-lightning-30b-a3b"];
 const MAX_TOKENS = 16384;
 const TIMEOUT_MS = 660000;
 
@@ -180,6 +180,7 @@ ${papersText}
         }
         const result = robustJsonParse(text, attempt);
         console.error(`[INFO] Analysis complete: ${(result.top_picks || []).length} top picks, ${(result.all_papers || []).length} total`);
+        result.model_used = model;
         return result;
       } catch (e) {
         if (e instanceof SyntaxError) {
@@ -402,7 +403,7 @@ function generateHtml(analysis) {
   </div>
 
   <footer>
-    <span>資料來源：PubMed &middot; 分析模型：${MODEL_NAME}</span>
+    <span>資料來源：PubMed &middot; 分析模型：${analysis.model_used || "未使用 AI（無新文獻）"}</span>
     <span><a href="https://github.com/u8901006/highly-sensitive">GitHub</a></span>
   </footer>
 </div>
