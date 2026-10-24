@@ -423,6 +423,10 @@ async function main() {
   }
 
   const papersData = JSON.parse(readFileSync(opts.input, "utf-8"));
+  if (!papersData?.papers?.length && existsSync(opts.output)) {
+    console.error("[INFO] No new papers; preserving existing report");
+    return;
+  }
   let analysis;
   if (!papersData || !papersData.papers?.length) {
     console.error("[WARN] No papers found, generating empty report");
