@@ -1,9 +1,6 @@
 name: High Sensitivity Daily Report
 
 on:
-  push:
-    branches: ["main"]
-    paths: [".github/workflows/daily-report.yml"]
   schedule:
     - cron: "30 5 * * *" # UTC 05:30 = 台北時間 13:30
   workflow_dispatch:
