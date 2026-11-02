@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Highly Sensitive &middot; 高敏感研究文獻日報 &middot; 2026年11月2日</title>
+<meta name="description" content="2026年11月2日 高敏感研究文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<style>
+  :root { --bg: #f6f1e8; --surface: #fffaf2; --line: #d8c5ab; --text: #2b2118; --muted: #766453; --accent: #8c4f2b; --accent-soft: #ead2bf; --card-bg: color-mix(in srgb, var(--surface) 92%, white); }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: radial-gradient(circle at top, #fff6ea 0, var(--bg) 55%, #ead8c6 100%); color: var(--text); font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  .container { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 60px 32px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 52px; animation: fadeDown 0.6s ease both; }
+  .logo { width: 48px; height: 48px; border-radius: 14px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; box-shadow: 0 4px 20px rgba(140,79,43,0.25); }
+  .header-text h1 { font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+  .header-meta { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; align-items: center; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; letter-spacing: 0.3px; }
+  .badge-date { background: var(--accent-soft); border: 1px solid var(--line); color: var(--accent); }
+  .badge-count { background: rgba(140,79,43,0.06); border: 1px solid var(--line); color: var(--muted); }
+  .badge-source { background: transparent; color: var(--muted); font-size: 11px; padding: 0 4px; }
+  .summary-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 28px 32px; margin-bottom: 32px; box-shadow: 0 20px 60px rgba(61,36,15,0.06); animation: fadeUp 0.5s ease 0.1s both; }
+  .summary-card h2 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; color: var(--accent); margin-bottom: 16px; }
+  .summary-text { font-size: 15px; line-height: 1.8; color: var(--text); }
+  .section { margin-bottom: 36px; animation: fadeUp 0.5s ease both; }
+  .section-title { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .section-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; background: var(--accent-soft); }
+  .news-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; padding: 22px 26px; margin-bottom: 12px; box-shadow: 0 8px 30px rgba(61,36,15,0.04); transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+  .news-card:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .news-card.featured { border-left: 3px solid var(--accent); }
+  .news-card.featured:hover { border-color: var(--accent); }
+  .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .rank-badge { background: var(--accent); color: #fff7f0; font-weight: 700; font-size: 12px; padding: 2px 8px; border-radius: 6px; }
+  .emoji-icon { font-size: 18px; }
+  .card-header-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .emoji-sm { font-size: 14px; }
+  .news-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.5; }
+  .journal-source { font-size: 12px; color: var(--accent); margin-bottom: 8px; opacity: 0.8; }
+  .news-card p { font-size: 13.5px; line-height: 1.75; color: var(--muted); }
+  .card-footer { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .tag { padding: 2px 9px; background: var(--accent-soft); border-radius: 999px; font-size: 11px; color: var(--accent); }
+  .news-card a { font-size: 12px; color: var(--accent); text-decoration: none; opacity: 0.7; margin-left: auto; }
+  .news-card a:hover { opacity: 1; }
+  .utility-high { color: #5a7a3a; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(90,122,58,0.1); border-radius: 4px; }
+  .utility-mid { color: #9f7a2e; font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(159,122,46,0.1); border-radius: 4px; }
+  .utility-low { color: var(--muted); font-size: 11px; font-weight: 600; padding: 2px 8px; background: rgba(118,100,83,0.08); border-radius: 4px; }
+  .utility-sm { font-size: 10px; }
+  .pico-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; padding: 12px; background: rgba(255,253,249,0.8); border-radius: 14px; border: 1px solid var(--line); }
+  .pico-item { display: flex; gap: 8px; align-items: baseline; }
+  .pico-label { font-size: 10px; font-weight: 700; color: #fff7f0; background: var(--accent); padding: 2px 6px; border-radius: 4px; flex-shrink: 0; }
+  .pico-text { font-size: 12px; color: var(--muted); line-height: 1.4; }
+  .keywords-section { margin-bottom: 36px; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .keyword { padding: 5px 14px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 20px; font-size: 12px; color: var(--accent); cursor: default; transition: background 0.2s; }
+  .keyword:hover { background: rgba(140,79,43,0.18); }
+  .topic-section { margin-bottom: 36px; }
+  .topic-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .topic-name { font-size: 13px; color: var(--muted); width: 100px; flex-shrink: 0; text-align: right; }
+  .topic-bar-bg { flex: 1; height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+  .topic-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #c47a4a); border-radius: 4px; transition: width 0.6s ease; }
+  .topic-count { font-size: 12px; color: var(--accent); width: 24px; }
+  .clinic-banner { margin-top: 48px; animation: fadeUp 0.5s ease 0.4s both; }
+  .clinic-links { display: flex; flex-direction: column; gap: 10px; }
+  .clinic-link { display: flex; align-items: center; gap: 14px; padding: 18px 24px; background: var(--card-bg); border: 1px solid var(--line); border-radius: 24px; text-decoration: none; color: var(--text); transition: all 0.2s; box-shadow: 0 8px 30px rgba(61,36,15,0.04); }
+  .clinic-link:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(61,36,15,0.08); }
+  .clinic-icon { font-size: 28px; flex-shrink: 0; }
+  .clinic-name { font-size: 15px; font-weight: 700; color: var(--text); flex: 1; }
+  .clinic-desc { font-size: 12px; color: var(--muted); margin-top: 2px; font-weight: 400; }
+  .clinic-arrow { font-size: 18px; color: var(--accent); font-weight: 700; }
+  footer { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); display: flex; justify-content: space-between; animation: fadeUp 0.5s ease 0.5s both; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 600px) { .container { padding: 36px 18px 60px; } .summary-card, .news-card { padding: 20px 18px; } .pico-grid { grid-template-columns: 1fr; } footer { flex-direction: column; gap: 6px; text-align: center; } .topic-name { width: 70px; font-size: 11px; } .clinic-links { gap: 8px; } .clinic-link { padding: 14px 18px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🌸</div>
+    <div class="header-text">
+      <h1>Highly Sensitive &middot; 高敏感研究文獻日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年11月2日</span>
+        <span class="badge badge-count">📊 44 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + NVIDIA Nemotron</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">本日文獻主要集中在肝臟線索、幹細胞與微環境、神經生物學與環境敏感性的交疊研究。雖然大部分為基礎科學領域，但其中探討感官加工敏感度、環境敏感度與心理健康相關的論文極具臨床潛力，特別是涉及認知、情緒調節與壓力反應的研究。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#1</span>
+            <span class="emoji-icon">🧠</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>Environmental sensitivity and perceived social support in relation to adolescent eating disorder symptoms.</h3>
+          <p class="journal-source">Journal of affective disorders &middot; Environmental sensitivity and perceived social support in relation to adolescent eating disorder symptoms.</p>
+          <p>環境敏感度是預測青少年飲食症狀的一致且顯著的正向預測因子，但未調節社群支持與症狀的關係；探討了性別差異與支援來源的互作用。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">466名青少年（51.61%為女性，平均年齡14.80歲）</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">環境敏感度（ES）與認知之間的自然觀察研究，測量認知與社會支持情況</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">對照組：無特定比較組，作為自變項的主要焦點</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">環境敏感度持續預測飲食症狀嚴重程度；社會支持來源（家庭、老師）具有保護作用，但依敏感度而異</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">青少年</span><span class="tag">飲食症狀</span><span class="tag">社會支持</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#2</span>
+            <span class="emoji-icon">👁️</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>The orthographic mind: Orthographic imagery propensity correlates with semantic structure and sensory sensitivity.</h3>
+          <p class="journal-source">Journal of experimental psychology. General &middot; The orthographic mind: Orthographic imagery propensity correlates with semantic structure and sensory sensitivity.</p>
+          <p>正文字形意像傾向與語意結構及感官敏感度呈顯著相關，具有較強的跨類別語意聯想與較低的感官處理敏感度。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">總計1,399名參與者，兩項研究涵蓋語意實驗與感官加工敏感度測量</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">透過問卷評估個體的內部表徵模式，並分析其與語義組織與外在信息互動的關聯</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">比較視覺意像、口語內語與正文字形意像在語義與資訊互動上的差異</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">正文字形意像與語意幾何形狀與感官處理敏感度呈顯著相關，顯示其為穩定的認知加權偏好</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">高敏感特質</span><span class="tag">正文字形意像</span><span class="tag">語義結構</span><span class="tag">感官敏感度</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#3</span>
+            <span class="emoji-icon">🧠</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>Environmental sensitivity and perceived social support in relation to adolescent eating disorder symptoms.</h3>
+          <p class="journal-source">Journal of affective disorders &middot; Environmental sensitivity and perceived social support in relation to adolescent eating disorder symptoms.</p>
+          <p>（見排名1，重複條目）環境敏感度是預測青少年飲食症狀的一致且顯著的正向預測因子，但未調節社群支持與症狀的關係；探討了性別差異與支援來源的互作用。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">466名青少年（51.61%為女性，平均年齡14.80歲）</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">環境敏感度（ES）與認知之間的自然觀察研究，測量認知與社會支持情況</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">對照組：無特定比較組，作為自變項的主要焦點</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">環境敏感度持續預測飲食症狀嚴重程度；社會支持來源（家庭、老師）具有保護作用，但依敏感度而異</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">青少年</span><span class="tag">飲食症狀</span><span class="tag">社會支持</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#4</span>
+            <span class="emoji-icon">👶</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>Highly sensitive child temperament and parent-reported feeding practices: A cross-sectional study.</h3>
+          <p class="journal-source">Appetite &middot; Highly sensitive child temperament and parent-reported feeding practices: A cross-sectional study.</p>
+          <p>高敏感兒童特質與家長報告的餵養習慣顯著相關，特別是對食物的敏感度與情緒調節有關，提示在餵養策略上需考慮兒童的感官敏感度。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">兒童（高敏感特質為包含變項），家長報告餵養習慣</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">觀察性研究，分析高敏感兒童特質與餵養實踐之間的關聯</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">比較高敏感與非高敏感兒童在餵養行為上的差異</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">高敏感兒童特質預測特定餵養習慣（如情緒性進食、對食物敏感），提示需依敏感度調整餵養策略。</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">高敏感特質</span><span class="tag">兒童發展</span><span class="tag">餵養習慣</span><span class="tag">感官敏感度</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#5</span>
+            <span class="emoji-icon">🧬</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>Interactive effect of childhood adversity and HPA-axis multilocus genetic variation on alexithymia in adolescents.</h3>
+          <p class="journal-source">Journal of affective disorders &middot; Interactive effect of childhood adversity and HPA-axis multilocus genetic variation on alexithymia in adolescents.</p>
+          <p>HPA軸多座遺傳變異作為生物學敏感因子，調節童年逆境與青少年無情感體驗之間的關係，支援了不同敏感度模型。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">460名青少年（平均年齡12.73歲，54.1%為女性）</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">自然觀察研究，分析HPA軸遺傳畫像分數與童年逆境在無情感體驗上的互作用</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">比較高敏感與低敏感遺傳畫像在逆境暴露下的情緒結果差異</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">高HPA軸畫像分數在高逆境下無情感體驗風險增大，低逆境下風險降低，支援差異敏感度假說。</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">HPA軸</span><span class="tag">遺傳變異</span><span class="tag">無情感體驗</span><span class="tag">童年逆境</span><span class="tag">差異敏感度</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#6</span>
+            <span class="emoji-icon">👶</span>
+            <span class="utility-high">高實用性</span>
+          </div>
+          <h3>Highly sensitive child temperament and parent-reported feeding practices: A cross-sectional study.</h3>
+          <p class="journal-source">Appetite &middot; Highly sensitive child temperament and parent-reported feeding practices: A cross-sectional study.</p>
+          <p>（見排名4，重複條目）高敏感兒童特質與家長報告的餵養習慣顯著相關，特別是對食物的敏感度與情緒調節有關，提示在餵養策略上需考慮兒童的感官敏感度。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">兒童（高敏感特質為包含變項），家長報告餵養習慣</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">觀察性研究，分析高敏感兒童特質與餵養實踐之間的關聯</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">比較高敏感與非高敏感兒童在餵養行為上的差異</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">高敏感兒童特質預測特定餵養習慣（如情緒性進食、對食物敏感），提示需依敏感度調整餵養策略。</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">高敏感特質</span><span class="tag">兒童發展</span><span class="tag">餵養習慣</span><span class="tag">感官敏感度</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#7</span>
+            <span class="emoji-icon">🧠</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>Environmental sensitivity and perceived social support in relation to adolescent eating disorder symptoms.</h3>
+          <p class="journal-source">Journal of affective disorders &middot; Environmental sensitivity and perceived social support in relation to adolescent eating disorder symptoms.</p>
+          <p>（見排名1，重複條目）環境敏感度是預測青少年飲食症狀的一致且顯著的正向預測因子，但未調節社群支持與症狀的關係；探討了性別差異與支援來源的互作用。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">466名青少年（51.61%為女性，平均年齡14.80歲）</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">環境敏感度（ES）與認知之間的自然觀察研究，測量認知與社會支持情況</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">對照組：無特定比較組，作為自變項的主要焦點</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">環境敏感度持續預測飲食症狀嚴重程度；社會支持來源（家庭、老師）具有保護作用，但依敏感度而異</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">青少年</span><span class="tag">飲食症狀</span><span class="tag">社會支持</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div>
+        <div class="news-card featured">
+          <div class="card-header">
+            <span class="rank-badge">#8</span>
+            <span class="emoji-icon">🧠</span>
+            <span class="utility-mid">中實用性</span>
+          </div>
+          <h3>The amygdaloid complex: from morphology to neurodegeneration.</h3>
+          <p class="journal-source">Brain : a journal of neurology &middot; The amygdaloid complex: from morphology to neurodegeneration.</p>
+          <p>Amygdala作為情緒調節、記憶與壓力反應的核心腦區，其構型在發展期具有延長的環境敏感窗口，單核RNA測序揭示了分子層級的多樣性，早期病理變化常於杏仁核檢出，具有重要的臨床意義。</p>
+          
+            <div class="pico-grid">
+              <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">一般人群與神經退行性疾病患者</span></div>
+              <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">文獻綜述與腦影像研究，探討杏仁核的構型、功能與疾病關聯</span></div>
+              <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">比較健康與病理狀態下的杏仁核構型與功能差異</span></div>
+              <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">杏仁核在情緒調節、壓力反應與神經退行性疾病（如TDP-43病變）中扮演關鍵角色，環境敏感窗口為發展期關鍵。</span></div>
+            </div>
+          <div class="card-footer">
+            <span class="tag">神經科學</span><span class="tag">杏仁核</span><span class="tag">情緒調節</span><span class="tag">壓力反應</span><span class="tag">腦造影</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">閱讀原文 →</a>
+          </div>
+        </div></div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Hepatic Stellate Cells: Fibrogenic Effectors to Central Regulators of Metabolism, Liver Disease Signaling, and Systemic Crosstalk.</h3>
+          <p class="journal-source">Gut and liver</p>
+          <p>肝星狀細胞作為肝臟纖維化的核心效應細胞，近年單細胞組學揭示其新陳代謝與免疫信號整合功能，涉及跨器官反饋網絡。</p>
+          <div class="card-footer">
+            <span class="tag">肝臟</span><span class="tag">星狀細胞</span><span class="tag">代謝</span><span class="tag">纖維化</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Ginsenoside Rh1 exerts hepatoprotective effects against liver fibrosis through induction of ferroptosis via SLC7A11 inhibition.</h3>
+          <p class="journal-source">The international journal of biochemistry & cell biology</p>
+          <p>人參皂鹼Rh1通過抑制SLC7A11誘導鐵死亡，在預防肝纖維化方面具潛力。</p>
+          <div class="card-footer">
+            <span class="tag">肝纖維化</span><span class="tag">鐵死亡</span><span class="tag">人參</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Heat-induced translational suppression is associated with initiator tRNA degradation in thermotolerant cells.</h3>
+          <p class="journal-source">European journal of cell biology</p>
+          <p>熱誘導的翻譯抑制與啟動子tRNA降解在耐熱細胞中相關，涉及熱應答與細胞死亡機制。</p>
+          <div class="card-footer">
+            <span class="tag">熱應答</span><span class="tag">tRNA降解</span><span class="tag">細胞生物學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Pot1a maintains mesenchymal stem cell niche function to support hematopoietic stem cells.</h3>
+          <p class="journal-source">Cell reports</p>
+          <p>Pot1a在維持間葉幹細胞小區功能以支援造血幹細胞中發揮作用，調節DNA損傷反應與氧化應激。</p>
+          <div class="card-footer">
+            <span class="tag">幹細胞</span><span class="tag">小區功能</span><span class="tag">造血</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Ultrasound-Triggered HSC Membrane-Cloaked Nanotherapeutics Attenuate Liver Fibrosis via Simultaneous Modulation of Mitophagic Flux and the TGF-β/Smad3 Cascade.</h3>
+          <p class="journal-source">ACS biomaterials science & engineering</p>
+          <p>超聲觸發的星狀細胞膜包被納米治療劑通過調節mitophagic flux與TGF-β/Smad3輔路，緩解肝纖維化。</p>
+          <div class="card-footer">
+            <span class="tag">肝星狀細胞</span><span class="tag">超聲</span><span class="tag">納米治療</span><span class="tag">纖維化</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>CMTM6 regulates hematopoietic stem cell homeostasis through modulating IFNRs-STAT1-KLF4 signaling axis.</h3>
+          <p class="journal-source">Journal of advanced research</p>
+          <p>CMTM6通過調節IFN受體-STAT1-KLF4信號軸，維持造血幹細胞的穩態。</p>
+          <div class="card-footer">
+            <span class="tag">幹細胞</span><span class="tag">IFN信號</span><span class="tag">STAT1</span><span class="tag">KLF4</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>SAHA increases chaperone expression and reduces Z-alpha-1-antitrypsin polymers in a patient specific iPSC-based liver model for alpha-1-antitrypsin deficiency.</h3>
+          <p class="journal-source">Stem cell research & therapy</p>
+          <p>SAHA增加輔助蛋白表達，在α-1抗胰蛋白酶缺乏症的iPSC肝模型中降低Z型聚合物。</p>
+          <div class="card-footer">
+            <span class="tag">iPSC</span><span class="tag">α-1抗胰蛋白酶缺乏症</span><span class="tag">輔助蛋白</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Imaging and Analyzing the Macrophages that Regulate Pathological Hematopoietic Clones in the Mouse Calvarial Bone Marrow.</h3>
+          <p class="journal-source">Methods in molecular biology (Clifton, N.J.)</p>
+          <p>描述追蹤病理克隆與骓髓巨噬細胞的协議，利用活體顯微鏡與標記策略。</p>
+          <div class="card-footer">
+            <span class="tag">巨噬細胞</span><span class="tag">骓髓</span><span class="tag">克隆性造血</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>ASIC1a promotes liver fibrosis by inhibiting METTL3 SUMOylation.</h3>
+          <p class="journal-source">Acta pharmacologica Sinica</p>
+          <p>ASIC1a通過抑制METTL3 SUMOylation促進肝纖維化，揭示新的分子機制。</p>
+          <div class="card-footer">
+            <span class="tag">ASIC1a</span><span class="tag">METTL3</span><span class="tag">SUMOylation</span><span class="tag">肝纖維化</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">⚛️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Stochastic and quantum perspectives on teleost immunity: Linking immunogenetics, structure, and biophysics.</h3>
+          <p class="journal-source">Progress in biophysics and molecular biology</p>
+          <p>從隨機與量子視角檢視輻鱗魚免疫，連結免疫遺傳、結構與物理學。</p>
+          <div class="card-footer">
+            <span class="tag">輻鱗魚</span><span class="tag">免疫</span><span class="tag">量子生物學</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">👁️</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>The orthographic mind: Orthographic imagery propensity correlates with semantic structure and sensory sensitivity.</h3>
+          <p class="journal-source">Journal of experimental psychology. General</p>
+          <p>（見排名2，重複條目）正文字形意像傾向與語意結構及感官敏感度呈顯著相關。</p>
+          <div class="card-footer">
+            <span class="tag">高敏感特質</span><span class="tag">正文字形意像</span><span class="tag">語義結構</span><span class="tag">感官敏感度</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>CSE1L enrichment in pediatric and young adult acute myeloid leukemia reveals a ribosomal export dependency.</h3>
+          <p class="journal-source">Cell reports</p>
+          <p>CSE1L在兒童和青年急性髓系白血病中豐富表達，依賴核質運輸。</p>
+          <div class="card-footer">
+            <span class="tag">白血病</span><span class="tag">核質運輸</span><span class="tag">CSE1L</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Mutant ASXL1 exacerbates CALR-mutant myeloproliferative neoplasms by enhancing a distinct megakaryocyte differentiation program.</h3>
+          <p class="journal-source">The Journal of clinical investigation</p>
+          <p>ASXL1變異惡化CALR變異性骨髓增生性腫瘤，增強特定粒球前體分化程序。</p>
+          <div class="card-footer">
+            <span class="tag">骨髓增生性腫瘤</span><span class="tag">ASXL1</span><span class="tag">CALR</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧠</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>The amygdaloid complex: from morphology to neurodegeneration.</h3>
+          <p class="journal-source">Brain : a journal of neurology</p>
+          <p>（見排名8，重複條目）Amygdala作為情緒調節、記憶與壓力反應的核心腦區。</p>
+          <div class="card-footer">
+            <span class="tag">神經科學</span><span class="tag">杏仁核</span><span class="tag">情緒調節</span><span class="tag">壓力反應</span><span class="tag">腦造影</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Isoimperatorin regulates hepatic fibrosis through LXRα/β-HMGB1/NLRP3 axis: insights into the apoptosis of activated hepatic stellate cells in hepatic microenvironment.</h3>
+          <p class="journal-source">Chinese journal of natural medicines</p>
+          <p>異槐皮素通過LXRα/β-HMGB1/NLRP3軸調節肝纖維化，涉及啟動星狀細胞的凋亡。</p>
+          <div class="card-footer">
+            <span class="tag">肝纖維化</span><span class="tag">LXR</span><span class="tag">HMGB1</span><span class="tag">NLRP3</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>EPCR expression marks CD150dormant long-term hematopoietic stem cells.</h3>
+          <p class="journal-source">Cell stem cell</p>
+          <p>EPCR標記CD150深度休眠長期造血幹細胞，特殊的幹細胞亞群。</p>
+          <div class="card-footer">
+            <span class="tag">造血幹細胞</span><span class="tag">EPCR</span><span class="tag">CD150</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Exploring the Mechanism of DEHP Promoting Hepatic Fibrosis Based on Network Toxicology by Triggering Lipophagy-Dependent Hepatic Stellate Cell Activation.</h3>
+          <p class="journal-source">Journal of agricultural and food chemistry</p>
+          <p>DEHP通過觸發脂質自噬依賴性星狀細胞啟動促進肝纖維化。</p>
+          <div class="card-footer">
+            <span class="tag">DEHP</span><span class="tag">脂質自噬</span><span class="tag">肝纖維化</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">📊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Clonal Hematopoiesis of Indeterminate Potential and Bone Mineral Density in Cohorts from Trans-Omics for Precision Medicine.</h3>
+          <p class="journal-source">Journal of bone and mineral research : the official journal of the American Society for Bone and Mineral Research</p>
+          <p>CLonal hematopoiesis of indeterminate potential與骨礦密度無整體關聯，特定多突變與骨密度有正向關聯。</p>
+          <div class="card-footer">
+            <span class="tag">CLIP</span><span class="tag">骨密度</span><span class="tag">基因型</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Solubility parameters of enzymatic hydrolysis lignin: a comparative study of inverse gas chromatography and Hansen solubility sphere.</h3>
+          <p class="journal-source">RSC advances</p>
+          <p>酶解木質素的溶解度參數研究，結合逆向氣相色譜與Hansen溶解度球。</p>
+          <div class="card-footer">
+            <span class="tag">木質素</span><span class="tag">溶解度參數</span><span class="tag">實驗方法</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Hesperetin-loaded transethosomes for management of skin cancer: formulation and optimization by Box-Behnken design and in vitro, ex vivo, and dermatokinetic studies.</h3>
+          <p class="journal-source">Naunyn-Schmiedeberg's archives of pharmacology</p>
+          <p>黑檀素載於透明質納米囊泡，用於皮癌管理，優化配方與透皮吸收。</p>
+          <div class="card-footer">
+            <span class="tag">黑檀素</span><span class="tag">透明質納米囊泡</span><span class="tag">皮癌</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Method-Dependent Variation in Stomatal Trait Estimation and Its Functional Implications in Oryza Species.</h3>
+          <p class="journal-source">Physiologia plantarum</p>
+          <p>不同測方法對植物氣孔性狀的估計存在差異，影響生理功能解讀。</p>
+          <div class="card-footer">
+            <span class="tag">植物氣孔</span><span class="tag">測方法</span><span class="tag">Oryza</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>The maternal-fetal interface is an early hematopoietic niche enriched in distinct erythro-myeloid progenitors.</h3>
+          <p class="journal-source">Nature immunology</p>
+          <p>母胎界面是早期造血小區，富含特定的紅系-粒系前體細胞。</p>
+          <div class="card-footer">
+            <span class="tag">母胎界面</span><span class="tag">早期造血</span><span class="tag">幹細胞</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧪</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>An Inverse Design Workflow for Solvent Mixtures Based on Hansen Solubility Parameters.</h3>
+          <p class="journal-source">Journal of chemical information and modeling</p>
+          <p>基於Hansen溶解度參數的溶劑混合物逆向設計工作流。</p>
+          <div class="card-footer">
+            <span class="tag">溶劑設計</span><span class="tag">Hansen參數</span><span class="tag">化學模擬</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">📊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Genetic Parameters and Genome-Wide Association Analysis of Reproductive Traits in Egyptian Buffalo.</h3>
+          <p class="journal-source">Journal of animal breeding and genetics = Zeitschrift fur Tierzuchtung und Zuchtungsbiologie</p>
+          <p>埃及水牛生殖性狀的遺傳參數與全基因組關聯分析。</p>
+          <div class="card-footer">
+            <span class="tag">水牛</span><span class="tag">GWAS</span><span class="tag">生殖性狀</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>Transient ATM inhibition enhances knock-in efficiency in hematopoietic stem cells by attenuating the DNA damage response.</h3>
+          <p class="journal-source">Proceedings of the National Academy of Sciences of the United States of America</p>
+          <p>短暫抑制ATM可增強造血幹細胞的敲入效率，透過抑制DNA損傷反應實現。</p>
+          <div class="card-footer">
+            <span class="tag">ATM</span><span class="tag">造血幹細胞</span><span class="tag">基因編輯</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🌡️</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Epigallocatechin gallate and thermal cycling–stimulation synergistically promote apoptosis in A549 cells via endoplasmic reticulum stress–induced calcium ion dysregulation and oxidative stress.</h3>
+          <p class="journal-source">Molecular medicine reports</p>
+          <p>EGCG與熱循環刺激協同促進A549細胞凋亡，涉及內質網壓力與氧化應激。</p>
+          <div class="card-footer">
+            <span class="tag">EGCG</span><span class="tag">熱循環</span><span class="tag">癌症治療</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Redox-metabolic cascade NIR-II prodrug for synchronizing compensatory HSPs/P-gp feedback with mitophagy flux impairment against intrinsic thermotolerance.</h3>
+          <p class="journal-source">International journal of pharmaceutics: X</p>
+          <p>開發紅外II波段納米藥物，協調HSPs/P-gp回饋與mitophagy flux受損，對抗內在耐熱性。</p>
+          <div class="card-footer">
+            <span class="tag">NIR-II</span><span class="tag">納米藥物</span><span class="tag">氧化代謝</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Acaudiolide attenuates MASH-related liver fibrosis through covalent engagement of SMAD4 and blockade of p-SMAD2/3 nuclear translocation.</h3>
+          <p class="journal-source">European journal of pharmacology</p>
+          <p>Acaudiolide通過共價結合SMAD4並阻斷p-SMAD2/3核轉位，緩解MASH相關肝纖維化。</p>
+          <div class="card-footer">
+            <span class="tag">MASH</span><span class="tag">肝纖維化</span><span class="tag">SMAD4</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-high utility-sm">高</span>
+          </div>
+          <h3>Interactive effect of childhood adversity and HPA-axis multilocus genetic variation on alexithymia in adolescents.</h3>
+          <p class="journal-source">Journal of affective disorders</p>
+          <p>（見排名5，重複條目）HPA軸多座遺傳變異調節童年逆境與青少年無情感體驗的關係。</p>
+          <div class="card-footer">
+            <span class="tag">HPA軸</span><span class="tag">遺傳變異</span><span class="tag">無情感體驗</span><span class="tag">童年逆境</span><span class="tag">差異敏感度</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Single-cell transcriptomics reveals the heterogeneous landscape of innate lymphoid cells in zebrafish.</h3>
+          <p class="journal-source">Cell reports</p>
+          <p>單核RNA測序揭示魚類固有淋巴細胞的heterogeneous landscape，闡明其分化與功能。</p>
+          <div class="card-footer">
+            <span class="tag">固有淋巴細胞</span><span class="tag">單核RNA測序</span><span class="tag">魚類</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧠</span>
+            <span class="utility-mid utility-sm">中</span>
+          </div>
+          <h3>Environmental sensitivity and perceived social support in relation to adolescent eating disorder symptoms.</h3>
+          <p class="journal-source">Journal of affective disorders</p>
+          <p>（見排名1，重複條目）環境敏感度是預測青少年飲食症狀的一致且顯著的正向預測因子。</p>
+          <div class="card-footer">
+            <span class="tag">環境敏感度</span><span class="tag">青少年</span><span class="tag">飲食症狀</span><span class="tag">社會支持</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>PXDN knockdown alleviates hepatic stellate cell activation by regulating GPX1.</h3>
+          <p class="journal-source">Biochimica et biophysica acta. Molecular basis of disease</p>
+          <p>PXDN knockdown透過調節GPX1緩解啟動星狀細胞激活。</p>
+          <div class="card-footer">
+            <span class="tag">PXDN</span><span class="tag">GPX1</span><span class="tag">肝星狀細胞</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🧬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Hematopoietic stem cell fitness mechanisms.</h3>
+          <p class="journal-source">Experimental hematology</p>
+          <p>綜述造血幹細胞的適應度機制，涉及 clonal fitness 與 stem cell fitness。</p>
+          <div class="card-footer">
+            <span class="tag">造血幹細胞</span><span class="tag">適應度</span><span class="tag">衰老</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Midbody inheritance predicts re-entry into quiescence, but not lineage potential, in mouse hematopoietic stem cells.</h3>
+          <p class="journal-source">Experimental hematology</p>
+          <p>中體遺傳預測小鼠造血幹細胞重新進入休眠，但不預測系統潛能。</p>
+          <div class="card-footer">
+            <span class="tag">造血幹細胞</span><span class="tag">中體</span><span class="tag">休眠</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">💊</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Salvianic acid A alleviates hepatic fibrosis by inhibiting the AKT1/NF-κB axis.</h3>
+          <p class="journal-source">European journal of pharmacology</p>
+          <p>Salvianic acid A通過抑制AKT1/NF-κB軸緩解肝纖維化。</p>
+          <div class="card-footer">
+            <span class="tag"> Salvianic acid A</span><span class="tag">AKT1</span><span class="tag">NF-κB</span><span class="tag">肝纖維化</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="card-header-row">
+            <span class="emoji-sm">🔬</span>
+            <span class="utility-low utility-sm">低</span>
+          </div>
+          <h3>Attenuation of liver fibrosis by platelet-type 12S-lipoxygenase expressed in hepatic stellate cells involves repression of platelet-derived growth factor receptors.</h3>
+          <p class="journal-source">Biochimica et biophysica acta. Molecular and cell biology of lipids</p>
+          <p>血小板型12S-lipoxygenase在星狀細胞中表達，透過抑制PDGFR緩解肝纖維化。</p>
+          <div class="card-footer">
+            <span class="tag">肝纖維化</span><span class="tag">PDGFR</span><span class="tag">12S-lipoxygenase</span>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/[object Object]/" target="_blank">PubMed →</a>
+          </div>
+        </div></div>
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div>
+            <div class="topic-row">
+              <span class="topic-name">高敏感特質</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+              <span class="topic-count">6</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">環境敏感度</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:83%"></div></div>
+              <span class="topic-count">5</span>
+            </div>
+            <div class="topic-row">
+              <span class="topic-name">差異易感性</span>
+              <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+              <span class="topic-count">3</span>
+            </div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">環境敏感度</span><span class="keyword">高敏感特質</span><span class="keyword">差異敏感度</span><span class="keyword">兒童發展</span><span class="keyword">情緒調節</span></div></div>
+
+  <div class="clinic-banner">
+    <div class="clinic-links">
+      <a href="https://www.leepsyclinic.com/" class="clinic-link" target="_blank">
+        <span class="clinic-icon">🏥</span>
+        <span class="clinic-name">李政洋身心診所首頁<span class="clinic-desc">專業身心健康服務</span></span>
+        <span class="clinic-arrow">→</span>
+      </a>
+      <a href="https://blog.leepsyclinic.com/" class="clinic-link" target="_blank">
+        <span class="clinic-icon">📬</span>
+        <span class="clinic-name">訂閱電子報<span class="clinic-desc">接收最新心理健康資訊</span></span>
+        <span class="clinic-arrow">→</span>
+      </a>
+      <a href="https://buymeacoffee.com/CYlee" class="clinic-link" target="_blank">
+        <span class="clinic-icon">☕</span>
+        <span class="clinic-name">Buy Me a Coffee<span class="clinic-desc">支持這個計畫持續運作</span></span>
+        <span class="clinic-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：nvidia/nemotron-3.5-lightning-30b-a3b</span>
+    <span><a href="https://github.com/u8901006/highly-sensitive">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
