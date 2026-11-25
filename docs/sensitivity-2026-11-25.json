@@ -4,6 +4,38 @@
   "papers": [
     {
       "pmid": "[object Object]",
+      "title": "Heat Shock Proteins in Parkinson's Disease: A Dynamic Continuum from Neuroprotection to Pathology.",
+      "journal": "Ageing research reviews",
+      "date": "2026 Nov 24",
+      "abstract": "Parkinson's disease (PD), the second most common neurodegenerative disorder, is pathologically defined by the progressive loss of dopaminergic neurons in the substantia nigra pars compacta (SNc) and the abnormal aggregation of &#x3b1;-synuclein (&#x3b1;-syn) into Lewy bodies, which spread from the nigrostriatal system to the olfactory bulb, lower brainstem, limbic regions, and ultimately the cerebral cortex. Heat shock proteins (HSPs) are a group of essential molecular chaperones maintaining proteostasis in this disease. However, their roles are far more complicated than previous researchers considered. This is not a simple dichotomy. We argue that HSPs are neither intrinsically protective nor pathogenic; instead, they exist on a dynamic continuum shaped by disease stage, ATP supply, and the integrity of the co-chaperone network. We propose that HSPs' functional shifts in PD may be stage-dependent: HSC70/HSP70-mediated compensatory clearance predominates in early phases, clearing misfolded/aggregated &#x3b1;-synuclein by inhibiting aggregation and promoting degradation to maintain protein homeostasis. In later stages of the disease, PD pathology leads to ATP depletion and co-chaperone network imbalance, shifting HSPs' function toward HSP90-driven pathogenic mechanisms. This framework moves HSPs from a binary classification to a dynamic, stage-sensitive model, with direct implications for trial design and therapeutic timing. However, a systematic overview dynamic role for HSPs remains lacking. Here, we synthesize evidence on both the protective and pathogenic roles of HSPs in PD, providing proposed ideas for a theoretical foundation for developing rational, HSP-targeted therapies.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Parkinson&#x2018;s disease",
+        "disease staging",
+        "dynamic dual role",
+        "heat shock proteins",
+        "molecular chaperones",
+        "therapeutic strategies",
+        "&#x3b1;-synuclein"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "Remodeling of the Hepatic Microenvironment Following Praziquantel Treatment in Mice with Chronic Schistosoma mansoni Infection.",
+      "journal": "Molecular and biochemical parasitology",
+      "date": "2026 Nov 24",
+      "abstract": "Praziquantel (PZQ) is the therapy of choice for schistosomiasis; however, its cellular effects remain incompletely understood. This study aimed to evaluate the effects of chronic S. mansoni infection and PZQ on liver cell biology, namely fibrogenesis and the urea cycle. The experiment included three groups: healthy, S. mansoni-infected, and PZQ-treated. Histological analysis and immunohistochemical assessments for alpha-smooth muscle actin (&#x3b1;-SMA) and hepatocyte-specific antigen (CPS1) were performed. CPS1 was detected using Hep Par-1 monoclonal antibody. Their respective cellular source structures, namely fibroblasts and mitochondria, were analyzed using transmission electron microscopy (TEM). Schistosomiasis increased periovular &#x3b1;-SMA expression, whereas Hep Par-1 expression declined. However, PZQ treatment ameliorated the expression of both markers. &#x3b1;-SMA and Hep Par-1 expression showed a significant, strong negative correlation (r = -0.816, P < 0.001). On TEM, the control group showed large lipid droplets; the infected, untreated group showed myofibroblastic forms lacking lipid vacuoles, together with mature collagen fibers and degenerated Kupffer-like cells/macrophages. The PZQ-treated group showed a transitory form of hepatic stellate cells (HSCs) with traces of lipid droplets. Additionally, in infected, untreated livers, mitochondria appeared markedly variable in size, with ill-defined membranes and indistinct cristae. PZQ treatment improved mitochondrial size, membranes, and cristae. By reversing cellular stress and reestablishing mitochondrial integrity, PZQ treatment promotes hepatic tissue resolution. This intervention reverses infection-induced metabolic shutdown and stabilizes hepatocytes by regulating the expression of the key urea cycle enzyme (Hep Par-1), demonstrating a clear connection between structural repair and functional metabolic recovery.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "Hep Par-1 (CPS1)",
+        "Praziquantel",
+        "S. mansoni",
+        "TEM",
+        "&#x3b1;-SMA"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
       "title": "Climatic and Anthropogenic Drivers of Amphibian Richness and Vulnerability in Nigeria.",
       "journal": "Ecology and evolution",
       "date": "2026 Nov",
@@ -243,31 +275,6 @@
     },
     {
       "pmid": "[object Object]",
-      "title": "Feline intestinal organoids reveal cell type-specific tropism and antiviral responses to type II feline infectious peritonitis virus.",
-      "journal": "Veterinary research",
-      "date": "2026 Nov 17",
-      "abstract": "Feline infectious peritonitis virus (FIPV), a highly pathogenic feline coronavirus (FCoV), causes a nearly uniformly fatal disease in cats, yet its infection dynamics within the intestinal epithelium-the primary site of viral entry and replication-remain largely unresolved. Here, we report the first establishment of long-term, passageable three-dimensional (3D) feline intestinal organoids, including feline ileal organoids (fILOs) and feline colonic organoids (fCOs), which faithfully recapitulate the cellular diversity and architecture of the feline intestine and support infection by type II FIPV. Using this physiologically relevant platform, we demonstrate that FIPV infection induces profound epithelial remodeling in fCOs, characterized by a marked expansion of proliferative cell populations and depletion of differentiated epithelial lineages. High-resolution single-cell RNA sequencing of fCOs revealed pronounced cell type-specific viral tropism, with preferential infection of differentiated epithelial cells, particularly goblet and tuft cells, while stem and transit-amplifying cells exhibited relative resistance. This differential susceptibility was strongly associated with cell type-specific expression of host entry and trafficking factors, including aminopeptidase N (APN), TMPRSS2, and Niemann-Pick C1 (NPC1). Importantly, our organoid-based infection model recapitulated in vivo-relevant antiviral responses, enabling robust evaluation of therapeutic candidates and accurately reflecting the potent antiviral efficacy of GS-441524 and the neutralizing antibody 1AF10. Collectively, this study establishes a novel, scalable, and physiologically faithful feline intestinal organoid platform that provides unprecedented insight into type II FIPV epithelial tropism and pathogenesis, and represents a powerful preclinical tool for accelerating the development of effective antiviral and preventive strategies against feline infectious peritonitis.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
-      "keywords": [
-        "Feline infectious peritonitis virus (FIPV)",
-        "Niemann-Pick C1 (NPC1)",
-        "TMPRSS2",
-        "feline intestinal organoids",
-        "goblet cells",
-        "tuft cells"
-      ]
-    },
-    {
-      "pmid": "[object Object]",
-      "title": "Tracking human HSCs and MPPs in mice reveals distinct clonal dynamics and responses to pre-transplant conditioning.",
-      "journal": "NPJ Regenerative medicine",
-      "date": "2026 Nov 17",
-      "abstract": "Blood and immune cell regeneration is sustained by hematopoietic stem and progenitor cells (HSPCs), which form the therapeutic basis of bone marrow transplantation. While the functional hierarchy of mouse HSPC subsets is well characterized, the distinct roles of human HSPC populations remain less well defined, particularly at clonal resolution and in the context of transplantation conditioning. Here, we performed quantitative clonal tracking of purified human HSCs (hHSCs) and human MPPs (hMPPs) in NSGW41 mice across primary and secondary transplantation under no conditioning, and busulfan or irradiation conditioning. We found that hHSC clones generated more blood cells, initiated lymphoid production earlier, and exhibited more robust multilineage differentiation than hMPP clones. hHSC clones were also less sensitive to conditioning, maintaining stable lineage biases. Notably, busulfan and irradiation differentially affected the magnitude, lineage bias, and timing of hematopoietic reconstitution without altering engraftment. During secondary transplantation, hHSCs and hMPPs contributed comparably to hematopoietic reconstitution but with substantially reduced output and increased clonal diversity. Extramedullary hematopoiesis was observed in all secondary recipients. These findings advance our understanding of human hematopoiesis and provide a framework for optimizing experimental models, improving transplantation conditioning strategies, and informing the preclinical evaluation of HSC-based cell and gene therapies.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
-      "keywords": []
-    },
-    {
-      "pmid": "[object Object]",
       "title": {
         "i": [
           "in situ",
@@ -361,22 +368,6 @@
         "heat shock protein inhibitor",
         "photothermal therapy",
         "quercetin"
-      ]
-    },
-    {
-      "pmid": "[object Object]",
-      "title": "Regulation of hepatic stellates cell activation by biomimetic fibrotic hydrogels with uniform and heterogeneous matrix stiffness.",
-      "journal": "Biofabrication",
-      "date": "2026 Nov 17",
-      "abstract": "Current research on liver fibrosis predominantly relies on culture matrices with uniform stiffness, largely overlooking the pathophysiological relevance of stiffness heterogeneity-the spatially uneven stiffness distribution characteristic of fibrotic liver tissue. To address this, we engineered biomimetic fibrotic hydrogels using decellularized liver matrix from fibrotic tissues and methacrylated hyaluronic acid. These hydrogels replicated the distinct stiffness profiles of normal, early-stage fibrotic, and late-stage fibrotic liver. Using a custom honeycomb-shaped mold, we integrated them into a unified platform featuring both uniform and heterogeneous mechanical regions. By co-culturing hepatic stellate cells (HSCs) on this platform, we investigated how matrix stiffness regulates HSCs proliferation, migration, and activation. Results demonstrated that on uniformly stiff substrates, particularly those mimicking late-stage fibrosis, extracellular matrix components and high stiffness promoted HSCs activation, upregulated the Piezo1-YAP signaling axis. In contrast, although the low-stiffness region of the mechanically heterogeneous platform exhibited increased HSC proliferation and activation, the proliferation and activation levels in the medium- and high-stiffness regions were significantly reduced. The expression patterns of the Piezo1-YAP signaling pathway further corroborated this phenomenon. These findings suggest that mechanical heterogeneity may exert a negative regulatory effect on HSC activation. This study provides new insights into the mechanobiological mechanisms underlying hepatic fibrosis and reveals potential therapeutic targets.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
-      "keywords": [
-        "biomaterial platforms",
-        "decellularized hepatic matrix",
-        "hepatic fibrosis",
-        "hepatic stellate cells",
-        "photocrosslinking",
-        "stiffness heterogeneity"
       ]
     },
     {
@@ -760,6 +751,21 @@
         "Motivation",
         "Sensitivity",
         "Substance use"
+      ]
+    },
+    {
+      "pmid": "[object Object]",
+      "title": "CD7 CAR-T cells eliminate chronic myeloid leukemia stem cells specifically and effectively.",
+      "journal": "Hematology (Amsterdam, Netherlands)",
+      "date": "2026 Dec 31",
+      "abstract": "OBJECTIVES: Leukemia stem cells (LSCs) in chronic myeloid leukemia (CML) are associated with disease recurrence and progression, cannot be eliminated by tyrosine kinase inhibitors (TKIs), and affect TKI discontinuation in CML patients. Chimeric antigen receptor T cells (CAR-T) therapy can eliminate tumor cells expressing specific antigens. CD7 is highly expressed on LSCs and can distinguish LSCs from normal hematopoietic stem cells (HSCs). This study explored the biological characteristics of CD7, and evaluated the effects of CD7 CAR-T cells on CD7CML tumor cells and CD7LSCs in vitro. METHODS: We examined CD7 expression in primary CML LSCs, constructed CD7-overexpressing K562 cells, and assessed the in vitro cytotoxicity, degranulation and cytokine secretion of CD7 CAR-T cells against CD7CML cells and CD34CD7LSCs, along with the correlation between CD7 and TKI resistance. RESULTS: CD7CML tumor cells were resistant to TKI to a certain extent. This molecule appears to be relevant to the survival of LSCs in patients with CML receiving TKI-targeted therapy. In the in vitro co-culture system, CD7 CAR-T cells effectively eliminate CD7CML cells and LSCs and exhibit multiple immunological activities during the co-culture process. DISCUSSION: This study targets the key limitation of current CML treatment in that TKIs fail to eliminate LSCs, and confirms the correlation between CD7 and LSC survival, as well as the targeting potential of CD7 CAR-T for CML. CONCLUSION: This study showed that using CD7 CAR-T cells to specifically eliminate LSCs is effective and rational in vitro, which provides experimental evidence for LSC-targeted CML therapy and lays a foundation for subsequent in vivo and translational research.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/[object Object]/",
+      "keywords": [
+        "CD7",
+        "chimeric antigen receptor T cells (CAR-T)",
+        "chronic myeloid leukemia (CML)",
+        "leukemia stem cell",
+        "tyrosine kinase inhibitors, BCR-ABL1, immunotherapy, drug resistance"
       ]
     }
   ]
